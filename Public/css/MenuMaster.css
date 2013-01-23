@@ -1,0 +1,398 @@
+﻿#imgLogo
+{
+    width: 335px;
+    height: 93px;
+    padding: 0.5em, 1em;
+    margin-top: 1em;
+    margin-bottom: 5px;
+}
+#title
+{
+    font-size: 2em;
+    font-weight: bold;
+    color: Black;
+    width: 335px;
+    height: 2em;
+    padding: 0.5em, 1em;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 1em;
+}
+
+
+/*
+#MainContent
+{
+    position: absolute;
+    left: 26%;
+    top: 140px;
+    height: 65%;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 3px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: Blue;
+    overflow: auto;
+}
+*/
+
+/*  floating定位 */
+#MainContent
+{
+    border: 1px dotted Gray;
+    width: 73%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color:#fff;
+}
+
+
+/* 绝对定位于div#main 
+#MainContent
+{
+    position: absolute;
+    top: 2.6em;
+    left: 25%;
+    border: 1px dotted Gray;
+    width: 70%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+*/
+
+/***************菜单栏*****************/
+div#MainMenu
+{
+    /*  border-right: 1px solid Black;  */
+    float: left;
+    width: 21%;
+    height: auto;
+    padding: 0;
+    margin: 0 30px 30px 0;
+}
+
+#MainMenu ul
+{
+    width: auto;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+    border-bottom: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: Black;
+}
+
+
+#MainMenu
+{
+    display: block;
+    margin: 0 0 0 4px;
+}
+
+span.share_img
+{
+    background-image: url('../images/share.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+span.arrow
+{
+    background-image: url('../images/arrow1.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#MainMenu ul#c_search
+{
+    margin: 0 0 2em 0; /*  height: 166px; */
+    height: auto;
+}
+#MainMenu ul#standard_rp
+{
+    /* height: 320px; */
+    height: auto;
+}
+#MainMenu ul#c_search, #MainMenu ul#standard_rp
+{
+    margin-left: 0px;
+}
+
+ul.menu li a
+{
+    display: block;
+}
+
+#MainMenu li a
+{
+    text-decoration: none;
+    width: 99%;
+    height: auto;
+    padding: 0 0.2px 0 3px;
+    margin: 0px;
+    text-align: left;
+    line-height: 2.6em;
+    background-color: #e8eef4;
+    color: #000;
+}
+
+#MainMenu li a:hover
+{
+    background-color: #e8e4fe;
+    text-decoration: none;
+    border-top: 1px solid Gray;
+    border-bottom: 1px solid Gray;
+}
+#MainMenu li a:active
+{
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+#MainMenu li
+{
+    width: auto;
+    height: 34px;
+    margin: 0;
+}
+#MainMenu li.Mmenu
+{
+    height: 38px;
+}
+
+#MainMenu li.Mmenu span.topOrButtom
+{
+    background-position: center center;
+    background-image: url('../images/Up.gif');
+    background-repeat: no-repeat; /*background-color: #E8EFAA;*/
+    background-attachment: fixed;
+    width: 17px;
+    height: 16px;
+}
+#MainMenu li.Mmenu a
+{
+    line-height: 3.0em; /* background-color: #e8efaa; */
+    background-color: #D2D2CF;
+}
+
+#MainMenu li.Mmenu a:hover
+{
+    background-color: #e8e4fe;
+    text-decoration: none;
+}
+
+#search_app1_table tr th, #search_app1_table tr td, #search_app2_table tr th, #search_app2_table tr td
+{
+    width: auto;
+    height: 2.1em;
+}
+#search_app1_table table, #search_app2_table table
+{
+    width: 48%;
+    display: inline;
+}
+
+#search_app1_table, #search_app2_table
+{
+    width: 31%;
+    height: auto;
+    padding: 0;
+    margin: 5px;
+    display: inline;
+}
+
+
+p#Search_app_p
+{
+    clear: both;
+    width: auto;
+    padding: 3px;
+    margin: 4px;
+}
+
+div#no_content
+{
+    clear: both;
+}
+
+/* 返回顶部 */
+div#back_to_top
+{
+    position: fixed;
+    bottom: 10px;
+    right: 70px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+div#back_to_top a
+{
+    text-align: center;
+    text-decoration: none;
+    color: #d1d1d1;
+    display: block;
+    width: 40px;
+    -moz-transition: color 1s;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+}
+
+div#back_to_top a:hover
+{
+    color: #979797;
+}
+
+div#back_to_top a span
+{
+    background: #d1d1d1 url(../images/top32.png) no-repeat center center;
+    border-radius: 6px;
+    display: block;
+    height: 40px;
+    margin-bottom: 5px;
+    -moz-transition: background 1s;
+    -webkit-transition: background 1s;
+    -o-transition: background 1s;
+}
+
+div#back_to_top a:hover span
+{
+    background: #979797 url(../images/top32.png) no-repeat center center;
+}
+
+div#search_app_name
+{
+    position: fixed;
+    top: 190px;
+    right: 65px;
+}
+
+div#search_app_name input
+{
+    width: 55px;
+    height: 30px;
+    background: #d1d1d1 url(../images/search24.png) no-repeat center center;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 5px;
+    -moz-transition: background 1s;
+    -webkit-transition: background 1s;
+    -o-transition: background 1s;
+}
+div#search_table
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+div#table
+{
+    margin: 10px 0px;
+}
+/********   导出按钮  **********/
+a#exportExcel
+{
+    text-decoration: none;
+    background-color: #d1d1ff;
+    border: thin solid #C0C0C0;
+    padding: 4px 3px;
+}
+
+a#exportExcel:hover
+{
+    background-color: #C0C0C0;
+}
+div.app_list
+{
+    margin: 5px 0px 10px;
+}
+
+div#pagingLink
+{
+    margin: 5px 0px 10px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 20px;
+    left: 80%;
+}
+span#AppListUpdate
+{
+    margin: 4px 20px;
+}
+div#edit
+{
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #C0C0C0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+div#edit a
+{
+    margin: 0 5px;
+}
+span#AppListUpdate a, div#create a, div#edit a, span.viewAppList a
+{
+    text-decoration: none;
+    background-color: #C0C0C0;
+    border: thin solid #C0C0C0;
+    padding: 4px 3px;
+}
+span#AppListUpdate a:hover, div#create a:hover, div#edit a:hover, span.viewAppList a:hover
+{
+    background-color: #d1d1d1;
+}
+.cpuSysList a
+{
+    text-decoration: none;
+    background-color: #C0C0C0;
+    border: thin solid #C0C0C0;
+    padding: 4px 3px;
+}
+.cpuSysList a:hover
+{
+    background-color: #d1d1d1;
+}
+
+div#back_to_list
+{
+    padding: 5px 0;
+    margin: 5px 0;
+}
+/***********  Test  ****************/
+input.text
+{
+    font-size: 1.2em;
+    border: 1px solid #B6D9F5;
+    height: 1.2em;
+}
+
+/*************** ajax.Search  *****************/
+div#mainTable
+{
+    clear: both;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+div.fieldset
+{
+    padding: 0px 0px 10px;
+}
+
+div#paging
+{
+    margin-bottom: 10px;
+}
