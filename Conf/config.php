@@ -14,8 +14,8 @@ $array=array(
 		'DEFAULT_MODULE'		=>	'Index',//默认模块
 		'DEFAULT_ACTION'		=>	'Index',//默认操作
 		
-		'ABSOLUTE_PATH'=>'http://localhost:8001/ComputerAssets/index.php/',
-		'APP_ABSOLUTE_PATH'=>'http://localhost:8001/ComputerAssets/',
+		'ABSOLUTE_PATH'=>'http://localhost:8001/SP/index.php/',
+		'APP_ABSOLUTE_PATH'=>'http://localhost:8001/SP/',
 		
 		'HTML_CACHE_ON'			=>	false,//开启静态缓存
 		'HTML_PATH' 			=>	'__APP__/Html',//静态缓存保存路径

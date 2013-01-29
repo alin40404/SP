@@ -1,0 +1,123 @@
+[ 2013-01-24T11:11:29+08:00 ] /AppServ/SP/index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T11:11:29+08:00 ] /AppServ/SP/index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.011189s ]
+[ 2013-01-24T11:11:29+08:00 ] /AppServ/SP/index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.023014s ]
+[ 2013-01-24T11:11:51+08:00 ] /AppServ/SP/index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T11:11:51+08:00 ] /AppServ/SP/index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001272s ]
+[ 2013-01-24T11:11:51+08:00 ] /AppServ/SP/index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001378s ]
+[ 2013-01-24T11:12:05+08:00 ] /AppServ/SP/index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T11:12:05+08:00 ] /AppServ/SP/index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000680s ]
+[ 2013-01-24T11:12:05+08:00 ] /AppServ/SP/index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000782s ]
+[ 2013-01-24T11:14:50+08:00 ] /appserv/sp/index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T11:14:50+08:00 ] /appserv/sp/index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002317s ]
+[ 2013-01-24T11:14:50+08:00 ] /appserv/sp/index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002440s ]
+[ 2013-01-24T11:14:50+08:00 ] /appserv/sp/index.php | NOTIC: [8] session_start() [<a href='function.session-start'>function.session-start</a>]: ps_files_cleanup_dir: opendir(C:\WINDOWS\TEMP\) failed: No such file or directory (2) functions.php 第 411 行.
+[ 2013-01-24T11:17:20+08:00 ] /sp/ | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T11:17:20+08:00 ] /sp/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001125s ]
+[ 2013-01-24T11:17:20+08:00 ] /sp/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001237s ]
+[ 2013-01-24T14:27:54+08:00 ] /appserv/sp/index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T14:27:54+08:00 ] /appserv/sp/index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.018132s ]
+[ 2013-01-24T14:27:54+08:00 ] /appserv/sp/index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.018269s ]
+[ 2013-01-24T14:28:27+08:00 ] /appserv/sp/index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T14:28:27+08:00 ] /appserv/sp/index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001273s ]
+[ 2013-01-24T14:28:27+08:00 ] /appserv/sp/index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001391s ]
+[ 2013-01-24T14:51:05+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+NOTIC: [2] fopen(http://www.baidu.com/) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: HTTP wrapper does not support writeable connections D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 22 行.
+
+[ 2013-01-24T14:51:11+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002265s ]
+NOTIC: [2] fopen(http://www.baidu.com/) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: HTTP wrapper does not support writeable connections D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 22 行.
+
+[ 2013-01-24T14:51:33+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001687s ]
+NOTIC: [2] fopen(http://www.baidu.com/) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: HTTP wrapper does not support writeable connections D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 22 行.
+
+[ 2013-01-24T15:13:19+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+NOTIC: [8] Undefined variable: g D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 27 行.
+
+[ 2013-01-24T15:13:20+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+NOTIC: [8] Undefined variable: g D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 27 行.
+
+[ 2013-01-24T15:13:20+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+NOTIC: [8] Undefined variable: g D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 27 行.
+
+[ 2013-01-24T15:13:44+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.005657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006145s ]
+
+[ 2013-01-24T15:13:45+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+
+[ 2013-01-24T15:13:45+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002012s ]
+
+[ 2013-01-24T16:48:59+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.090739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.151363s ]
+NOTIC: [8] Use of undefined constant __NAMESPACE__ - assumed '__NAMESPACE__' D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 30 行.
+
+[ 2013-01-24T16:49:00+08:00 ] 127.0.0.1 /appserv/sp/index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.167234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.570613s ]
+NOTIC: [8] Use of undefined constant __NAMESPACE__ - assumed '__NAMESPACE__' D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 30 行.
+
+[ 2013-01-24T16:49:37+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+NOTIC: [8] Use of undefined constant __NAMESPACE__ - assumed '__NAMESPACE__' D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 30 行.
+
+[ 2013-01-24T16:49:38+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+NOTIC: [8] Use of undefined constant __NAMESPACE__ - assumed '__NAMESPACE__' D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 30 行.
+
+[ 2013-01-24T16:49:38+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+NOTIC: [8] Use of undefined constant __NAMESPACE__ - assumed '__NAMESPACE__' D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 30 行.
+
+[ 2013-01-24T16:49:38+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+NOTIC: [8] Use of undefined constant __NAMESPACE__ - assumed '__NAMESPACE__' D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 30 行.
+
+[ 2013-01-24T17:12:09+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.044300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.044469s ]
+NOTIC: [8] Use of undefined constant __NAMESPACE__ - assumed '__NAMESPACE__' D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 30 行.
+NOTIC: [2] Wrong parameter count for ini_get() D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 31 行.
+
+[ 2013-01-24T17:12:10+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+NOTIC: [8] Use of undefined constant __NAMESPACE__ - assumed '__NAMESPACE__' D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 30 行.
+NOTIC: [2] Wrong parameter count for ini_get() D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 31 行.
+
