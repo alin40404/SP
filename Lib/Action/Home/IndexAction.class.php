@@ -27,9 +27,15 @@ class IndexAction extends Action {
 		// test();
 		echo (__NAMESPACE__);
 		dump ( ini_get () );
-		
+		$array=array(
+				1=>"aa",
+				2=>"bb",
+				3=>"cc",
+				);
 		dump ( $_SERVER );
 		dump ( $_SERVER ['HTTP_REFERER'] );
+		dump($array);
+// 		$pdo=new PDO($dsn, $username, $passwd, $options)
 	}
 	public function show() {
 		$this->display ();

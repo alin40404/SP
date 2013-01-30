@@ -1,0 +1,47 @@
+drop database if exists  `demo`;
+create database `demo`;
+use demo;
+
+create table `nc_member`(
+`member_id` int(10) unsigned not null auto_increment,
+`login_name` varchar(50) not null,
+`password` varchar(50) not null,
+primary key(`member_id`)
+)engine=InnoDB auto_increment=3 default charset=utf8;
+
+
+create table `nc_member_extend`(
+`extend_id` int(10) unsigned not null auto_increment,
+`member_id` int(10) unsigned default null,
+`true_name` varchar(30) default null,
+key `extend_id` (`extend_id`),
+key `member_id` (`member_id`)       #keyÖµÎªË÷Òý
+)engine=innodb auto_increment=3 default charset=utf8;
+
+
+
+insert into `nc_member`(`member_id`,`login_name`,`password`)values(1,'user','ddd');
+insert into `nc_member`(`member_id`,`login_name`,`password`)values(2,'ussser','ddd');
+insert into `nc_member`(`member_id`,`login_name`,`password`)values(3,'usesdar','ddd');
+
+
+insert into `nc_member_extend`(`extend_id`,`member_id`,`true_name`)values(1,1,'chen');
+insert into `nc_member_extend`(`extend_id`,`member_id`,`true_name`)values(2,2,'zhen');
+insert into `nc_member_extend`(`extend_id`,`member_id`,`true_name`)values(3,3,'alin');
+
+alter table `nc_member_extend` add constraint `FK_nc_member_extend`
+foreign key (`member_id`) references `nc_member`(`member_id`)
+on delete set null on update set null;
+
+alter table `nc_member_extend` add constraint `FK_nc_member_extend`
+foreign key (`member_id`) references `nc_member`(`member_id`)
+on delete cascade on update cascade;
+
+
+update  nc_member set member_id=4 where member_id=2;
+
+delete from nc_member where member_id=4;
+
+
+select * from nc_member_extend \G;
+

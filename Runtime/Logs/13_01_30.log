@@ -1,0 +1,8 @@
+[ 2013-01-30T09:28:57+08:00 ] 127.0.0.1 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.052345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.052518s ]
+NOTIC: [8] Use of undefined constant __NAMESPACE__ - assumed '__NAMESPACE__' D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 28 行.
+NOTIC: [2] Wrong parameter count for ini_get() D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 29 行.
+NOTIC: [8] Undefined index:  HTTP_REFERER D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 36 行.
+
