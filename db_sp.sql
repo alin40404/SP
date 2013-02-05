@@ -322,3 +322,31 @@ CREATE TABLE `sp_user_view` (
 -- 导出表中的数据 `sp_user_view`
 -- 
 
+
+
+-- 
+-- 表的结构 `sp_friend_link`
+-- 
+
+CREATE TABLE `sp_friend_link` (
+  `link_id` smallint(5) unsigned NOT NULL auto_increment,
+  `site_name` varchar(100) NOT NULL,
+  `position_id` tinyint(3) unsigned NOT NULL,
+  `link_type` tinyint(1) unsigned NOT NULL,
+  `link_url` varchar(200) NOT NULL,
+  `sort_order` smallint(5) unsigned NOT NULL default '1',
+  `link_code` varchar(150) NOT NULL,
+  PRIMARY KEY  (`link_id`),
+  KEY `position_id` (`position_id`,`link_type`,`sort_order`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+-- 
+-- 导出表中的数据 `sp_friend_link`
+-- 
+
+INSERT INTO `sp_friend_link` VALUES (1, '嫁娶网', 101, 1, 'http://www.ijiaqu.com', 1, '嫁娶网');
+INSERT INTO `sp_friend_link` VALUES (2, '极好居', 101, 1, 'http://www.jihaoju.com', 2, '极好居');
+INSERT INTO `sp_friend_link` VALUES (3, '青番茄', 101, 1, 'http://www.qfanqie.com', 3, '青番茄');
+INSERT INTO `sp_friend_link` VALUES (4, '青番茄', 101, 1, 'http://www.tp-coupon.com', 4, 'TP-COUPON');
+
+
