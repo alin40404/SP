@@ -323,11 +323,12 @@ CREATE TABLE `sp_user_view` (
 -- 
 
 
+
 -- 
--- 表的结构 `dbs_friend_link`
+-- 表的结构 `sp_friend_link`
 -- 
 
-CREATE TABLE `dbs_friend_link` (
+CREATE TABLE `sp_friend_link` (
   `link_id` smallint(5) unsigned NOT NULL auto_increment,
   `site_name` varchar(100) NOT NULL,
   `position_id` tinyint(3) unsigned NOT NULL,
@@ -339,15 +340,13 @@ CREATE TABLE `dbs_friend_link` (
   KEY `position_id` (`position_id`,`link_type`,`sort_order`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
-
 -- 
--- 导出表中的数据 `dbs_friend_link`
+-- 导出表中的数据 `sp_friend_link`
 -- 
 
-INSERT INTO `dbs_friend_link` VALUES (1, '嫁娶网', 101, 1, 'http://www.ijiaqu.com', 1, '嫁娶网');
-INSERT INTO `dbs_friend_link` VALUES (2, '极好居', 101, 1, 'http://www.jihaoju.com', 2, '极好居');
-INSERT INTO `dbs_friend_link` VALUES (3, '青番茄', 101, 1, 'http://www.qfanqie.com', 3, '青番茄');
-INSERT INTO `dbs_friend_link` VALUES (4, '青番茄', 101, 1, 'http://www.tp-coupon.com', 4, 'TP-COUPON');
-
+INSERT INTO `sp_friend_link` VALUES (1, '嫁娶网', 101, 1, 'http://www.ijiaqu.com', 1, '嫁娶网');
+INSERT INTO `sp_friend_link` VALUES (2, '极好居', 101, 1, 'http://www.jihaoju.com', 2, '极好居');
+INSERT INTO `sp_friend_link` VALUES (3, '青番茄', 101, 1, 'http://www.qfanqie.com', 3, '青番茄');
+INSERT INTO `sp_friend_link` VALUES (4, '青番茄', 101, 1, 'http://www.tp-coupon.com', 4, 'TP-COUPON');
 
 
