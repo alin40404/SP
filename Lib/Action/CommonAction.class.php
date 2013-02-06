@@ -4,7 +4,7 @@
  * CommonAction.class.php
  * @copyright			copyright(c)  2013
  * @author alin.chen
- * @contact        QQ:302592040 Email:302592040@qq.com
+ * 
  */
 class CommonAction extends Action{
 	/**
@@ -57,5 +57,45 @@ class CommonAction extends Action{
 		return false;
 	}
 	
+	/**
+	 +----------------------------------------------------------
+	 * 操作成功跳转的快捷方法
+	 +----------------------------------------------------------
+	 * @access protected
+	 +----------------------------------------------------------
+	 * @param string $message 提示信息
+	 * @param string $jumpUrl 页面跳转地址
+	 * @param Boolean $ajax 是否为Ajax方式
+	 +----------------------------------------------------------
+	 * @return void
+	 +----------------------------------------------------------
+	 */
+	protected function success($message,$jumpUrl='',$ajax=false){
+		if(!$ajax){
+			$this->assign('title','提示信息-');
+		}
+		parent::success($message,$jumpUrl,$ajax);
+		exit;
+	}
 	
+	/**
+	 +----------------------------------------------------------
+	 * 操作错误跳转的快捷方法
+	 +----------------------------------------------------------
+	 * @access protected
+	 +----------------------------------------------------------
+	 * @param string $message 错误信息
+	 * @param string $jumpUrl 页面跳转地址
+	 * @param mixed $ajax 是否为Ajax方式 当数字时指定跳转时间
+	 +----------------------------------------------------------
+	 * @return void
+	 +----------------------------------------------------------
+	 */
+	protected function error($message,$jumpUrl='',$ajax=false){
+		if(!$ajax){
+			$this->assign('title','提示信息-');
+		}
+		parent::error($message,$jumpUrl,$ajax);
+		exit;
+	}
 }
