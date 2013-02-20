@@ -6,7 +6,18 @@
  *
  */
 class IndexAction extends HomeCommonAction {
+	/**
+	 * 默认
+	 */
 	public function index() {
+		
+		$title='SP-首页';
+		$this->assign('title',$title);
+		$this->display ();
+		
+	}
+	public function show() {
+
 		header ( "Content-Type:text/html; charset=utf-8" );
 		echo '<div style="font-weight:normal;color:blue;float:left;width:345px;text-align:center;border:1px solid silver;background:#E8EFFF;padding:8px;font-size:14px;font-family:Tahoma">^_^ Hello,欢迎使用<span style="font-weight:bold;color:red">ThinkPHP</span></div>';
 		dump ( rtrim ( dirname ( __FILE__ ), '/\\' ) );
@@ -31,8 +42,8 @@ class IndexAction extends HomeCommonAction {
 		// }
 		// test();
 		echo (__NAMESPACE__);
-// 		dump(C());
-        dump(__APP__);
+		// 		dump(C());
+		dump(__APP__);
 		dump(C('TMPL_PARSE_STRING'));
 		dump(__ROOT__);
 		
@@ -47,16 +58,14 @@ class IndexAction extends HomeCommonAction {
 				1=>"aa",
 				2=>"bb",
 				3=>"cc",
-				);
+		);
 		dump(array_splice($array, 0,2,"13456789"));
 		dump($array);
-// 		dump ( $_SERVER );
-// 		dump ( $_SERVER ['HTTP_REFERER'] );
-// 		dump($array);
-// 		$pdo=new PDO($dsn, $username, $passwd, $options)
-	}
-	public function show() {
-		$this->display ();
+		// 		dump ( $_SERVER );
+		// 		dump ( $_SERVER ['HTTP_REFERER'] );
+		// 		dump($array);
+		// 		$pdo=new PDO($dsn, $username, $passwd, $options)
+		
 	}
 	
 	public function tag() {
@@ -101,7 +110,6 @@ Password: <input name="password" type="password">
 </html> 
 SHOW;
 		echo $content;
-		
 	}
 	
 	public function _empty(){
