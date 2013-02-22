@@ -28,7 +28,7 @@ $array=array(
 		'HTML_FILE_SUFFIX'      => '.html',// 默认静态文件后缀
 		
 		'TMPL_STRIP_SPACE'      => false,       // 是否去除模板文件里面的html空格与换行
-		'TMPL_PARSE_STRING'		=> array('__PUBLIC__'=>__ROOT__.'/Public'),//用户自定义模板字符串
+		'TMPL_PARSE_STRING'		=> array('__PUBLIC__'=>__ROOT__.'/SP/Public'),//用户自定义模板字符串
 		
 		'TIME_ZONE'				=>	8,	//系统默认时区	
 
