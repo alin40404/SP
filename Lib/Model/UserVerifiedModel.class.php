@@ -7,7 +7,17 @@
  *
  */
 class UserVerifiedModel extends Model {
-	// protected $table='user_verified';
+   // protected $table='user_verified';
+	
+	public function selectByUnameAndPW($user,$password){
+		if(empty($user)||empty($password)){
+			return NULL;
+		}else{
+			$password=md5($password);
+			return $this->where("uname='$user' and password='$password'")->select();
+//             return $this->select();
+		}
+	}
 	
 	/**
 	 *  添加数据操作

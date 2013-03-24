@@ -1,1 +1,14 @@
 @CHARSET "utf-8";
+
+input[type="text"]
+{
+    height: 1.8em;
+	width: 12em;
+    margin: 3px 0 1px;
+}
+
+.span2.inputText{
+	height: 2.15em;
+	width: 15em;
+	margin: 0;
+}

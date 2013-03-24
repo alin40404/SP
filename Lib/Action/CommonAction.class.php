@@ -37,11 +37,10 @@ class CommonAction extends Action{
 		
 		if(!$this->isAjax()&&!$this->isPost()){
 			$this->assign('_siteConfig',$this->_siteConfig);
-			$this->assign('_refererUrl',$this->_refererUrl);
-				
+			$this->assign('_refererUrl',$this->_refererUrl);				
 		}
-		
 	}
+	
 	
 	/**
 	 * 是否Post请求
@@ -56,6 +55,7 @@ class CommonAction extends Action{
 		}
 		return false;
 	}
+	
 	
 	/**
 	 +----------------------------------------------------------

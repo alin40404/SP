@@ -14,8 +14,8 @@ class IndexAction extends HomeCommonAction {
 		$title='SP-首页';
 		$this->assign('title',$title);
 		$this->display ();
-		
 	}
+	
 	public function show() {
 
 		header ( "Content-Type:text/html; charset=utf-8" );
@@ -94,7 +94,6 @@ SHOW;
 		$name = $_GET['name'];
 		echo("Hello $name");
 		}
-
 	}
 	
 	public function sql(){

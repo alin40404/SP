@@ -25,6 +25,7 @@ class HomeCommonAction extends CommonAction {
 		// 验证登陆
 		$this->_check_login ();
 	}
+	
 	private function _init_user() {
 		// $auth=cookie('auth');
 		// if($auth){
@@ -54,6 +55,7 @@ class HomeCommonAction extends CommonAction {
 			$this->assign ( 'user', $this->_user );
 		}
 	}
+	
 	private function _check_login() {
 		if (is_array ( MODULE_NAME, C ( 'LOGIN_MODULES' ) ) && ! in_array ( ACTION_NAME, C ( 'NOT_LOGIN_ACTIONS' ) ) && ! $this->_user ['uid']) {
 			// 需要登录
@@ -64,4 +66,5 @@ class HomeCommonAction extends CommonAction {
 			}
 		}
 	}
+	
 }

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title><{$title}></title>
+
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+ <!--   <script type="text/javascript" src="__PUBLIC__/js/Admin/wbox-min.js"></script>	 --> 
+ <script type="text/javascript" src="__PUBLIC__/js/bootstrap.js"></script>
+	    	<script type="text/javascript" src="../../../Public/js/jquery.js"></script>
+	    	<script type="text/javascript" src="../../../Public/js/Admin/wbox.js"></script>	
+	  
+            <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/Admin/wbox.css" />
+            <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap-responsive.css" />
+            <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.css" />
+            <style type="text/css">
+	body{
+		width:920px;
+		margin:0 auto;
+		background-color:#ffffff;
+	}
+	#wBoxInfo{
+		width:918px;
+	}
+	#wBoxInfo h1{
+		text-align:center;
+	}
+	#wBoxUL,#wBoxChange{
+		width:400px;
+		float:left;
+	}
+	#wBoxDemos{
+		width:918px;
+		float:left;
+	}
+	#wBoxDemos li{
+		width:450px;
+		float:left;
+	}
+	.code{
+		margin-left:30px;
+	}
+	h2{
+		font-size:15px;
+	}
+	.demo {
+		width:360px;
+	}
+</style>
+
+</head>
+<body>
+<div id="logout"><{$info}></div>
+<div><button id="wbox1" type="button">点击弹出设置名字的wBox</button></div>
+<div><button id="wbox2" type="button">点击弹出透明背景wBox</button></div>
+<div><button id="wbox3" type="button">弹出5秒钟自动关闭wBox</button></div>
+ <div style="display:none" id="info" class="demo">这是来自隐藏div#info的消息<a class='wBox_close' href="javascript:void(0);">关闭</a></div>
+<div><button id="wboxImg" type="button">图片wBox</button></div>
+<div>
+请选择：
+<select class="select" rel="tooltip" title="省/直辖市">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+</div>
+
+<div>
+ <h6>地区管理</h6>
+</div>
+<div class="tabbable">
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#home">省/直辖市</a></li>
+  <li><a href="#profile">市/区</a></li>
+  <li><a href="#messages">区/地级市/县</a></li>
+  <li><a href="#settings">设置</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home"> Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. </div>
+  <div class="tab-pane" id="profile">Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+  <div class="tab-pane" id="messages">Raw denim you probably haven't heard of them jean shorts Austin.</div>
+  <div class="tab-pane" id="settings">...</div>
+</div>
+ </div>
+
+	    	<script type="text/javascript">
+	    	$('.select').tooltip('show')
+	    	$('#myTab a').click(function (e) {
+	    		  e.preventDefault();
+	    		  $(this).tab('show');
+	    		});
+	    	    //	    	    $(document).ready(function () {
+	    	    //	    	        var btn = $("#wbox1");
+	    	    //	    	        btn.click(function () {
+	    	    //	    	            var wBox = $("#wbox1").wBox({
+	    	    //	    	                title: "Test Title Name",
+	    	    //	    	                html: "<div class='demo'>点击弹出设置名字的wBox</div>"
+	    	    //	    	            });
+	    	    //	    	            wBox.showBox();
+	    	    //	    	            //  alert("ss");
+	    	    //	    	        });
+	    	    //	    	    });
+	    	    var wBox = $("#wbox1").wBox({
+	    	        title: "Test Title Name",
+	    	        html: "<div class='demo'>点击弹出设置名字的wBox</div>"
+	    	    });
+
+	    	    $("#wbox2").wBox({ opacity: 0, html: "<div class='demo'>点击弹出背景为透明的wBox</div>" });
+	    	    $("#wbox3").wBox({ target: "#info", timeout: 5000 });
+	    	    $('#wboxImg').wBox({ target: "004.jpg", requestType: "img" });
+	    	   
+	    	</script>
+<div>
+<table class="table table-hover table-condensed">
+  <caption>省市</caption>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>名称</th>
+      <th>编辑</th>
+      <th>删除</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>1</td>
+      <td>Mark</td>
+      <td>edit</td>
+      <td>deleted</td>
+      
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+       <h6><i class="icon-random"></i> 地区设置</h6>
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+      <div class="accordion-inner">
+        Anim pariatur cliche...
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        <h6><i class="icon-random"></i> 商品分类</h6>
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+        Anim pariatur cliche...
+      </div>
+    </div>
+  </div>
+</div>
+<?php echo ceil(5/2); ?>
+</body>
+</html>

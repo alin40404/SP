@@ -197,3 +197,71 @@ function load_config() {
 	}
 	return $arr;
 }
+
+
+function showPage($totalRows,$nowPage=1,$perPagePows=5,$rollPages=5){
+	if($totalRows==0){
+		return NULL;
+	}
+	$pageAll=array();
+	$page=array();
+	//总页数
+	$totalPages=ceil($totalRows/$perPagePows);
+	$page['upName']='';
+	$page['up']='up_p_'.($nowPage-1);
+	$page['downName']='';
+	$page['down']='down_p_'.($nowPage+1);
+	if($nowPage<=1){
+		$nowPage=1;
+	$page['upName']='disabled';
+	$page['up']='';
+	}
+    if($nowPage>=$totalPages){
+    	$nowPage=$totalPages;
+		$page['downName']='disabled';
+		$page['down']='';
+	}
+	$page['totalRows']=$totalRows;
+	$page['totalPages']=$totalPages;
+	$page['nowPage']=$nowPage;
+	$pageAll['pgInfo']=$page;
+	unset($page);
+	$page=array();
+	
+	$lessPrev=ceil($rollPages/2);
+	$moreNext=$totalPages-$lessPrev+1;
+	
+	if($totalPages<=$rollPages){
+		$begin=1;
+		$end=$totalPages;
+		
+	}else{
+		if($nowPage>$lessPrev&&$nowPage<$moreNext){
+			$begin=$nowPage-$lessPrev+1;;
+			$end=$nowPage-$lessPrev+$rollPages;
+				
+		}else if($nowPage<=$lessPrev){
+			$begin=1;
+			$end=$rollPages;
+			
+	}else{
+		$begin=$totalPages-$rollPages+1;;
+		$end=$totalPages;
+		}
+	}
+	
+	for($i=$begin;$i<=$end;$i++){
+		if($i!=$nowPage){
+			$page[$i]='p_'.$i;
+		}else{
+			$page[$i]['pid']='p_'.$i;
+			$page[$i]['class']='disabled';
+		}
+	}
+	
+	$pageAll['pgInfo']['begin']=$begin;
+	$pageAll['pgInfo']['end']=$end;
+	
+	$pageAll['page']=$page;
+	return $pageAll;
+}

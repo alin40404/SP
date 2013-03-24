@@ -1,0 +1,12 @@
+[ 2013-03-07T23:30:32+08:00 ] 0.0.0.0 /sp/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.252425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.252776s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\HomeCommonAction.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.076503s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.020340s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\HomeCommonAction.class.php 第 58 行.
+NOTIC: [2] ini_get() expects exactly 1 parameter, 0 given D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 44 行.
+
+[ 2013-03-07T23:45:01+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/Home/Index/Index.html]

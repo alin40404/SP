@@ -6,3 +6,60 @@ NOTIC: [8] Use of undefined constant __NAMESPACE__ - assumed '__NAMESPACE__' D:\
 NOTIC: [2] Wrong parameter count for ini_get() D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 29 行.
 NOTIC: [8] Undefined index:  HTTP_REFERER D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 36 行.
 
+[ 2013-01-30T23:44:45+08:00 ] ERR: (ThinkException) 无法加载模块:show
+[ 2013-01-30T23:45:03+08:00 ] ERR: (ThinkException) 无法加载模块:tag
+[ 2013-01-30T23:47:01+08:00 ] ERR: (ThinkException) 无法加载模块:tag
+[ 2013-01-30T23:47:01+08:00 ] ERR: (ThinkException) 无法加载模块:tag
+[ 2013-01-30T23:47:03+08:00 ] ERR: (ThinkException) 无法加载模块:tag
+[ 2013-01-30T23:47:03+08:00 ] ERR: (ThinkException) 无法加载模块:tag
+[ 2013-01-30T23:47:04+08:00 ] ERR: (ThinkException) 无法加载模块:tag
+[ 2013-01-30T23:47:04+08:00 ] ERR: (ThinkException) 无法加载模块:tag
+[ 2013-01-30T23:47:04+08:00 ] ERR: (ThinkException) 无法加载模块:tag
+[ 2013-01-30T23:47:11+08:00 ] 127.0.0.1 /sp/index.php/Index/tag
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001453s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001573s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 46 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.048228s ]
+INFO: [ view_template ] --END-- [ RunTime:0.048411s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.367868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.368112s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.023290s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.134017s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.072751s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.155575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.386290s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.047144s ]
+INFO: [ view_end ] --END-- [ RunTime:0.047450s ]
+
+[ 2013-01-30T23:47:46+08:00 ] 127.0.0.1 /sp/index.php/Index/show
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001548s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001678s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() D:\AppServ\www\SP\Lib\Action\Home\IndexAction.class.php 第 46 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001437s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001524s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.068467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068592s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001203s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002013s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001322s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006198s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001427s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001678s ]
+
