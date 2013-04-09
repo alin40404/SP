@@ -199,14 +199,15 @@ function load_config() {
 }
 
 
-function showPage($totalRows,$nowPage=1,$perPagePows=5,$rollPages=5){
-	if($totalRows==0){
-		return NULL;
+function showPage($totalRows,$nowPage=1,$perPageRows=5,$rollPages=5){
+	if($totalRows<=0){
+		//return NULL;
+		$totalRows=1;
 	}
 	$pageAll=array();
 	$page=array();
 	//总页数
-	$totalPages=ceil($totalRows/$perPagePows);
+	$totalPages=ceil($totalRows/$perPageRows);
 	$page['upName']='';
 	$page['up']='up_p_'.($nowPage-1);
 	$page['downName']='';
@@ -221,6 +222,7 @@ function showPage($totalRows,$nowPage=1,$perPagePows=5,$rollPages=5){
 		$page['downName']='disabled';
 		$page['down']='';
 	}
+	$page['perPageRows']=$perPageRows;
 	$page['totalRows']=$totalRows;
 	$page['totalPages']=$totalPages;
 	$page['nowPage']=$nowPage;
@@ -264,4 +266,11 @@ function showPage($totalRows,$nowPage=1,$perPagePows=5,$rollPages=5){
 	
 	$pageAll['page']=$page;
 	return $pageAll;
+}
+
+function mkdirs($dir, $mode = 0777)
+{
+	if (is_dir($dir) || @mkdir($dir, $mode)) return TRUE;
+	if (!mkdirs(dirname($dir), $mode)) return FALSE;
+	return @mkdir($dir, $mode);
 }

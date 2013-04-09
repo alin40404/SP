@@ -1,0 +1,2463 @@
+[ 2013-03-29T00:02:35+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014047s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000722s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004129s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004358s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.023359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023497s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000804s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000691s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000573s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003076s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000894s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2013-03-29T00:02:36+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002273s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013098s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000672s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.012212s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000288s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 39 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 40 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001794s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001870s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017833s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001068s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000974s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000858s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004227s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001163s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001230s ]
+
+[ 2013-03-29T00:02:37+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.009952s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000527s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.007827s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000417s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001331s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001412s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015910s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000718s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000654s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000554s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002838s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000884s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2013-03-29T00:02:51+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&p=1&style=block&class=alert%20alert-success&infor=%E5%88%A0%E9%99%A4%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.016285s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.001083s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.006468s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 9 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000335s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000375s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001730s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001946s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022900s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000865s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000984s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000611s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003448s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000873s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2013-03-29T00:02:52+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&p=1&style=block&class=alert%20alert-error&infor=%E5%88%A0%E9%99%A4%E5%A4%B1%E8%B4%A5%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.011896s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000347s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.005143s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 9 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000336s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000193s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001707s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001786s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019783s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001551s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001749s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001796s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006588s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001236s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2013-03-29T00:03:16+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014425s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000768s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004293s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004508s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017854s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001225s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001004s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000863s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004447s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001466s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001547s ]
+
+[ 2013-03-29T00:03:17+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014766s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000710s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.004867s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000262s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001327s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001404s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016301s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000740s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000660s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000549s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002863s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000854s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2013-03-29T00:03:18+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014916s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.001829s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.009254s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000285s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 39 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 40 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001574s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001650s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017963s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001107s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000973s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000931s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004263s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001177s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001243s ]
+
+[ 2013-03-29T00:03:28+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&p=1&style=block&class=alert%20alert-error&infor=%E5%88%A0%E9%99%A4%E5%A4%B1%E8%B4%A5%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013072s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000805s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.012447s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 9 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000618s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000388s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001616s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001743s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019471s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000769s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000814s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000557s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003188s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000943s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2013-03-29T00:03:34+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&p=1&style=block&class=alert%20alert-error&infor=%E5%88%A0%E9%99%A4%E5%A4%B1%E8%B4%A5%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013651s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000685s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.010686s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 9 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000318s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000211s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000696s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000788s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018440s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000606s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000539s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000399s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002430s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000781s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2013-03-29T00:14:46+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&p=1&style=block&class=alert%20alert-error&infor=%E5%88%A0%E9%99%A4%E5%A4%B1%E8%B4%A5%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012612s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000651s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.011374s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 9 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000570s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000403s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002626s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002753s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019729s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000787s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000705s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000558s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003109s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000963s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001046s ]
+
+[ 2013-03-29T00:19:05+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.008091s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.001257s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001985s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002113s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017721s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000962s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000809s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000679s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003599s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001031s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001119s ]
+
+[ 2013-03-29T00:19:06+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013164s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000914s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.014006s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000784s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000552s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002410s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002534s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018398s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000944s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000863s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000755s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003700s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001086s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2013-03-29T00:19:07+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.005304s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000307s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.004469s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000452s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 39 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 40 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001286s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001374s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015547s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000739s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000590s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000432s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002582s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000774s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2013-03-29T00:22:00+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.006333s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000528s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001520s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001644s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015850s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002641s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000746s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000527s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004946s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000955s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2013-03-29T00:22:02+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.040109s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000720s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011808s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000588s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000422s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003981s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004177s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.029123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029267s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001101s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001132s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000815s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004326s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001208s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2013-03-29T00:22:03+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013075s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000685s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.009952s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000405s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000251s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 39 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 40 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002188s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.023685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023803s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000680s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000626s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000775s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002957s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000830s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2013-03-29T00:22:12+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&p=1&style=block&class=alert%20alert-success&infor=%E5%88%A0%E9%99%A4%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012781s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000647s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011427s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 9 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000539s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000356s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001629s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001721s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021345s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000928s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001026s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000717s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003860s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001129s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001210s ]
+
+[ 2013-03-29T00:22:14+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&p=1&style=block&class=alert%20alert-error&infor=%E5%88%A0%E9%99%A4%E5%A4%B1%E8%B4%A5%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013196s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000730s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.006398s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 9 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000322s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000215s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001808s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001917s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022219s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000745s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000999s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000690s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003383s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000908s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2013-03-29T00:24:26+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013645s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000741s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003595s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003749s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.022771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022882s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001211s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000953s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000790s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004276s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001345s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001443s ]
+
+[ 2013-03-29T00:24:27+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012679s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000657s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.012447s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000536s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000396s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003067s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003243s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.025509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025662s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000974s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000961s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000944s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004158s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001205s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2013-03-29T00:24:29+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013396s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000675s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.009733s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000374s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000296s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 39 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 40 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002033s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002146s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022379s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000681s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000644s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000522s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002723s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000983s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2013-03-29T00:24:44+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012720s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000778s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011509s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000538s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000420s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004188s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004376s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.028639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028788s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001204s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001119s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000980s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004762s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001491s ]
+
+[ 2013-03-29T00:24:55+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013397s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000667s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011891s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000286s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000175s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001582s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001659s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016723s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000942s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000866s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000765s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003693s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001071s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2013-03-29T00:25:01+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&search=search&cname=%E5%95%86%E5%93%81%E4%B8%80
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012770s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000686s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011324s ]
+SQL: SELECT * FROM `sp_category` WHERE ( cname like '%商品一%' ) LIMIT 5   [ RunTime:0.046902s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_category` WHERE ( cname like '%商品一%' ) LIMIT 1   [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000440s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000403s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003622s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003800s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.043146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043350s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002420s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002236s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000764s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006649s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001083s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001147s ]
+
+[ 2013-03-29T00:25:20+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&search=search&cname=%E5%95%86%E5%93%81%E4%B8%80
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012836s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000684s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.010047s ]
+SQL: SELECT * FROM `sp_category` WHERE ( cname like '%商品一%' ) LIMIT 5   [ RunTime:0.000469s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_category` WHERE ( cname like '%商品一%' ) LIMIT 1   [ RunTime:0.000282s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000235s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000220s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001857s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001954s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021666s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001244s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001061s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000724s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004109s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001104s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2013-03-29T00:25:51+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013268s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000710s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.011432s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000573s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000403s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004118s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004296s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021957s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000929s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000856s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000993s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003919s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001053s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2013-03-29T00:26:03+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&search=search&cname=%E5%B9%BF%E8%A5%BF%E7%9C%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012561s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000714s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.011307s ]
+NOTIC: [8] Undefined index: name D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 12 行.
+SQL: SELECT * FROM `sp_market_province` WHERE ( pname like '%%' ) LIMIT 5   [ RunTime:0.000620s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` WHERE ( pname like '%%' ) LIMIT 1   [ RunTime:0.000445s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000472s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000382s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003720s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003915s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026170s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001203s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001119s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000980s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004809s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001375s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001460s ]
+
+[ 2013-03-29T00:26:10+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&search=search&cname=%E5%B9%BF%E8%A5%BF%E7%9C%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012490s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000649s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.009773s ]
+NOTIC: [8] Undefined index: name D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 12 行.
+SQL: SELECT * FROM `sp_market_province` WHERE ( pname like '%%' ) LIMIT 5   [ RunTime:0.000342s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` WHERE ( pname like '%%' ) LIMIT 1   [ RunTime:0.000237s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000239s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000201s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001826s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001917s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.085560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085752s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002461s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002251s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001977s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009640s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002747s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002913s ]
+
+[ 2013-03-29T00:26:18+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&search=search&cname=%E5%B9%BF%E8%A5%BF%E7%9C%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012882s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000660s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011302s ]
+SQL: SELECT * FROM `sp_category` WHERE ( cname like '%广西省%' ) LIMIT 5   [ RunTime:0.000570s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_category` WHERE ( cname like '%广西省%' ) LIMIT 1   [ RunTime:0.000512s ]
+NOTIC: [2] Division by zero D:\AppServ\www\SP\Common\common.php 第 210 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000466s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000432s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001933s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002123s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022080s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001248s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001226s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001071s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005151s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001354s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001441s ]
+
+[ 2013-03-29T00:28:22+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012578s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000407s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001668s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001748s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017005s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001012s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000946s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000822s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003985s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001135s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001217s ]
+
+[ 2013-03-29T00:28:23+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.010407s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000392s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.006049s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000343s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 39 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 40 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001440s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001535s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018903s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000728s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000553s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000402s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002452s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000661s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2013-03-29T00:28:24+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012107s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000370s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.006369s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000331s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000218s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001839s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001929s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.020003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020095s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000696s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000624s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000497s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002724s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000981s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2013-03-29T00:28:30+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&search=search&name=%E5%B9%BF
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012651s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000654s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.011662s ]
+SQL: SELECT * FROM `sp_market_province` WHERE ( pname like '%广%' ) LIMIT 5   [ RunTime:0.000615s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` WHERE ( pname like '%广%' ) LIMIT 1   [ RunTime:0.000436s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000461s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000376s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003194s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003371s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021552s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000721s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000653s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000554s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002847s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000841s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000905s ]
+
+[ 2013-03-29T00:28:36+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&search=search&name=%E5%B9%BF%E4%B8%9C%E7%9C%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.008207s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000375s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.005720s ]
+SQL: SELECT * FROM `sp_market_province` WHERE ( pname like '%广东省%' ) LIMIT 5   [ RunTime:0.000348s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` WHERE ( pname like '%广东省%' ) LIMIT 1   [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000330s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000240s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001486s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001576s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019481s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000659s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000637s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000537s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002736s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000780s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2013-03-29T00:30:28+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.016453s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000816s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003990s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004217s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.020211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020353s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000781s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000664s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000552s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002962s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000856s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2013-03-29T00:30:29+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.008882s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000573s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.009469s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.001273s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000352s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 39 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 40 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002068s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002236s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017735s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000573s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000576s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000439s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002517s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000731s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2013-03-29T00:30:30+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.008952s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000537s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.007826s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000413s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000283s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002606s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002729s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018403s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000725s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000671s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000573s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002884s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000917s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2013-03-29T00:30:47+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&search=search&name=%E5%B9%BF%E4%B8%9C%E7%9C%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012599s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000724s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.011700s ]
+SQL: SELECT * FROM `sp_market_province` WHERE ( pname like '%广东省%' ) LIMIT 5   [ RunTime:0.000631s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` WHERE ( pname like '%广东省%' ) LIMIT 1   [ RunTime:0.000536s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000457s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000404s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001242s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001313s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017062s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000779s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000704s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000595s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003040s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000890s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2013-03-29T00:31:44+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&search=search&name=%E5%B9%BF%E8%A5%BF%E7%9C%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012662s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000649s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.011422s ]
+SQL: SELECT * FROM `sp_market_province` WHERE ( pname like '%广西省%' ) LIMIT 5   [ RunTime:0.000613s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` WHERE ( pname like '%广西省%' ) LIMIT 1   [ RunTime:0.000454s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000454s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000401s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001387s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001557s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.025787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025956s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000617s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000537s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000394s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002428s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000787s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2013-03-29T00:31:52+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&search=search&name=%E5%B9%BF%E4%B8%9C%E7%9C%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012610s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000639s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.012969s ]
+SQL: SELECT * FROM `sp_market_province` WHERE ( pname like '%广东省%' ) LIMIT 5   [ RunTime:0.001935s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` WHERE ( pname like '%广东省%' ) LIMIT 1   [ RunTime:0.000700s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 28 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000457s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000419s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001343s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001515s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021317s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000473s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000410s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000301s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001862s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000921s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2013-03-29T00:32:34+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013770s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000713s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002783s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002987s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.025730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025875s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001060s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000735s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000558s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003457s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000960s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2013-03-29T00:32:35+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013300s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.001278s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.012571s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 34 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000767s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000437s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 40 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 41 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004203s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004411s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.020262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020419s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000942s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000907s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000816s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003845s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001098s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2013-03-29T00:32:36+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013119s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000859s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.005765s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000275s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000798s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014352s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000496s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000413s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000302s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001884s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000627s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2013-03-29T00:32:43+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&search=search&name=%E5%B9%BF%E4%B8%9C
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.006418s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000386s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.005898s ]
+SQL: SELECT * FROM `sp_market_province` WHERE ( pname like '%广东%' ) LIMIT 5   [ RunTime:0.000355s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` WHERE ( pname like '%广东%' ) LIMIT 1   [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 29 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000231s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000208s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001057s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001150s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019365s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000606s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000545s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000394s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002426s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000793s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2013-03-29T00:36:00+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.009392s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000531s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001926s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002071s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.020258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020362s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000635s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000686s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000455s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002611s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000706s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2013-03-29T00:36:01+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.022696s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000837s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.009635s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 39 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 42 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 43 行.
+NOTIC: [8] Undefined variable: data D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 56 行.
+NOTIC: [8] Undefined variable: page D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 57 行.
+NOTIC: [8] Undefined variable: page D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 58 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002179s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002280s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.023242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023366s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001199s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000803s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000698s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003764s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001022s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2013-03-29T00:36:02+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002641s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013124s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000711s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.013521s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000644s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000445s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003830s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003963s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021863s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000954s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000860s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000715s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003719s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001134s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001217s ]
+
+[ 2013-03-29T00:38:04+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014478s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000877s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003972s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004199s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017920s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000802s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000671s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000557s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002994s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000863s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2013-03-29T00:38:06+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.016360s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000704s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.011980s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 47 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 48 行.
+NOTIC: [8] Undefined variable: data D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: page D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 62 行.
+NOTIC: [8] Undefined variable: page D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 63 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004196s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004334s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.023259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023390s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001179s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001119s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000984s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004731s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001530s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001604s ]
+
+[ 2013-03-29T00:38:07+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013285s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000689s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.007682s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000368s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000297s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002302s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002407s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022817s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001000s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000910s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000811s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003894s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001105s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2013-03-29T00:38:32+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001643s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013637s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000500s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002126s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002244s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.021513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021625s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001143s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001026s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000950s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004408s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001120s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001196s ]
+
+[ 2013-03-29T00:38:33+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013301s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000682s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011761s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000590s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000417s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003508s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003634s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022512s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001352s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001350s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001122s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005418s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001472s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001541s ]
+
+[ 2013-03-29T00:38:34+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.017548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017658s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013486s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000775s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.009645s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 47 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 48 行.
+NOTIC: [8] Undefined variable: data D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: page D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 62 行.
+NOTIC: [8] Undefined variable: page D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 63 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001640s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001721s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017409s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000911s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000853s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000751s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003621s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001043s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2013-03-29T00:39:25+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.006682s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000378s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001909s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002009s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017787s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000929s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000816s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000749s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000933s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003617s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001227s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2013-03-29T00:39:27+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012939s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000668s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.011597s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 47 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 48 行.
+NOTIC: [8] Undefined variable: data D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: page D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 62 行.
+NOTIC: [8] Undefined variable: page D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 63 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002223s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002349s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022179s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000896s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000854s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000717s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003653s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001101s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2013-03-29T00:39:28+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014850s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.001702s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.005711s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000360s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001930s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002043s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.020610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020717s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000891s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000799s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000675s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003447s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001221s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2013-03-29T00:39:31+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012576s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000487s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003341s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003476s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.022273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022380s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001105s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000696s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000624s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003476s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000879s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2013-03-29T00:39:32+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013512s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000927s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.009921s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 47 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 48 行.
+NOTIC: [8] Undefined variable: data D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: page D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 62 行.
+NOTIC: [8] Undefined variable: page D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 63 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001266s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001346s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017219s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000804s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000660s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000554s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002932s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000850s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2013-03-29T00:39:33+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003004s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.016057s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000944s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011483s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000409s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001298s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001390s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017008s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000803s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000710s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000621s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003110s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000934s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2013-03-29T00:42:44+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014636s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000721s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003749s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003971s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.029099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029233s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001045s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000816s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000618s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003518s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000912s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2013-03-29T00:42:45+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012956s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000651s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.007599s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 21 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000332s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 26 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001573s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001668s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022413s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001022s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001028s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000785s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004122s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001190s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2013-03-29T00:42:46+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013339s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000670s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.015479s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 33 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.001007s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001930s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002014s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017916s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.003321s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001223s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000793s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006483s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001629s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001706s ]
+
+[ 2013-03-29T00:42:54+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&search=search&name=%E5%B9%BF%E4%B8%9C
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013179s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000800s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.011802s ]
+NOTIC: [8] Undefined index: style D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 15 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000333s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000217s ]
+SQL: SELECT * FROM `sp_market_province` WHERE ( pname like '%广东%' ) LIMIT 5   [ RunTime:0.000255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` WHERE ( pname like '%广东%' ) LIMIT 1   [ RunTime:0.000227s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001623s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001715s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022396s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000937s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000860s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000717s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003469s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000800s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2013-03-29T00:43:10+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet&search=search&name=%E5%B9%BF
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.006550s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000365s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.005882s ]
+NOTIC: [8] Undefined index: style D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 15 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000324s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000217s ]
+SQL: SELECT * FROM `sp_market_province` WHERE ( pname like '%广%' ) LIMIT 5   [ RunTime:0.000258s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` WHERE ( pname like '%广%' ) LIMIT 1   [ RunTime:0.000217s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002263s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002354s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019152s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000988s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000907s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000809s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000988s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003858s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2013-03-29T00:43:57+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.009184s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000474s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003100s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003212s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 128 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 144 行.
+NOTIC: [8] Undefined variable: odd D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 203 行.
+NOTIC: [8] Undefined variable: even D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 219 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017015s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001069s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000788s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000633s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003585s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001074s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001170s ]
+
+[ 2013-03-29T00:43:58+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013197s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000408s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.005947s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 21 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000521s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 19 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 26 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001996s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002089s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022121s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001025s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000928s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000819s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003927s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001083s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2013-03-29T00:43:59+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014171s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000420s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.006727s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 22 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000393s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000259s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 43 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002231s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002333s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022196s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001018s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000890s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000780s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004066s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001498s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2013-03-29T00:44:06+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&search=search&cname=%E4%B8%80
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012814s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000701s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011556s ]
+NOTIC: [8] Undefined index: style D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 17 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000918s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000426s ]
+SQL: SELECT * FROM `sp_category` WHERE ( cname like '%一%' ) LIMIT 5   [ RunTime:0.000481s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_category` WHERE ( cname like '%一%' ) LIMIT 1   [ RunTime:0.000475s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003584s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003763s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.024069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024211s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001846s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001163s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001231s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005762s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001413s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001495s ]
+
+[ 2013-03-29T00:44:12+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&search=search&cname=%E5%95%86%E5%93%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012973s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000664s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011607s ]
+NOTIC: [8] Undefined index: style D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 17 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000601s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000177s ]
+SQL: SELECT * FROM `sp_category` WHERE ( cname like '%商品%' ) LIMIT 5   [ RunTime:0.000202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_category` WHERE ( cname like '%商品%' ) LIMIT 1   [ RunTime:0.000182s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001438s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001510s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016535s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001024s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000860s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000751s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000936s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003747s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001097s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001163s ]
+
+[ 2013-03-29T00:44:31+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&p=1&style=block&class=alert%20alert-info&infor=%E5%85%B1%E5%88%A0%E9%99%A41%E6%9D%A1%E8%AE%B0%E5%BD%95%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.011870s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000374s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.005853s ]
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000296s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001823s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001913s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.020178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020269s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000873s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000808s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000702s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003524s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001043s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2013-03-29T00:44:37+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013088s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000674s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.007332s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 17 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000320s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000216s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001835s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001929s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022222s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000877s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000800s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000681s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003404s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001022s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2013-03-29T00:44:46+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&p=1&style=block&class=alert%20alert-success&infor=%E4%BF%AE%E6%94%B9%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002031s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012963s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000648s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.010240s ]
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000326s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001833s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001923s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021852s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001310s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001124s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000812s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004333s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001061s ]
+
+[ 2013-03-29T00:44:54+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&p=1&style=block&class=alert%20alert-info&infor=%E4%BF%9D%E5%AD%98%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013149s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000678s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011943s ]
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000823s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000452s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003568s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003743s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018045s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000933s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000861s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000742s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003656s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001082s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001147s ]
+
+[ 2013-03-29T00:45:05+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll&p=1&style=block&class=alert%20alert-info&infor=%E4%BF%9D%E5%AD%98%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012961s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000652s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.011891s ]
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000569s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000415s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003574s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003764s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.024766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024910s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001265s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001254s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000990s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004992s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001415s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001498s ]
+

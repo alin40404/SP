@@ -2,6 +2,8 @@
 class AdminCommonAction extends CommonAction{
 	
 	protected $_user = null;
+	protected $pageNum=5;
+	protected $rollPages=5;
 	protected function _initialize() {
 		parent::_initialize ();
 		// 禁止通过URL访问的操作
@@ -21,6 +23,8 @@ class AdminCommonAction extends CommonAction{
 		$this->_check_login ();
 		//
 		$this->assign('host',C('HOST'));
+		$this->pageNum=C('PAGENUM');
+		$this->rollPages=C('ROLLPAGES');
 	}
 	
 	private function _init_user() {

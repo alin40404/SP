@@ -1,8 +1,20 @@
 <?php
 class CategoryModel extends Model {
+	protected $table = "category";
+	public function setPageList($p = 1, $pageNum = 5) {
+		while ( true ) {
+			$result = $this->order ( "cid" )->page ( "$p,$pageNum" )->select ();
+			if ($result == null && $p > 1) {
+				$p --;
+			} else {
+				break;
+			}
+		}
+		return $result;
+	}
 	/**
 	 * 获取所有内容
-	 * 
+	 *
 	 * @return Ambigous <mixed, string, boolean, NULL, unknown>
 	 */
 	public function getAll(array $limit = array()) {
@@ -18,24 +30,23 @@ class CategoryModel extends Model {
 	
 	/**
 	 * 根据名称查询
-	 * 
-	 * @param string $cname     
-	 * @param	int $showNUm
+	 *
+	 * @param string $cname        	
+	 * @param int $showNUm        	
 	 * @return Ambigous <mixed, string, boolean, NULL, unknown>
 	 */
-	public function selectByName($cname,$showNUm=50) {
-		$result = $this->where ( "cname like '%$cname%'" )->limit($showNUm)->select ();
+	public function selectByName($cname, $showNUm = 50) {
+		$result = $this->where ( "cname like '%$cname%'" )->limit ( $showNUm )->select ();
 		return $result;
 	}
-	
-	public function getTheSearchNum($cname){
-		$result = $this->where ( "cname like '%$cname%'" )->count();
+	public function getTheSearchNum($cname) {
+		$result = $this->where ( "cname like '%$cname%'" )->count ();
 		return $result;
 	}
 	
 	/**
 	 * 根据名称精确查询
-	 * 
+	 *
 	 * @param string $cname        	
 	 * @return Ambigous <mixed, string, boolean, NULL, unknown>
 	 */
@@ -45,29 +56,29 @@ class CategoryModel extends Model {
 	}
 	/**
 	 * 根据id编辑
-	 * 
+	 *
 	 * @param int $cid        	
 	 * @param string $cname        	
 	 * @return Ambigous <boolean, unknown>
 	 */
 	public function editById($cid, $cname) {
 		$result = $this->selectPreciseByName ( $cname );
-		if ( $result) {
+		if ($result) {
 			return false;
 		} else {
 			$data ['cname'] = $cname;
 			$result = $this->where ( "cid='$cid'" )->save ( $data );
-			if($result==1){
+			if ($result == 1) {
 				return true;
-			}else{
+			} else {
 				return false;
 			}
-		}	
+		}
 	}
 	
 	/**
 	 * 根据id 批量编辑
-	 * 
+	 *
 	 * @param array $data        	
 	 * @return number
 	 */
@@ -85,20 +96,20 @@ class CategoryModel extends Model {
 	
 	/**
 	 * 由$cname 增加
-	 * 
+	 *
 	 * @param string $cname        	
 	 */
 	public function addByName($cname) {
 		$result = $this->selectPreciseByName ( $cname );
-		if ( $result) {
+		if ($result) {
 			return false;
 		} else {
-			$preNum=$this->getTheNum();
+			$preNum = $this->getTheNum ();
 			$data ['cname'] = $cname;
 			$num = $this->data ( $data )->add ();
-			if($preNum<$num){
+			if ($preNum < $num) {
 				return true;
-			}else{
+			} else {
 				return false;
 			}
 		}
@@ -106,7 +117,7 @@ class CategoryModel extends Model {
 	
 	/**
 	 * (non-PHPdoc)
-	 * 
+	 *
 	 * @see Model::addAll()
 	 */
 	public function addAll(array $data) {
@@ -122,7 +133,7 @@ class CategoryModel extends Model {
 	}
 	/**
 	 * 根据$cid删除
-	 * 
+	 *
 	 * @param int $cid        	
 	 * @return Ambigous <mixed, boolean, unknown>
 	 */
@@ -132,7 +143,7 @@ class CategoryModel extends Model {
 	
 	/**
 	 * 根据$cid 批量删除
-	 * 
+	 *
 	 * @param array $data        	
 	 * @return number
 	 */

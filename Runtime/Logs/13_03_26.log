@@ -1,0 +1,29 @@
+[ 2013-03-26T21:52:24+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.028182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028319s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.483365s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.036177s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 59 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: UserName D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: Password D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 20 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.054214s ]
+INFO: [ view_template ] --END-- [ RunTime:0.054390s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: error D:\AppServ\www\SP\Runtime\Cache\Admin\17ee208018732b832d411ca700006883.php 第 179 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.209363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.209477s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.010881s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.022118s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000935s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.005779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.039987s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.006400s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006538s ]
+

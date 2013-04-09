@@ -1,0 +1,2622 @@
+[ 2013-04-05T20:57:52+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=goodsManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026116s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000689s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001425s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001508s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\96c0975288370493283430d2acb51399.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013684s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001030s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000912s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000742s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000924s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003848s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001144s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2013-04-05T20:57:53+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AssortmentSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026579s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.001468s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.013406s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 21 行.
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid LIMIT 0,5   [ RunTime:0.000295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_assortment` LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 42 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 43 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001220s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001293s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016238s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000708s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000660s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000442s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002654s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000752s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2013-04-05T20:57:54+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.025793s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000670s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.009526s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010249s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000350s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 31 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000343s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000272s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001841s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001954s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019317s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000938s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001307s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000762s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000963s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004155s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001069s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2013-04-05T20:59:07+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=goodsManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012969s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000388s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001445s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001538s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\96c0975288370493283430d2acb51399.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016175s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001006s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000926s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000796s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003965s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001822s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002075s ]
+
+[ 2013-04-05T20:59:09+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AssortmentSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012251s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000441s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011933s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 21 行.
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid LIMIT 0,5   [ RunTime:0.000690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_assortment` LIMIT 1   [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 42 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 43 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001465s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001541s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019209s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001028s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000935s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000802s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003964s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001180s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2013-04-05T20:59:10+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013308s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000380s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012622s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.015083s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000354s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 31 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000327s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001043s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001148s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016713s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000484s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000434s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000313s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001920s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000608s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2013-04-05T20:59:13+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.025303s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000782s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.014061s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012288s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000406s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 26 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='2' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000405s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000322s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001886s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002019s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018932s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000944s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000878s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000761s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003741s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001064s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2013-04-05T20:59:16+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002117s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.023634s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000513s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012151s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.014899s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000352s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 26 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001486s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001582s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017006s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000962s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000904s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000796s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003791s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001066s ]
+
+[ 2013-04-05T20:59:21+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=addByName
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.018207s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000388s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012666s ]
+NOTIC: [8] Undefined variable: result D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 102 行.
+
+[ 2013-04-05T21:00:01+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=goodsManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.030490s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000405s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001617s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001720s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\96c0975288370493283430d2acb51399.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013575s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000981s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000880s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000765s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003814s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001213s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001300s ]
+
+[ 2013-04-05T21:00:02+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.022756s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000399s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012219s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011864s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000296s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 31 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000191s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000693s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000781s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015514s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000582s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000560s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000414s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002337s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000701s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2013-04-05T21:00:03+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AssortmentSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026266s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000674s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012163s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 21 行.
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid LIMIT 0,5   [ RunTime:0.000336s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_assortment` LIMIT 1   [ RunTime:0.000208s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 42 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 43 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001971s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002064s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.020279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020401s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000915s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000821s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000714s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003513s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000997s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2013-04-05T21:00:08+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.020949s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000442s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.014732s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010124s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000275s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000228s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000173s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001423s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001516s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019161s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001133s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000939s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000764s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004016s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001094s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2013-04-05T21:00:23+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.029122s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.001134s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.015506s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009484s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000283s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000320s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000325s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001513s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001625s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018795s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000991s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000878s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000761s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003884s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001073s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2013-04-05T21:00:27+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.020695s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000369s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.013734s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011265s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000301s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000395s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000221s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001403s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001485s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018070s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001001s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000902s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000758s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004179s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001134s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2013-04-05T21:00:30+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.027476s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000718s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.015037s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009569s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000604s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000196s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001417s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001506s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018272s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001036s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000884s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000769s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003851s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001068s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2013-04-05T21:00:35+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.028593s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000715s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012247s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010143s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000284s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000205s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001399s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001486s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018580s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001192s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000930s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000764s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004060s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001068s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2013-04-05T21:00:39+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014434s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000643s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.014698s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.028490s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000341s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000281s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000332s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001463s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001556s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021632s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001007s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001020s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000854s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004359s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001129s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001199s ]
+
+[ 2013-04-05T21:00:45+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.021822s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000414s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012475s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011251s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000348s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000304s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000203s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001344s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001424s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017461s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000958s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000918s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000813s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003792s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001009s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2013-04-05T21:00:50+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.025554s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000675s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.014287s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012323s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000330s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000371s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000260s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001641s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001793s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017029s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000990s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000837s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000780s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003910s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001022s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2013-04-05T21:04:48+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013099s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000475s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012809s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009996s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000304s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 26 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='2' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000348s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000250s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001612s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001702s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017486s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001012s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000835s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000694s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003705s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001074s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2013-04-05T21:04:51+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014911s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000636s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.015134s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012793s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000842s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 26 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000449s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000249s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001467s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001558s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.020058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020161s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001041s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000931s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000796s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003977s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001636s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001714s ]
+
+[ 2013-04-05T21:05:23+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.025966s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000393s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012386s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012092s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000333s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000309s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001308s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001387s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017464s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001041s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000831s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000689s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003668s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2013-04-05T21:05:27+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.018037s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000943s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012710s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.016558s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000473s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000418s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001436s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001527s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021114s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001010s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000880s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000755s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003812s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001382s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001458s ]
+
+[ 2013-04-05T21:05:30+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013429s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000384s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.013034s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.015465s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000358s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000331s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001637s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001730s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.036957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037075s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000936s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000943s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000766s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003822s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001085s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2013-04-05T21:05:43+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026642s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000384s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.013032s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012242s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000893s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000416s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000275s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000207s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001588s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001683s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017593s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000801s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000675s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000669s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003218s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000829s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2013-04-05T21:05:47+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013638s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000954s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.013875s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009831s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000268s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000192s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000227s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000192s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001185s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001272s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018877s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000806s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000686s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000563s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003252s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000868s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2013-04-05T21:05:52+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026773s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000928s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.014322s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010635s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000300s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000210s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001177s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001267s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018808s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000827s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000678s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000556s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003202s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000954s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2013-04-05T21:05:57+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.027713s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000688s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.013526s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.013568s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000426s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000266s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001149s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001232s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017288s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000768s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000659s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000518s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002842s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000813s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2013-04-05T21:06:01+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.017146s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000361s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.013640s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.015854s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000319s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000233s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000297s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000249s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001216s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001340s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021663s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000792s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000688s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000550s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003394s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001010s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2013-04-05T21:06:05+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.021698s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000318s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.009776s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.024593s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000425s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000563s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000459s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000290s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001306s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001400s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019346s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000877s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000758s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000589s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003250s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000977s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2013-04-05T21:06:10+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026191s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000672s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012475s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011815s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000319s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000403s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000257s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001456s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001556s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017540s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000804s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000728s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000557s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003046s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000867s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2013-04-05T21:06:13+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.010887s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000404s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.009756s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009229s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000310s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000837s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000375s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001313s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001410s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018208s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000816s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000710s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000558s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003089s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000945s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2013-04-05T21:06:18+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.022656s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000322s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.009743s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010372s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000292s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000336s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000220s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001304s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001394s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017237s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000810s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000680s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000552s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002993s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000980s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2013-04-05T21:06:28+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.030106s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000638s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.011913s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009792s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000303s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.001108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000507s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001282s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001382s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017893s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000775s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000612s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000528s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002804s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000837s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2013-04-05T21:06:34+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001611s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012872s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000359s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.010860s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009831s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000219s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001139s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001228s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018012s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000813s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000677s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000552s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002992s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000950s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2013-04-05T21:06:38+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.023795s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000499s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.014877s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011175s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000297s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000347s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000231s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001477s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001571s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017716s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000796s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000703s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000554s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003081s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000885s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000952s ]
+
+[ 2013-04-05T21:06:43+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.027305s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000671s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.014549s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009846s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000297s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000338s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000205s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001230s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001319s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018237s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000882s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000704s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000567s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003271s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000879s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2013-04-05T21:06:48+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001799s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026118s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.001066s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.018723s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010041s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000286s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000211s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000324s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000234s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001185s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001276s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018079s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000839s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000647s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000529s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002887s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000797s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2013-04-05T21:06:53+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=2&aid=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012756s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000375s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.013015s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.015200s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000393s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000497s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000331s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001217s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001317s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017943s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000766s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000694s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000581s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003002s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000970s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2013-04-05T21:07:07+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.020654s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000390s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012600s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010196s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000283s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 20,5   [ RunTime:0.000287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001366s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001468s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018511s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000836s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000688s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000713s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003265s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000894s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2013-04-05T21:07:42+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.028287s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000820s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.011035s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010525s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000318s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 15,5   [ RunTime:0.000311s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000252s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001275s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001380s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017898s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000753s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000608s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000461s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002699s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001035s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2013-04-05T21:07:45+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.020933s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000382s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012369s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011687s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 10,5   [ RunTime:0.000362s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000550s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000630s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016124s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000535s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000393s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000311s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001887s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000641s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2013-04-05T21:07:47+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014916s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000459s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.019020s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.013874s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000385s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000463s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000317s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000754s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000855s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019174s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000587s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000450s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000326s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002094s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000779s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2013-04-05T21:07:50+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.023256s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000384s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012153s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011145s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000287s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000331s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000594s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000673s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016899s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000611s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000447s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000312s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002099s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000622s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2013-04-05T21:07:54+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.010297s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000366s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.009387s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009545s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000337s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 26 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='2' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000276s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000598s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000685s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016301s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000545s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000534s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000326s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002125s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000618s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2013-04-05T21:08:00+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013198s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000371s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012281s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009164s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000293s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 26 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000338s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000303s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000719s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000814s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015621s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000710s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000434s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000283s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002103s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000571s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2013-04-05T21:08:07+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.022005s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000386s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012744s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.013951s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000517s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 26 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='2' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000523s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000569s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000653s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015588s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000501s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000401s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000302s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002078s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000699s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2013-04-05T21:08:12+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=2&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.009850s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000300s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.009371s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009369s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000306s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000193s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='2' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000228s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000184s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000581s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000668s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015545s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000521s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000426s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000314s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001970s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000612s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2013-04-05T21:08:16+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=2&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.022149s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000324s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.009381s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011269s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='2' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000247s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000189s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000590s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000679s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015734s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000500s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000413s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000284s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001882s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000570s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2013-04-05T21:08:21+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=2&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.024845s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000383s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.014579s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012475s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000296s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000215s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='2' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000281s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000216s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000554s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000638s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015293s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000585s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000477s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000335s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002156s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000687s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2013-04-05T21:08:25+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=2&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026025s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000686s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.018353s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009470s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000359s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000220s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='2' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='2' ) LIMIT 1   [ RunTime:0.000204s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000592s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000679s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016674s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000550s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000455s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000343s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002114s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000718s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2013-04-05T21:08:53+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AssortmentSet&a=showAll&p=1&style=block&class=alert%20alert-success&infor=%E5%88%A0%E9%99%A4%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013644s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000374s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.013208s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid LIMIT 0,5   [ RunTime:0.000336s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_assortment` LIMIT 1   [ RunTime:0.000209s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 27 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001382s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001497s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015927s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000664s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000477s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000351s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002253s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000679s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2013-04-05T21:08:58+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.010257s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000415s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.009907s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009370s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000272s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 26 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000483s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000228s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000591s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000670s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014926s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000626s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000410s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000284s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002045s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000691s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2013-04-05T21:10:17+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AssortmentSet&a=showAll&p=1&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.019283s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000469s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.016584s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid LIMIT 0,5   [ RunTime:0.000718s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_assortment` LIMIT 1   [ RunTime:0.000281s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 27 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001719s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001797s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017299s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001033s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000942s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000771s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004097s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001123s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2013-04-05T21:10:21+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.022226s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000497s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.014243s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012414s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000305s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 5,5   [ RunTime:0.000382s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000359s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001438s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001522s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017969s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001007s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000887s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000760s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003816s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001203s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2013-04-05T21:10:24+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001411s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.024896s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000691s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.018151s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012357s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000334s ]
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 26 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='8' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000327s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='8' ) LIMIT 1   [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001989s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002095s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019414s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001064s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000843s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000705s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003853s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001145s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2013-04-05T21:10:28+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=8&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.011183s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000320s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.009767s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.009777s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000274s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='8' ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='8' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000340s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='8' ) LIMIT 1   [ RunTime:0.000184s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001633s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001720s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018355s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000975s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000871s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000754s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003815s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001061s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2013-04-05T21:10:32+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll&p=1&aid=8&style=block&class=alert%20alert-success&infor=%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012611s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000342s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.014166s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010235s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000296s ]
+SQL: SELECT * FROM `sp_assortment` WHERE ( aid='8' ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='8' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000471s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='8' ) LIMIT 1   [ RunTime:0.000252s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001508s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001606s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019605s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001059s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001020s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000862s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004233s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001186s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2013-04-05T21:11:04+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AssortmentSet&a=showAll&p=1&style=block&class=alert%20alert-success&infor=%E5%88%A0%E9%99%A4%E6%88%90%E5%8A%9F%EF%BC%81
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.010428s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000419s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010111s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid LIMIT 0,5   [ RunTime:0.000313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_assortment` LIMIT 1   [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 27 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001375s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001440s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017545s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000964s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001041s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000889s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003986s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001009s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2013-04-05T21:11:59+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=goodsManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.024790s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000393s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002429s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002545s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\96c0975288370493283430d2acb51399.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017075s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001358s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001270s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001080s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005333s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001506s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2013-04-05T21:12:00+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AssortmentSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.022349s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000519s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.032795s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 21 行.
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid LIMIT 0,5   [ RunTime:0.000270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_assortment` LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 42 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 43 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001449s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001525s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018249s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001277s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000950s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000811s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004395s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001223s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001290s ]
+
+[ 2013-04-05T21:12:01+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.022163s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000440s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012122s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011249s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000274s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 31 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000354s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001430s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001512s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017542s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000976s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000930s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000668s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003601s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001014s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001079s ]
+
+[ 2013-04-05T21:12:02+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=inforPartition
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.025042s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000346s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001221s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001306s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\e527869d8924016c8dd849d717414f93.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.011414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011502s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000912s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000617s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000800s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003257s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000755s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2013-04-05T21:12:04+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=provinceSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.040242s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000410s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.013758s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 21 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000315s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 27 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 26 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 42 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000900s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000971s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016209s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000750s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000427s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000314s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002276s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000640s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2013-04-05T21:12:05+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=CitySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026374s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000667s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketCityModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketCityModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_market_city` [ RunTime:0.031189s ]
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.009414s ]
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid  [ RunTime:0.000288s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\CitySetAction.class.php 第 31 行.
+SQL: SELECT * FROM `sp_market_city` WHERE ( pid='1' ) ORDER BY cid LIMIT 0,5   [ RunTime:0.000294s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_city` WHERE ( pid='1' ) LIMIT 1   [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\CitySetAction.class.php 第 39 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\CitySetAction.class.php 第 40 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001607s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001719s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.044337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044439s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000920s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000804s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000672s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003775s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001039s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2013-04-05T21:12:06+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=ZoneSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.024469s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000652s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketZoneModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketZoneModel.class.php 第 172 行.
+SQL: SHOW COLUMNS FROM `sp_market_zone` [ RunTime:0.012337s ]
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.012006s ]
+NOTIC: [2048] Declaration of MarketCityModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketCityModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_market_city` [ RunTime:0.009540s ]
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid  [ RunTime:0.000320s ]
+SQL: SELECT * FROM `sp_market_city` WHERE ( pid='1' )  [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\ZoneSetAction.class.php 第 47 行.
+SQL: SELECT * FROM `sp_market_zone` WHERE ( cid='2' ) ORDER BY zid LIMIT 0,5   [ RunTime:0.000253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_zone` WHERE ( cid='2' ) LIMIT 1   [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\ZoneSetAction.class.php 第 53 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\ZoneSetAction.class.php 第 54 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001534s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001612s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.023209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023307s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001130s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001607s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000828s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004794s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001151s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2013-04-05T21:12:07+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=InforPartition&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013354s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000492s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.014057s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 22 行.
+SQL: SELECT * FROM `sp_category` ORDER BY cid LIMIT 0,5   [ RunTime:0.000441s ]
+SQL: SELECT * FROM `sp_category`  [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 28 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 42 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\InforPartitionAction.class.php 第 43 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001975s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002073s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.052171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052299s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000891s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000735s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000611s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003253s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001125s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001193s ]
+
+[ 2013-04-05T22:07:39+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=goodsManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.009818s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000331s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001448s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001529s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\96c0975288370493283430d2acb51399.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012243s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000911s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000818s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000702s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003426s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000894s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2013-04-05T22:07:40+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AssortmentSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.009772s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000445s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.011291s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 21 行.
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid LIMIT 0,5   [ RunTime:0.000373s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_assortment` LIMIT 1   [ RunTime:0.000418s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 42 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 43 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001414s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001506s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018177s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000826s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000733s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000614s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003127s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000888s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2013-04-05T22:07:41+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.009578s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000341s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.008926s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.010199s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000341s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 31 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000415s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000284s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001796s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001908s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018572s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001017s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000878s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000771s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003831s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001067s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2013-04-05T23:47:20+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=admintitle
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.016466s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000515s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002375s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002505s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\142d2cf9ece87a85db245ef938964566.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.031362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031466s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001145s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001221s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000887s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004602s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001281s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2013-04-05T23:47:30+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=adSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013671s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000568s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004261s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004387s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\3e5c26596fa18e36c0526f16d777a875.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.076064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076181s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001443s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001516s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001164s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001609s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001724s ]
+
+[ 2013-04-05T23:47:32+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=linkManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.011124s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000346s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001475s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001557s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\352dea72b95da5b74ca8df882b129eda.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012665s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001288s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000931s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000768s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004144s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001055s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2013-04-05T23:47:36+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=admintitle
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012029s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000359s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001666s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001767s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\142d2cf9ece87a85db245ef938964566.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016732s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001080s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000932s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000859s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004342s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2013-04-05T23:47:41+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=admintitle
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.011652s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000333s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001527s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001622s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\142d2cf9ece87a85db245ef938964566.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.069030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069135s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001507s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001483s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000913s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005209s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001274s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2013-04-05T23:47:45+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=admintitle
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.017571s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000388s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001919s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002025s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\142d2cf9ece87a85db245ef938964566.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.130024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130126s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001100s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000938s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000810s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004086s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001196s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2013-04-05T23:47:52+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Member&a=memberManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012632s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000414s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001631s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001733s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\8a917ed2bcd96e521ed5a75d9a3e7758.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.025333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025439s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000972s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000944s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000728s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001035s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2013-04-05T23:47:54+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Member&a=manage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014294s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000562s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001699s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001866s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\65065d21213d193f4b913d224c92b05d.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.040477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040575s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001017s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000868s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000841s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003982s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001318s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2013-04-05T23:48:34+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=goodsManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.011188s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000367s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001805s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001894s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\96c0975288370493283430d2acb51399.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014174s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001139s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001444s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000934s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004967s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001269s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2013-04-05T23:48:36+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AssortmentSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001573s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.015600s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000409s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.046846s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 21 行.
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid LIMIT 0,5   [ RunTime:0.000399s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_assortment` LIMIT 1   [ RunTime:0.000218s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 42 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 43 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002141s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002240s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.025213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025335s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001296s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001095s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001011s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004980s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001238s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2013-04-05T23:48:37+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.011437s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000319s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.009880s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 166 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012208s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000265s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 31 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.000374s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 38 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 39 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001532s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001623s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019074s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001046s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000880s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000768s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003860s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001326s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001400s ]
+

@@ -1,0 +1,1194 @@
+[ 2013-03-30T19:53:01+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.006594s ]
+INFO: [ route_check ] --END-- [ RunTime:0.018887s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.015880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016166s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.274092s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.016927s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 85 行.
+
+[ 2013-03-30T19:53:16+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001653s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001780s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.033984s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000773s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 85 行.
+
+[ 2013-03-30T19:53:24+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000919s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.027922s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000349s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 85 行.
+
+[ 2013-03-30T19:53:41+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001277s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001384s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032828s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000821s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 85 行.
+
+[ 2013-03-30T20:42:48+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001849s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001960s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.033600s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000715s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T20:46:40+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001952s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002087s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.027863s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000526s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T20:47:54+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001545s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001658s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.022425s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000425s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 5 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 5 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 5 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 5 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 5 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 5 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 93 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 196 行.
+
+[ 2013-03-30T20:49:30+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001407s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001523s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.016429s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000649s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 5 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 73 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 41 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 5 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 73 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 5 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 9 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 5 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 45 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 29 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 21 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 53 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 97 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 57 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 65 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 1 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 25 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 17 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 89 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 77 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 69 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 13 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 61 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 81 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 85 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 33 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 49 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+NOTIC: [8] Undefined variable: 37 D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 203 行.
+
+[ 2013-03-30T20:50:33+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001132s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032702s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000376s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 205 行.
+
+[ 2013-03-30T20:52:09+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001272s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032126s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000746s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T20:52:51+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001850s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001980s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032577s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000350s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 210 行.
+
+[ 2013-03-30T20:53:59+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001537s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.025341s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000409s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 105 行.
+NOTIC: [8] Undefined variable: Array D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 105 行.
+
+[ 2013-03-30T20:55:00+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001609s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001738s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.018733s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.002897s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 105 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 106 行.
+
+[ 2013-03-30T20:55:49+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001259s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.025686s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000491s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 105 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+
+[ 2013-03-30T20:56:11+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000903s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032412s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.001813s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 105 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+
+[ 2013-03-30T20:56:13+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001523s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003418s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.030191s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000465s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 105 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+
+[ 2013-03-30T20:56:41+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001152s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026205s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000584s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 105 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 108 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 108 行.
+
+[ 2013-03-30T20:56:55+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001020s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.020358s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000337s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 105 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 108 行.
+NOTIC: [8] Array to string conversion D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 108 行.
+
+[ 2013-03-30T22:23:53+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.021665s ]
+INFO: [ route_check ] --END-- [ RunTime:0.021868s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.016233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016379s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.053985s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000491s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T22:25:12+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002029s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002156s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.029954s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000554s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T22:28:42+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001701s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001809s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012845s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000373s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T22:30:28+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001699s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001828s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.030403s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000351s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T22:41:09+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001590s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001758s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.027057s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.043014s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T22:44:13+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001703s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.035935s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000784s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T22:58:58+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001628s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001753s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.024541s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000383s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T23:01:16+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001455s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001598s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.030022s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000587s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T23:01:50+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001314s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.031997s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000332s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [2] array_fill(): Number of elements must be positive D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 125 行.
+NOTIC: [2] array_merge(): Argument #1 is not an array D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 129 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 130 行.
+
+[ 2013-03-30T23:03:33+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001298s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001409s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.014816s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000335s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [2] array_fill(): Number of elements must be positive D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 125 行.
+NOTIC: [2] array_merge(): Argument #1 is not an array D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 129 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 130 行.
+
+[ 2013-03-30T23:03:35+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002071s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002192s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.013373s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000337s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [2] array_fill(): Number of elements must be positive D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 125 行.
+NOTIC: [2] array_merge(): Argument #1 is not an array D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 129 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 130 行.
+
+[ 2013-03-30T23:04:27+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001290s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001391s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026861s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000439s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [2] array_fill(): Number of elements must be positive D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 125 行.
+NOTIC: [2] array_merge(): Argument #1 is not an array D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 130 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 131 行.
+
+[ 2013-03-30T23:04:29+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001039s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.033687s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000336s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [2] array_fill(): Number of elements must be positive D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 125 行.
+NOTIC: [2] array_merge(): Argument #1 is not an array D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 130 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 131 行.
+
+[ 2013-03-30T23:04:51+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001430s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001650s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.018482s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000324s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [2] array_fill(): Number of elements must be positive D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 125 行.
+NOTIC: [2] array_merge(): Argument #1 is not an array D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 130 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 131 行.
+
+[ 2013-03-30T23:05:10+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000897s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.033713s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000499s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+NOTIC: [2] array_fill(): Number of elements must be positive D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 125 行.
+NOTIC: [2] array_merge(): Argument #1 is not an array D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 130 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 131 行.
+
+[ 2013-03-30T23:06:14+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001337s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.028249s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000470s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T23:10:30+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001863s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002007s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.037103s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000398s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T23:14:07+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001686s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026387s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000384s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+
+[ 2013-03-30T23:41:35+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/test
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001172s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.017129s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000543s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: var D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 84 行.
+

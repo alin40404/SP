@@ -12,3 +12,7 @@ input[type="text"]
 	width: 15em;
 	margin: 0;
 }
+.pagination.pagination-centered a{
+	cursor:pointer;
+}
+

@@ -87,20 +87,20 @@ CREATE TABLE `sp_category` (
 -- --------------------------------------------------------
 
 -- 
--- 表的结构 `sp_goods_varity`
+-- 表的结构 `sp_goods_variety`
 -- 
 
-CREATE TABLE `sp_goods_varity` (
+CREATE TABLE `sp_goods_variety` (
   `vid` int(11) unsigned NOT NULL auto_increment COMMENT '商品类型id',
   `vname` varchar(20) NOT NULL COMMENT '商品类型名称',
-  `pvid` int(11) unsigned default null,
-  `cid` int(11) unsigned NOT NULL,
+  `pvid` int(11) unsigned default null COMMENT '无限分类，指向父类的vid',
+  `aid` int(11) unsigned NOT NULL,
   PRIMARY KEY  (`vid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 
 -- 
--- 导出表中的数据 `sp_goods_varity`
+-- 导出表中的数据 `sp_goods_variety`
 -- 
 
 
@@ -374,6 +374,17 @@ CREATE TABLE `sp_friend_link` (
 -- 导出表中的数据 `sp_friend_link`
 -- 
 
+--
+--   品种分类表
+--
+create table `sp_assortment`(
+`aid` int(11)  unsigned NOT NULL auto_increment,
+`aname` varchar(50) not null,
+ PRIMARY KEY  (`aid`)
+)ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+
 -- ------------------修改外键-------------------------
 
 alter table `sp_market_city` add
@@ -382,15 +393,16 @@ references `sp_market_province`(`pid`) on update cascade on delete cascade ;
 
 
 
-alter table `sp_goods_varity` add
- constraint `fk_goods_varity_c` foreign key(`cid`) 
- references `sp_category`(`cid`) on update cascade on delete cascade ;
+alter table `sp_goods_variety` add
+constraint `fk_goods_variety_ass` foreign key(`aid`) 
+ references `sp_assortment`(`aid`) on update cascade on delete cascade ;
 
 
+--alter table `sp_goods` drop foreign key `fk_goods_v`;
 
 alter table `sp_goods` add
 constraint `fk_goods_v` foreign key(`vid`)
-references `sp_goods_varity`(`vid`) on update cascade on delete cascade ;
+references `sp_goods_variety`(`vid`) on update cascade on delete cascade ;
 
 
 alter table `sp_market` add

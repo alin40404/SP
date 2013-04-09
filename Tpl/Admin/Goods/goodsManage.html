@@ -1,7 +1,90 @@
-<include file="Public:header"/>
-<!-- 这里可以添加css文件和javascript文件 -->
-<include file="Public:navigation"/>
-<div>
- 可设置内容。。。
+<include file="Public:header" /><!-- 这里可以添加css文件和javascript文件 -->
+<script type="text/javascript" src="__PUBLIC__/js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.Jcrop.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.form.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery.Jcrop.css" />
+
+<include file="Public:navigation" />
+<div id="main-edit" style="border-top: thin #CCC solid;">
+    <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"><span><i class="icon-random"></i>品种设置</span></a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse in">
+                <div class="accordion-inner">
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs" id="myTab">
+                            <li class="active">
+                                <a href="#home">管理</a>
+                            </li>
+                            <li>
+                                <a href="#profile">分类管理</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home">
+                                <div id="assortmentSet">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile">
+                                <div id="goodsvarietySet">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 设置 -->
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"><span><i class="icon-random"></i>菜篮子管理</span></a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+					    <div class="tabbable">
+                        <ul class="nav nav-tabs" id="myTab">
+                            <li class="active">
+                                <a href="#home_goods">goods管理</a>
+                            </li>
+                            <li>
+                                <a href="#profile_goods">价格管理</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home_goods">
+                                <div id="goods">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile_goods">
+                                <div id="goodspriceSet">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 设置 -->
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<include file="Public:footer"/>
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+        loadFile("assortmentSet", host + "g=Admin&m=AssortmentSet&a=showAll");
+    });
+	
+	$(document).ready(function(){
+	loadFile("goodsvarietySet", host + "g=Admin&m=GoodsVarietySet&a=showAll");
+});
+
+	$(document).ready(function(){
+	loadFile("goods", host + "g=Admin&m=GoodsSet&a=showAll");
+});
+    $('#myTab a').click(function(e){
+        e.preventDefault();
+        $(this).tab('show');
+    });
+</script>
+<include file="Public:footer" />

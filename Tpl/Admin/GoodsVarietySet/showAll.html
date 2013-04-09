@@ -1,0 +1,202 @@
+<div id="goodsvarietySet1">
+    <div>
+        <div class="input-append">    
+        <span class="add-on">类别：</span>
+        <select name="<{$pref}>_prvSelect" class="span2" rel="tooltip" data-placement="right" title="省/直辖市">
+        	<?php $count=count($assortment);
+			if($count<=0){ ?>
+            <option>---暂无数据---</option>
+			<?php }else{
+			if(!empty($aid)){
+			?>
+			 <option value="<{$aname}>_<{$aid}>"><{$aname}></option>
+			<?php
+			}
+			foreach($assortment as $key=>$value){
+			if($aid!=$value['aid']){
+			 ?>
+            <option value="<?php echo $value['aname'],'_',$value['aid']; ?>"><?php echo $value['aname']; ?></option>
+            <?php }
+			} 
+			}?>
+        </select>
+		<input id="<{$pref}>_inputSearch" class="span2 inputText" type="text" placeholder="<{$spPlaceHolder}>" />
+        <button id="<{$pref}>_btnSearch" class="btn" type="button" data-loading-text="搜索中..">搜索</button>
+    </div>
+    </div>
+    <div>
+        <div id="inforMessage" style="margin: 0 20%; text-align: center; display: <{$style}>" class="<{$class}>">
+            <{$infor}>
+            <button type="button" class="close" data-dismiss="alert">
+                &times;
+            </button>
+        </div>
+        <?php 
+		$count=count($data);
+		$nowPage=$pgInfo['nowPage'];
+		$num=($nowPage-1)*$pgInfo['perPageRows']+1;
+if($count<=0){ ?>
+      <div class="alert-info" style=" margin: 5px 3px; padding: 2px; text-align: center;">
+            暂无数据！
+        </div>
+        <?php }else{ ?>
+        <table class="table table-hover table-condensed" style="font-size: small;">
+            <thead>
+                <tr>
+                    <th>
+                        <button id="<{$pref}>_check_all" type="button" class="btn btn-mini btn-info">全选</button>
+                        <button id="<{$pref}>_check_invert" type="button" class="btn btn-mini btn-info">反选</button>
+                    </th>
+                    <th>名称</th>
+                    <th>
+                        <button id="<{$pref}>_saveAll" type="button" class="btn btn-small btn-info" data-loading-text="正在保存">批量保存</button>
+                    </th>
+                    <th>
+                        <button id="<{$pref}>_deleteAll" type="button" class="btn btn-small btn-warning" data-loading-text="正在删除">批量删除</button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php 
+
+foreach($data as $id=>$array){
+$id=$array['vid'];
+$name=$array['vname'];
+                ?>
+                <tr>
+                    <td>
+                        <label class="<{$pref}>_checkbox">
+                            <input id="<{$pref}>_checkbox_<?php echo $id; ?>" type="checkbox" name="<{$pref}>_checkbox" />
+                            <?php echo $num; $num++?>
+                        </label>
+                    </td>
+                    <td>
+                        <input id="<{$pref}>_input_<?php echo $id; ?>" name="<{$pref}>_text" class="input-medium" type="text" placeholder="<{$spPlaceHolder}>" value="<?php echo $name; ?>" />
+                    </td>
+                    <td>
+                        <button id="<{$pref}>_edit_<?php echo $id; ?>" type="button" class="<{$pref}>_edit btn btn-mini btn-info" data-loading-text="保存中..">保存</button>
+                    </td>
+                    <td>
+                        <button id="<{$pref}>_delete_<?php echo $id; ?>" type="button" data-toggle="modal" class="<{$pref}>_delete btn btn-mini btn-warning" data-loading-text="删除中.." data-target="#<{$pref}>_deleteModal">删除</button>
+                    </td>
+                </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+        <div class="pagination pagination-centered">
+            <ul>
+                <li>
+                    <span class="label" style="color: #333333;">第<{$pgInfo['nowPage']}>/<{$pgInfo['totalPages']}>页</span>
+                </li>
+            </ul>
+            <ul>
+                <li class="<{$pgInfo['upName']}>">
+                    <a class="<{$pref}>_page<{$pgInfo['upName']}>" id="sp_<{$pgInfo['up']}>" >Prev</a>
+                </li>
+                <?php foreach($page as $p=>$pid){ if($p==$pgInfo['nowPage']){ ?>
+                <li class="<?php echo $pid['class']; ?>">
+                    <a class="<{$pref}>_now_page" id="<{$pref}>_<?php echo $pid['pid']; ?>" >
+                        <?php echo $p; ?>
+                    </a>
+                </li>
+                <?php } else{ ?>
+                <li>
+                    <a class="<{$pref}>_page" id="<{$pref}>_<?php echo $pid; ?>" >
+                        <?php echo $p; ?>
+                    </a>
+                </li>
+                <?php } } ?>
+                <li class="<{$pgInfo['downName']}>">
+                    <a class="<{$pref}>_page<{$pgInfo['downName']}>" id="<{$pref}>_<{$pgInfo['down']}>" >Next</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span class="label" style="color: #333333;">共<{$pgInfo['totalRows']}>条记录</span>
+                </li>
+            </ul>
+        </div>
+        <?php } ?>
+        <div id="<{$pref}>_deleteModal" class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h5>警告！</h5>
+            </div>
+            <div class="modal-body">
+                <p>确定要删除吗？</p>
+            </div>
+            <div class="modal-footer">
+                <button id="<{$pref}>_to_delete" class="btn btn-small btn-warning" data-dismiss="modal" aria-hidden="true">确定</button>
+                <button class="btn  btn-small" data-dismiss="modal" aria-hidden="true">取消</button>
+            </div>
+        </div>
+        <div id="<{$pref}>_deleteAllModal" class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5>警告！</h5>
+            </div>
+            <div class="modal-body">
+                <p>确定要删除吗？</p>
+            </div>
+            <div class="modal-footer">
+                <button id="<{$pref}>_to_deleteAll" class="btn btn-small btn-warning" data-dismiss="modal" aria-hidden="true">确定</button>
+                <button class="btn  btn-small" data-dismiss="modal" aria-hidden="true">取消</button>
+            </div>
+        </div>
+        <div id="<{$pref}>_alert_checkbox_choose" class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="text-warning">警告！</h5>
+            </div>
+            <div class="modal-body">
+                <p>请选择要操作的项！</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-small" data-dismiss="modal" aria-hidden="true">确定</button>
+            </div>
+        </div>
+    </div>
+    <div class="input-append">
+        <input class="span2 inputText" id="<{$pref}>_inputAdd" type="text" placeholder="<{$spPlaceHolder}>" value="" />
+        <button id="<{$pref}>_btnAdd" type="button" class="btn btn-info" data-loading-text="增加中..">增加</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    	pageClickByData( ".<{$pref}>_page",{aid:"<{$aid}>",aname:"<{$aname}>",key:"<{$search}>"}, "<{$replaceId}>", host + "g=<{$group}>&m=<{$module}>&a=showAll");
+    	var edit = ".<{$pref}>_edit.btn.btn-mini.btn-info";
+    	mutilBtn(edit, host + "g=<{$group}>&m=<{$module}>&a=editByName", {p : "<{$pgInfo['nowPage']}>"}, "<{$replaceId}>");
+    	var del = ".<{$pref}>_delete.btn.btn-mini.btn-warning";
+    	mutilDelBtn(del, "<{$pref}>_to_delete", host+ "g=<{$group}>&m=<{$module}>&a=deleteById", {p :  "<{$pgInfo['nowPage']}>"}, "<{$replaceId}>");
+    
+    	allChoose("<{$pref}>_check_all", "<{$pref}>_checkbox");
+    	invertChoose("<{$pref}>_check_invert", "<{$pref}>_checkbox");
+    	mutilSave("<{$pref}>_saveAll", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose", host+ "g=<{$group}>&m=<{$module}>&a=editAll", {p :  "<{$pgInfo['nowPage']}>"}, "<{$replaceId}>");
+    
+    	mutilDel("<{$pref}>_deleteAll", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose","<{$pref}>_deleteAllModal", "<{$pref}>_to_deleteAll", host+ "g=<{$group}>&m=<{$module}>&a=deleteAll", {p :  "<{$pgInfo['nowPage']}>"}, "<{$replaceId}>");
+    	
+    	 //添加商品名称
+        singleBtn("<{$pref}>_btnAdd", "<{$pref}>_inputAdd", host + "g=<{$group}>&m=<{$module}>&a=addByName", {p :  "<{$pgInfo['nowPage']}>",aid:"<{$aid}>"}, "<{$replaceId}>");
+ 
+ 	//商品名称搜索
+    singleBtn("<{$pref}>_btnSearch", "<{$pref}>_inputSearch", host + "g=<{$group}>&m=<{$module}>&a=showAll", {
+        p: "<{$pgInfo['nowPage']}>",
+        aid:"<{$aid}>",aname:"<{$aname}>"
+    },  "<{$replaceId}>");
+
+ 
+$("select[name='<{$pref}>_prvSelect']").change(function(){
+	var Str=this.value;
+	var arr=Str.split("_");
+	var name=arr[0]
+	var id=arr[1];
+	
+	var url= host + "g=<{$group}>&m=<{$module}>&a=showAll";
+	ajaxRequest("post", url, {aid:id,aname:name}, "",  "#<{$replaceId}>");
+})
+
+
+</script>

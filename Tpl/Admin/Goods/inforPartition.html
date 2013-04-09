@@ -1,7 +1,5 @@
 <include file="Public:header" />
 <!-- 这里可以添加css文件和javascript文件 -->
-<script type="text/javascript" src="../../../Public/js/jquery.js"></script>
-<script type="text/javascript" src="../../../Public/js/Admin/wbox.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/bootstrap.js"></script>
 
 <include file="Public:navigation" />
@@ -19,210 +17,25 @@
                         <ul class="nav nav-tabs" id="myTab">
                             <li class="active"><a href="#home">省/直辖市</a></li>
                             <li><a href="#profile">市/区</a></li>
-                            <li><a href="#messages">区/地级市/县</a></li>
-                            <!--
-  <li><a href="#settings">设置</a></li>
-  -->
+                            <li><a href="#messages">区/地级市/县</a></li>                     
+ <!-- <li><a href="#settings">设置</a></li>-->
                         </ul>
                         <div class="tab-content">
-                            <div class="tab-pane active" id="home">
-                                <div>
-                                    <table class="table table-hover table-condensed" style="font-size: small;">
-                                        <!--<caption>省市</caption>-->
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <label>
-                                                        <button type="button" class="btn btn-mini btn-info">
-                                                            全选</button>
-                                                        <button type="button" class="btn btn-mini btn-info">
-                                                            反选</button>
-                                                    </label>
-                                                </th>
-                                                <th>
-                                                    名称
-                                                </th>
-                                                <th colspan="2">
-                                                    操作
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="<{$odd}>">
-                                                <td>
-                                                    1
-                                                </td>
-                                                <td>
-                                                    <input class="input-medium" type="text" placeholder="省/直辖市" value="Mark" />
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-mini btn-info">
-                                                        edit</button>
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-mini btn-warning">
-                                                        deleted</button>
-                                                </td>
-                                            </tr>
-                                            <tr class="<{$even}>">
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td>
-                                                    Mark
-                                                </td>
-                                                <td>
-                                                    edit
-                                                </td>
-                                                <td>
-                                                    deleted
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                         <div class="tab-pane active" id="home">
+ <div id="provinceSet">
+ 	
+ </div>
+ 
+  					</div>
                             <div class="tab-pane" id="profile">
-                                <div>
-                                    省/直辖市：
-                                    <select id="select0" class="span2" rel="tooltip" data-placement="right" title="省/直辖市">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <table class="table table-hover table-condensed" style="font-size: small;">
-                                        <!--<caption>省市</caption>-->
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <label>
-                                                        <button type="button" class="btn btn-mini btn-info">
-                                                            全选</button>
-                                                        <button type="button" class="btn btn-mini btn-info">
-                                                            反选</button>
-                                                    </label>
-                                                </th>
-                                                <th>
-                                                    名称
-                                                </th>
-                                                <th colspan="2">
-                                                    操作
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="<{$odd}>">
-                                                <td>
-                                                    1
-                                                </td>
-                                                <td>
-                                                    <input class="input-medium" type="text" placeholder="省/直辖市" value="Mark" />
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-mini btn-info">
-                                                        edit</button>
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-mini btn-warning">
-                                                        deleted</button>
-                                                </td>
-                                            </tr>
-                                            <tr class="<{$even}>">
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td>
-                                                    Mark
-                                                </td>
-                                                <td>
-                                                    edit
-                                                </td>
-                                                <td>
-                                                    deleted
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                            	<div id="citySet">
+                            		
+                            	</div>
                             </div>
                             <div class="tab-pane" id="messages">
-                                <div>
-                                    省/直辖市：
-                                    <select id="select1" class="span2"  rel="tooltip" data-placement="right" title="省/直辖市">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                    ,市/区：
-                                    <select id="select2" class="span2" rel="tooltip"  data-placement="right" title="市/区">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <table class="table table-hover table-condensed" style="font-size: small;">
-                                        <!--<caption>省市</caption>-->
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <label>
-                                                        <button type="button" class="btn btn-mini btn-info">
-                                                            全选</button>
-                                                        <button type="button" class="btn btn-mini btn-info">
-                                                            反选</button>
-                                                    </label>
-                                                </th>
-                                                <th>
-                                                    名称
-                                                </th>
-                                                <th colspan="2">
-                                                    操作
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="<{$odd}>">
-                                                <td>
-                                                    1
-                                                </td>
-                                                <td>
-                                                    <input class="input-medium" type="text" placeholder="省/直辖市" value="Mark" />
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-mini btn-info">
-                                                        edit</button>
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-mini btn-warning">
-                                                        deleted</button>
-                                                </td>
-                                            </tr>
-                                            <tr class="<{$even}>">
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td>
-                                                    Mark
-                                                </td>
-                                                <td>
-                                                    edit
-                                                </td>
-                                                <td>
-                                                    deleted
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+<div id="zoneSet">
+	
+</div>
                             </div>
                         </div>
                     </div>
@@ -237,20 +50,11 @@
                 </a>
             </div>
             <div id="collapseTwo" class="accordion-body collapse">
-                <div class="accordion-inner">
-                    <div class="input-append">
-                        <input id="sp_inputSearch" class="span2 inputText" type="text" placeholder="类型名称" />
-                        <button id="sp_btnSearch" class="btn" type="button" data-loading-text="搜索中..">搜索</button>
-                        <button type="button" class="btn btn-info" data-toggle="button">批量增加</button>
-                    </div>
-                    <div id="tableGoods">
-                    
-                   </div>
-                      <div id="<{$add}>" class="input-append">
-                        <input class="span2 inputText" id="sp_inputAdd" type="text" placeholder="增加商品类型" value="" />
-                        <button id="sp_btnAdd" type="button" class="btn btn-info" data-loading-text="增加中..">增加</button>
-                    </div>
-                </div>
+                <div  class="accordion-inner">
+                	<div id="tableGoods">
+                		
+                	</div>
+                 </div>
             </div>
         </div>
     </div>
@@ -258,20 +62,22 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        loadFile("tableGoods", host + "g=Admin&m=InforPartition&a=showAll");
+		
+		loadFile("provinceSet", host + "g=Admin&m=AreaSet&a=provinceSet");
     });
+$(document).ready(function(){
+	loadFile("citySet", host + "g=Admin&m=CitySet&a=showAll");
+	loadFile("zoneSet", host + "g=Admin&m=ZoneSet&a=showAll");
+});
 
+$(document).ready(function(){
+	 loadFile("tableGoods", host + "g=Admin&m=InforPartition&a=showAll");
+});
 
-    $('#myTab a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-    });
-
-    //添加商品名称
-    singleBtn("sp_btnAdd", "sp_inputAdd", host + "g=Admin&m=InforPartition&a=addByName", {}, "tableGoods");
-    //商品名称搜索
-    singleBtn("sp_btnSearch", "sp_inputSearch", host + "g=Admin&m=InforPartition&a=searchByName", {}, "tableGoods");
-
+$('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
 
 
 </script>

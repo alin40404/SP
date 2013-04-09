@@ -45,6 +45,11 @@ $array=array(
 		'DEFAULT_THEME'			=>	'',//默认模板主题
 		'OPEN_PLATFORM'			=>	array('sina', 'qq'),//开启的开放平台
 		
+		'HOST' => 'http://localhost:8001/sp/index.php?',
+		'PAGENUM' => 5,//每页显示的分页数
+		'ROLLPAGES'=>5,
+		'UPLOAD_GOODS_IMG_URL'=>'Public/upload/img/goods/',
+		'DEFAULT_GOODS_IMG'=>'Public/images/goods_demo.png',
 );
 
 return array_merge($config,$array);
