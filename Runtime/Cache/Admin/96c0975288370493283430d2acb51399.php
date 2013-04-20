@@ -26,7 +26,10 @@ var host =  "<?php echo ($host); ?>";
 <script type="text/javascript" src="__PUBLIC__/js/bootstrap.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/jquery.Jcrop.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/jquery.form.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/Date.1.0.js"></script>
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery.Jcrop.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/Date.1.0.css" />
+
 
 </head>
 <body>
@@ -122,6 +125,7 @@ var host =  "<?php echo ($host); ?>";
                             </div>
                             <div class="tab-pane" id="profile_goods">
                                 <div id="goodspriceSet">
+                                	
                                 </div>
                             </div>
                         </div>
@@ -144,6 +148,8 @@ var host =  "<?php echo ($host); ?>";
 
 	$(document).ready(function(){
 	loadFile("goods", host + "g=Admin&m=GoodsSet&a=showAll");
+	loadFile("goodspriceSet", host + "g=Admin&m=PriceSet&a=showAll");
+	
 });
     $('#myTab a').click(function(e){
         e.preventDefault();

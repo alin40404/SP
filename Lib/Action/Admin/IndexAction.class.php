@@ -38,7 +38,7 @@ class IndexAction extends AdminCommonAction{
 		$manage=$this->host.'g=Admin&m=Member&a=manage';
 		$this->assign('manage',$manage);
 		
-		
+
 		/** otherManage模块 */
 		
 		

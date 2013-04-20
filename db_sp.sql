@@ -195,8 +195,7 @@ CREATE TABLE `sp_market_city` (
 
 CREATE TABLE `sp_market_price` (
 `priceid` int(11) unsigned NOT NULL auto_increment,
-  `gid` int(11) unsigned NOT NULL COMMENT '商品id',
-  `mid` int(11) unsigned NOT NULL COMMENT '市场id',
+  `mgid` int(11) unsigned NOT NULL COMMENT '市场对应的商品id',
   `mtid` int(11) unsigned NOT NULL COMMENT '销售方式id:批发或零售',
   `price` decimal(10,3) NOT NULL COMMENT '价格',
    `maxprice` decimal(10,3) default 0.000 COMMENT '最高价格',
@@ -383,9 +382,46 @@ create table `sp_assortment`(
  PRIMARY KEY  (`aid`)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+--
+-- 市场上卖的菜名
+--
+create table `sp_market_goods`(
+`mgid` int(11) unsigned not null auto_increment,
+`mid` int(11) unsigned not null,
+`gid` int(11) unsigned not null,
+ PRIMARY KEY  (`mgid`)
+)engine=InnoDB default charset=utf8 auto_increment=1;
 
+--
+-- 商品单位表
+--
+create table `sp_price_units`(
+`uid` int(11) unsigned not null auto_increment,
+`uname` varchar(20) not null,
+primary key(`uid`)
+)engine=InnoDB default charset=utf8 auto_increment=1;
 
 -- ------------------修改外键-------------------------
+
+
+-- sp_market
+
+alter table `sp_market_goods` add
+constraint `fk_market_goods_m` foreign key(`mid`)
+references `sp_market`(`mid`) on update cascade on delete cascade;
+
+-- sp_goods
+
+alter table `sp_market_goods` add
+constraint `fk_market_goods_g` foreign key(`gid`)
+references `sp_goods`(`gid`) on update cascade on delete cascade;
+
+
+alter table `sp_market_price` add
+constraint `fk_market_price_mg` foreign key(`mgid`)
+references `sp_market_goods`(`mgid`) on update cascade on delete cascade;
+
+
 
 alter table `sp_market_city` add
 constraint `fk_market_city_p` foreign key(`pid`) 

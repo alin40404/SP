@@ -73,5 +73,4 @@ class AdminCommonAction extends CommonAction{
 			$this->redirect('User/login');
 		}
 	}
-	
 }

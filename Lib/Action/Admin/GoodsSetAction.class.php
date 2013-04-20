@@ -193,18 +193,6 @@ class GoodsSetAction extends AdminCommonAction{
 		) );
 	}
 	
-	// 	public function searchByName() {
-	// 		if ($_POST) {
-	// 			$_POST = stripslashesDeep ( $_POST );
-	// 			$name = $_POST ['key'];
-	// 			$search = "search";
-	// 		}
-	
-	// 		$this->redirect ( 'showAll', array (
-	// 				'search' => $search,
-	// 				'name' => $name
-	// 		) );
-	// 	}
 	
 	public function editAll() {
 		$db =D ( 'Goods' );

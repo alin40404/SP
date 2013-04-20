@@ -61,7 +61,17 @@ class MarketModel extends Model{
 	}
 	
 	public function selectById($id=1){
+		if($id<0||$id===null){
+			return null;
+		}
 		return $this->where("mid='$id'")->find();
+	}
+	
+	public function selectByZid($id=1){
+		if($id<0||$id===null){
+			return null;
+		}
+		return $this->where("zid='$id'")->select();
 	}
 	
 	/**

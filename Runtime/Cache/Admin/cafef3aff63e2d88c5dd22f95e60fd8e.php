@@ -37,13 +37,11 @@ body {
         <td valign="top">&nbsp;</td>
       </tr>
       <tr>
-        <td colspan="2" valign="top"><span class="left_bt">感谢您使用 商家信息网 网站管理系统程序</span><br>
+        <td colspan="2" valign="top"><span class="left_bt">感谢您使用 菜篮子价格查询 网站管理系统程序</span><br>
               <br>
             <span class="left_txt">&nbsp;<img src="__PUBLIC__/images/Admin/ts.gif" width="16" height="16"> 提示：<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您现在使用的是www.865171.cn开发的一套用于构建商务信息类门户型网站的专业系统！如果您有任何疑问请点左下解的</span><span class="left_ts">在线客服</span><span class="left_txt">进行咨询！<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;七大栏目完美整合，一站通使用方式，功能强大，操作简单，后台操作易如反掌，只需会打字，会上网，就会管理网站！<br>
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此程序是您建立地区级商家信息门户的首选方案！　 <br>
-</span></td>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;暂无</span>
+		  </td>
         <td width="7%">&nbsp;</td>
         <td width="40%" valign="top"><table width="100%" height="144" border="0" cellpadding="0" cellspacing="0" class="line_table">
           <tr>
@@ -77,192 +75,28 @@ body {
 
 <div class="tab-content">
   <div class="tab-pane active" id="home">
-      <TABLE width=100% height="133" border=0 align="center" cellPadding=0 cellSpacing=0>
-                        <TBODY>
-                          <TR>
-                            <TD height="5" colspan="3"></TD>
-                          </TR>
-                          <TR>
-                            <TD width="4%" height="28" background="__PUBLIC__/images/Admin/news-title-bg.gif"></TD>
-                            <TD height="25" colspan="2" background="__PUBLIC__/images/Admin/news-title-bg.gif" class="left_txt">亲爱的管理员： <font color="#FFFFFF" class="left_ts"><b></b></TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="42%" height="25" bgcolor="#FAFBFC"><span class="left_txt">您有未验证分类信息： </span>
-                               
-                                <span class="left_ts"> </span></TD>
-                            <TD width="54%" height="25" bgcolor="#FAFBFC"><span class="left_txt">您有未验证广告张贴： </span>
-                               
-                                <span class="left_ts"> </span></TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">您有未验证商家展示： </span>
-                               
-                                <span class="left_ts"> </span></TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">您有未验证网上商城： </span>
-                               
-                                <span class="left_ts"> </span></TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">您有未验证网上名片： </span>
-                                <span class="left_ts"> </span></TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">您有未验证市场联盟： </span>
-                               
-                                <span class="left_ts"> </span></TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">您有未验证市场资讯： </span>
-                               
-                                <span class="left_ts"> </span></TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">您有未验证商家商品： </span>
-                                <span class="left_ts"> </span></TD>
-                          </TR>
-                          <TR>
-                            <TD height="5" colspan="3"></TD>
-                          </TR>
-                        </TBODY>
-                    </TABLE>
+  	<div>
+  		<label>亲爱的管理员： </label>
+		<p>
+			管理员告示
+		</p>
+  	</div>
+     
    </div>
   <div class="tab-pane" id="profile">
-  <table>
-                <!--关于cells集合-->
-                <TBODY>
-                  <TR>
-                    <TD vAlign=top align=middle><TABLE width=100% height="133" border=0 align="center" cellPadding=0 cellSpacing=0>
-                        <TBODY>
-                          <TR>
-                            <TD height="5" colspan="3"></TD>
-                          </TR>
-                          <TR>
-                            <TD width="4%" height="28" background="__PUBLIC__/images/Admin/news-title-bg.gif"></TD>
-                            <TD colspan="2" background="__PUBLIC__/images/Admin/news-title-bg.gif" class="left_txt">现有会员：名&nbsp;&nbsp; 其中：                                名&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;&nbsp;名</TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="42%" height="25" bgcolor="#FAFBFC"><span class="left_txt">本站现有分类信息： </span><span class="left_txt">条</span></TD>
-                            <TD width="54%" bgcolor="#FAFBFC"><span class="left_txt">本站现有广告张贴： </span><span class="left_txt">条</span></TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">本站现有商家展示： </span><span class="left_txt">个</span></TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">本站现有网上商城： </span><span class="left_txt">个</span></TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">本站现有网上名片： </span><span class="left_txt">个</span></TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">本站现有市场联盟： </span><span class="left_txt">个</span></TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">本站现有市场资讯： </span><span class="left_txt">条</span></TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">本站现有商家商品： </span><span class="left_txt">个</span></TD>
-                          </TR>
-                          <TR>
-                            <TD height="5" colspan="3"></TD>
-                          </TR>
-                        </TBODY>
-                    </TABLE></TD>
-                  </TR>
-                </TBODY>
-  </table>
+ <div>
+ 	暂无
+ </div>
   </div>
   <div class="tab-pane" id="messages">
-<table>
-      <!--关于tBodies集合-->
-                <TBODY >
-                  <TR>
-                    <TD vAlign=top align=middle><TABLE width=100% border=0 align="center" cellPadding=0 cellSpacing=0>
-                        <TBODY>
-                          <TR>
-                            <TD colspan="3"></TD>
-                          </TR>
-                          <TR>
-                            <TD height="5" colspan="3"></TD>
-                          </TR>
-                          <TR>
-                            <TD width="4%" height="25" background="__PUBLIC__/images/Admin/news-title-bg.gif"></TD>
-                            <TD height="25" colspan="2" background="__PUBLIC__/images/Admin/news-title-bg.gif" class="left_txt"><span class="TableRow2">服务器IP:</span>系统版本：</TD>
-                          </TR>
-                          <TR>
-                            <TD height="25" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="42%" height="25" bgcolor="#FAFBFC"><span class="left_txt">服务器类型：</span></TD>
-                            <TD width="54%" height="25" bgcolor="#FAFBFC"><span class="left_txt">脚本解释引擎：</span></TD>
-                          </TR>
-                          <TR>
-                            <TD height="25" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD height="25" colspan="2" bgcolor="#FAFBFC"><span class="left_txt">站点物理路径：</span></TD>
-                          </TR>
-                          <TR>
-                            <TD height="25" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">FSO文本读写：</span><span class="TableRow2"><font color="#FF0066"><b><img src="__PUBLIC__/images/Admin/X.gif" width="12" height="13"></b></font><img src="__PUBLIC__/images/Admin/g.gif" width="12" height="12"></span></TD>
-                            <TD height="25" bgcolor="#FAFBFC"><span class="left_txt">数据库使用：</span><span class="left_ts"><img src="__PUBLIC__/images/Admin/X.gif" width="12" height="13"><b style="color:blue">
-                              
-                            MS SQL
-                            
-                              ACCESS
-                              
-                            </b></span></TD>
-                          </TR>
-                         
-                          <TR>
-                            <TD height="5" colspan="3"></TD>
-                          </TR>
-                        </TBODY>
-                    </TABLE></TD>
-                  </TR>
-                </TBODY>
-
-</table>  
+ <div>
+ 	暂无
+ </div>
 </div>
   <div class="tab-pane" id="settings">
-  <table>
-                <!--关于display属性-->
-                <TBODY >
-                  <TR>
-                    <TD vAlign=top align=middle><TABLE width=100% border=0 align="center" cellPadding=0 cellSpacing=0>
-                        <TBODY>
-                          <TR>
-                            <TD colspan="3"></TD>
-                          </TR>
-                          <TR>
-                            <TD height="5" colspan="3"></TD>
-                          </TR>
-                          <TR>
-                            <TD width="4%" background="__PUBLIC__/images/Admin/news-title-bg.gif"></TD>
-                            <TD width="91%" background="__PUBLIC__/images/Admin/news-title-bg.gif" class="left_ts">《》程序说明：</TD>
-                            <TD width="5%" background="__PUBLIC__/images/Admin/news-title-bg.gif" class="left_txt">&nbsp;</TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD bgcolor="#FAFBFC" class="left_txt"><span class="left_ts">1、</span>本程序由www.865171.cn全新改造(QQ:215288671) </TD>
-                            <TD bgcolor="#FAFBFC" class="left_txt">&nbsp;</TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD bgcolor="#FAFBFC" class="left_txt"><span class="left_ts">2、</span>本程序仅提供使用，任何违反互联网规定的行为，自行负责！</TD>
-                            <TD bgcolor="#FAFBFC" class="left_txt">&nbsp;</TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD bgcolor="#FAFBFC" class="left_txt"><span class="left_ts">3、</span> 支持作者的劳动，请保留版权。</TD>
-                            <TD bgcolor="#FAFBFC" class="left_txt">&nbsp;</TD>
-                          </TR>
-                          <TR>
-                            <TD bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD bgcolor="#FAFBFC" class="left_txt"><span class="left_ts">4、</span>程序使用，技术支持请联系www.865171.cn。</TD>
-                            <TD bgcolor="#FAFBFC" class="left_txt">&nbsp;</TD>
-                          </TR>
-                          <TR>
-                            <TD height="5" colspan="3"></TD>
-                          </TR>
-                        </TBODY>
-                    </TABLE></TD>
-                  </TR>
-                </TBODY>
-  </table>
+  <div>
+ 	暂无
+ </div>
   </div>
 </div>
  </div>
@@ -285,10 +119,7 @@ body {
             <td height="102" valign="top"><label></label>
               <label>
               <textarea name="textarea" style="width:350px;" cols="10" rows="8" class="left_txt">
-一、专业的地区级商家门户建站首选方案！
-二、全站一号通，一次注册，终身使用，一个帐号，全站通用！
-三、分类信息、商家展示（百业联盟）、网上商城、网上名片（网上黄页）、广告张贴、市场联盟、市场资讯七大栏目完美整合。
-四、界面设计精美，后台功能强大。傻瓜式后台操作，无需专业的网站制作知识，只要会打字，就会管理维护网站。
+无
 </textarea>
               </label></td>
           </tr>

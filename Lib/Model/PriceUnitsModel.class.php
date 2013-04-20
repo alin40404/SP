@@ -1,24 +1,13 @@
 <?php
-class AssortmentModel extends Model{
-	protected $table = "assortment";
-	public function setPageList($p = 1, $pageNum = 5,$search="") {
-		if(empty($search)){
-			while ( true ) {
-				$result = $this->order ( "aid" )->page ( "$p,$pageNum" )->select ();
-				if ($result == null && $p > 1) {
-					$p --;
-				} else {
-					break;
-				}
-			}
-		}else{
-			while ( true ) {
-				$result = $this->where("aname like '%$search%'")->order ( "aid" )->page ( "$p,$pageNum" )->select ();
-				if ($result == null && $p > 1) {
-					$p --;
-				} else {
-					break;
-				}
+class PriceUnitsModel extends Model {
+	protected $table = "price_units";
+	public function setPageList($p = 1, $pageNum = 5) {
+		while ( true ) {
+			$result = $this->order ( "cid" )->page ( "$p,$pageNum" )->select ();
+			if ($result == null && $p > 1) {
+				$p --;
+			} else {
+				break;
 			}
 		}
 		return $result;
@@ -30,61 +19,56 @@ class AssortmentModel extends Model{
 	 */
 	public function getAll(array $limit = array()) {
 		if ($limit == null) {
-			return $this->order ( "aid" )->select ();
+			return $this->order ( "uid" )->select ();
 		}
-		return $this->order ( "aid" )->limit ( "$limit[begin],$limit[offset]" )->select ();
+		return $this->order ( "uid" )->limit ( "$limit[begin],$limit[offset]" )->select ();
 	}
-	
 	public function getTheNum() {
-		return $this->count ();
+		$data = $this->select ();
+		return count ( $data );
 	}
 	
 	/**
 	 * 根据名称查询
 	 *
-	 * @param string $cname
-	 * @param int $showNUm
+	 * @param string $cname        	
+	 * @param int $showNUm        	
 	 * @return Ambigous <mixed, string, boolean, NULL, unknown>
 	 */
-	public function selectByName($name, $showNUm = 50) {
-		$result = $this->where ( "aname like '%$name%'" )->limit ( $showNUm )->select ();
+	public function selectByName($cname, $showNUm = 50) {
+		$result = $this->where ( "cname like '%$cname%'" )->limit ( $showNUm )->select ();
 		return $result;
 	}
-	public function getTheSearchNum($name) {
-		$result = $this->where ( "aname like '%$name%'" )->count ();
+	public function getTheSearchNum($cname) {
+		$result = $this->where ( "cname like '%$cname%'" )->count ();
 		return $result;
 	}
 	
 	/**
 	 * 根据名称精确查询
 	 *
-	 * @param string $cname
+	 * @param string $cname        	
 	 * @return Ambigous <mixed, string, boolean, NULL, unknown>
 	 */
-	public function selectPreciseByName( $name) {
-		$result = $this->where ( "aname ='$name'" )->select ();
+	public function selectPreciseByName($name) {
+		$result = $this->where ( "uname ='$name'" )->select ();
 		return $result;
 	}
-	
-	public function selectById($id = 1) {
-		return $this->where ( "aid='$id'" )->find ();
-	}
-
-	
 	/**
 	 * 根据id编辑
 	 *
-	 * @param int $cid
-	 * @param string $cname
+	 * @param int $id        	
+	 * @param string $name        	
 	 * @return Ambigous <boolean, unknown>
 	 */
-	public function editById($id,$name) {
+	public function editById($id, $name) {
 		$result = $this->selectPreciseByName ( $name );
+		$result=false;
 		if ($result) {
 			return false;
 		} else {
-			$data ['aname'] = $name;
-			$result = $this->where("aid='$id'")->save ( $data );
+			$data ['uname'] = $name;
+			$result = $this->where ( "uid='$id'" )->save ( $data );
 			if ($result == 1) {
 				return true;
 			} else {
@@ -96,7 +80,7 @@ class AssortmentModel extends Model{
 	/**
 	 * 根据id 批量编辑
 	 *
-	 * @param array $data
+	 * @param array $data        	
 	 * @return number
 	 */
 	public function editAll(array $data) {
@@ -114,15 +98,16 @@ class AssortmentModel extends Model{
 	/**
 	 * 由$name 增加
 	 *
-	 * @param string $cname
+	 * @param string $name        	
 	 */
-	public function addByName( $name) {
+	public function addByName($name) {
 		$result = $this->selectPreciseByName ( $name );
+		$result=false;
 		if ($result) {
 			return false;
 		} else {
 			$preNum = $this->getTheNum ();
-			$data ['aname'] = $name;
+			$data ['uname'] = $name;
 			$num = $this->data ( $data )->add ();
 			if ($preNum < $num) {
 				return true;
@@ -151,17 +136,17 @@ class AssortmentModel extends Model{
 	/**
 	 * 根据$cid删除
 	 *
-	 * @param int $cid
+	 * @param int $cid        	
 	 * @return Ambigous <mixed, boolean, unknown>
 	 */
 	public function deleteById($id) {
-		return $this->where ( "aid='$id'" )->delete ();
+		return $this->where ( "uid='$id'" )->delete ();
 	}
 	
 	/**
 	 * 根据$cid 批量删除
 	 *
-	 * @param array $data
+	 * @param array $data        	
 	 * @return number
 	 */
 	public function deleteAll(array $data) {

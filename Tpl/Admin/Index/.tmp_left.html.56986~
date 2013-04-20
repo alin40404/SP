@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -31,7 +31,7 @@ H1 a {
 	color: #000;
 	height: 30px;
 	text-decoration: none;
-	-moz-outline-style: none;
+	moz-outline-style: none;
 	background-image: url(__PUBLIC__/images/Admin/menu_bgS.gif);
 	background-repeat: no-repeat;
 	line-height: 30px;

@@ -31,7 +31,7 @@ H1 a {
 	color: #000;
 	height: 30px;
 	text-decoration: none;
-	moz-outline-style: none;
+	-moz-outline-style: none;
 	background-image: url(__PUBLIC__/images/Admin/menu_bgS.gif);
 	background-repeat: no-repeat;
 	line-height: 30px;

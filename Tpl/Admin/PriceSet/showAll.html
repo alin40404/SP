@@ -1,0 +1,717 @@
+<div id="goodspriceSet1">
+        <div id="inforMessage" style="margin: 0 20% 5px; text-align: center; display: <{$style}>" class="<{$class}>">
+            <{$info}>
+            <button type="button" class="close" data-dismiss="alert">
+                &times;
+            </button>
+     </div>
+    <div>
+    	<div class="input-prepend">    
+        <span class="add-on">地区</span>
+        <select name="<{$pref}>_prvSelect" class="span2" rel="tooltip" data-placement="right" title="省/直辖市">
+        	<?php $countPrv=count($province);
+			if($countPrv<=0){ ?>
+            <option>---暂无数据---</option>
+			<?php }else{
+			foreach($province as $key=>$value){
+			
+			 ?>
+            <option <?php if($prid==$value['pid']){echo "selected='selected'";} ?> value="<?php echo $value['pname'],'_',$value['pid']; ?>"><?php echo $value['pname']; ?></option>
+            <?php }
+			}?>
+        </select>
+		    <select name="<{$pref}>_citySelect" class="span2" rel="tooltip" data-placement="right" title="市/区">
+        	<?php $countCity=count($city);
+			if($countCity<=0){ ?>
+            <option>---暂无数据---</option>
+			<?php }else{
+			foreach($city as $key=>$value){
+			 ?>
+            <option  <?php if($cityid==$value['cid']){echo "selected='selected'";} ?>   value="<?php echo $value['cname'],'_',$value['cid']; ?>"><?php echo $value['cname']; ?></option>
+            <?php }
+			}?>
+        </select>
+		    <select name="<{$pref}>_ZoneSelect" class="span2" rel="tooltip" data-placement="right" title="市/区">
+        	<?php $count=count($zone);
+			if($count<=0){ ?>
+            <option>---暂无数据---</option>
+			<?php }else{
+			foreach($zone as $key=>$value){
+			 ?>
+            <option <?php if($zoneid==$value['zid']){echo "selected='selected'";} ?>  value="<?php echo $value['zname'],'_',$value['zid']; ?>"><?php echo $value['zname']; ?></option>
+            <?php }
+			}?>
+        </select>
+		 <span class="add-on">市场</span>
+		 	<select name="<{$pref}>_MarketSelect" class="span2" rel="tooltip" data-placement="right" title="市场">
+        	<?php $count=count($market);
+			if($count<=0){ ?>
+            <option>---暂无数据---</option>
+			<?php }else{
+			foreach($market as $key=>$value){
+			 ?>
+            <option <?php if($marketid==$value['mid']){echo "selected='selected'";} ?> value="<?php echo $value['mname'],'_',$value['mid']; ?>"><?php echo $value['mname']; ?></option>
+            <?php }
+			}?>
+        </select>
+		</div>
+    </div>
+
+<div class="tabbable tabs-left">
+  <ul class="nav nav-tabs">
+    <li ><a href="#<{$pref}>_market_goods" data-toggle="tab">市场goods</a></li>
+    <li class="active"><a href="#<{$pref}>_goodsprice" data-toggle="tab">goods价格</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane" id="<{$pref}>_market_goods">
+      <p>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span6">
+      <!--Sidebar content-->
+	  <div class="input-prepend">    
+        <span class="add-on"><i class="icon-star"></i>品种</span>
+		    <select name="<{$pref}>_assortmentSelect" class="span4"  rel="tooltip" data-placement="right" title="市/区">
+        	<?php $count=count($assortment);
+			if($count<=0){ ?>
+            <option>---暂无数据---</option>
+			<?php }else{
+			foreach($assortment as $key=>$value){
+			$id=$value['aid'];
+			$name=$value['aname'];
+			 ?>
+            <option <?php if($aid==$id){echo "selected='selected'";} ?> value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
+            <?php }
+			}?>
+        </select>
+		   <select name="<{$pref}>_goodsVarietySelect" class="span4" rel="tooltip" data-placement="right" title="">
+        	<?php $count=count($goodsVariety);
+			if($count<=0){ ?>
+            <option>---暂无数据---</option>
+			<?php }else{
+			foreach($goodsVariety as $key=>$value){
+			$id=$value['vid'];
+			$name=$value['vname'];
+			 ?>
+            <option <?php if($vid==$id){echo "selected='selected'";} ?> value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
+            <?php }
+			}?>
+        </select>
+	</div>
+	<div>
+	<?php $count=count($goods); ?>
+	<label class="text-info"><i class="icon-arrow-right"></i>未添加goods名称(共<?php echo $count;?>种)</label>
+	<div>
+	<select size="10" multiple="multiple" name="<{$pref}>_goodsSelect_left"  rel="tooltip" data-placement="right">
+        	<?php $count=count($goods);
+			if($count>0){ 
+			foreach($goods as $key=>$value){
+			$id=$value['gid'];
+			$name=$value['gname'];	
+			 ?>
+            <option  value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
+            <?php }
+			}?>
+</select>
+</div>
+<div>
+<button type="button" id="<{$pref}>_left_marketgoods" class="btn btn-small">确定<i class="icon-forward"></i></button>
+</div>
+	</div>
+    </div>
+    <div class="span6">
+      <!--Body content-->
+	  <div style=" height:30px;" class="input-prepend">  
+	  <label class="text-info">
+	  	<i class="icon-pencil"></i>当前：<{$marketname}>
+	  </label>
+	  </div>
+	  <?php $count=count($marketgoods); ?>
+	  <label class="text-info"><i class="icon-arrow-right"></i>已添加的goods名称(共<?php echo $count;?>种)，品种:<{$vname}></label>
+	<div>
+	<select size="10" multiple="multiple" name="<{$pref}>_goodsSelect_right" >
+        	<?php 
+			if($count>0){
+			foreach($marketgoods as $key=>$value){
+			$id=$value['gid'];
+			$name=$value['gname'];
+			 ?>
+            <option  value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
+            <?php }
+			}?>
+</select>
+</div>
+<div>
+<button type="button" id="<{$pref}>_right_marketgoods" class="btn btn-small"><i class="icon-backward"></i>确定</button>
+<button type="button" id="<{$pref}>_edit_marketgoods" class="btn btn-small" data-loading-text="修改 中.">修改</button>
+</div>
+    </div>
+  </div>
+  <div style="margin-top:20px;"  class="text-warning">警告说明</div>
+</div>
+</p>
+    </div>
+	
+    <div class="tab-pane active" id="<{$pref}>_goodsprice">
+      <p>
+		<div class="input-append">    
+		<input id="<{$pref}>_inputSearch" class="span2 inputText" type="text" placeholder="<{$spPlaceHolder}>" />
+        <button id="<{$pref}>_btnSearch" class="btn" type="button" data-loading-text="搜索中..">搜索</button>
+	<span class="add-on">
+		销售方式：
+	<label style="display:inline;"><input type="radio" class="<{$pref}>_optionsRadios" name="<{$pref}>_optionsRadios" id="<{$pref}>_optionsRadios2" value="批发" <?php if($mtype!='零售') echo 'checked=checked'; ?>  />批发</label>
+    <label style="display:inline;"><input type="radio" class="<{$pref}>_optionsRadios" name="<{$pref}>_optionsRadios" id="<{$pref}>_optionsRadios1" value="零售" <?php if($mtype=='零售') echo 'checked=checked'; ?> />零售</label>
+		</span>
+		<span class="add-on">日期：<input style=" height:20px; margin: 0px;padding:0px;" type="text" class="mh_date" name="<{$pref}>_date" readonly="true" value="<{$mtime}>" /></span>
+		</div>
+        <?php 
+		$count=count($data);
+		$nowPage=$pgInfo['nowPage'];
+		$num=($nowPage-1)*$pgInfo['perPageRows']+1;
+if($count<=0){ ?>
+      <div class="alert-info" style=" margin: 5px 3px; padding: 2px; text-align: center;">
+            暂无数据！
+        </div>
+        <?php }else{ ?>
+        <table class="table table-hover table-condensed" style="font-size: small;">
+            <thead>
+                <tr>
+                    <th>
+                        <button id="<{$pref}>_check_all" type="button" class="btn btn-mini btn-info">
+                            全选
+                        </button>
+                        <button id="<{$pref}>_check_invert" type="button" class="btn btn-mini btn-info">
+                            反选
+                        </button>
+                    </th>
+                    <th>
+					商品名称
+                    </th>
+					<th>
+						<a id="<{$pref}>_units_add"   href="#<{$pref}>_modal_units_add" data-toggle="modal">单位&nbsp;&nbsp;&nbsp;<i class="icon-wrench"></i></a>
+					</th>
+					<th>
+						价格           
+					</th>
+					<th>最低价</th>
+					<th>最高价</th>
+                    <th>
+                        <button id="<{$pref}>_saveAll" type="button" class="btn btn-small btn-info" data-loading-text="正在保存">
+                            批量保存
+                        </button>
+                    </th>
+                    <th>
+                        <button id="<{$pref}>_deleteAll" type="button" class="btn btn-small btn-warning" data-loading-text="正在删除">
+                            批量删除
+                        </button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php 
+
+foreach($data as $id=>$array){
+$gid=$array['gid'];
+$name=$array['gname'];
+$id=$array['mgid'];
+$mtype=$array['mtype'];
+$price=$array['price'];
+$maxprice=$array['maxprice'];
+$minprice=$array['minprice'];
+$uid=$array['uid'];
+                ?>
+                <tr>
+                    <td>
+                        <label class="<{$pref}>_checkbox">
+                            <input id="<{$pref}>_checkbox_<?php echo $id; ?>" type="checkbox" name="<{$pref}>_checkbox" />
+                            <?php echo $num; $num++?>
+                        </label>
+                    </td>
+					<td>
+						<{$name}>
+					</td>
+					<td>
+						<{$uname}>
+			<select style="width:auto;" name="<{$pref}>_unitsSelect" class="span1" rel="tooltip" data-placement="right" title="市场">
+        	<?php $count=count($units);
+			if($count<=0){ ?>
+            <option></option>
+			<?php }else{
+			foreach($units as $key=>$value){
+			$uid0=$value['uid'];
+			$uname0=$value['uname'];
+			 ?>
+            <option <?php if($uid==$uid0){echo "selected='selected'";} ?> value="<?php echo $uname0,'_',$uid0; ?>"><?php echo $uname0; ?></option>
+            <?php }
+			}?>
+        </select>
+					</td>
+					<td>
+				 <input style="width:100px;" id="<{$pref}>_input_<?php echo $id; ?>" name="<{$pref}>_text" class="input-medium" type="text" placeholder="价格" value="<?php echo $price; ?>" />
+					</td>
+					<td >
+				 <input style="width:100px;" id="<{$pref}>_input_<?php echo $id; ?>" name="<{$pref}>_text" class="input-medium" type="text" placeholder="价格" value="<?php echo $minprice; ?>" />
+					</td>
+                    <td >  
+				 <input style="width:100px;" id="<{$pref}>_input_<?php echo $id; ?>" name="<{$pref}>_text" class="input-medium" type="text" placeholder="价格" value="<?php echo $maxprice; ?>" />
+					</td>
+                    <td>
+                        <button id="<{$pref}>_edit_<?php echo $id; ?>" type="button" class="<{$pref}>_edit btn btn-mini btn-info" data-loading-text="保存中..">保存
+                        </button>
+                    </td>
+                    <td>
+                        <button id="<{$pref}>_delete_<?php echo $id; ?>" type="button" data-toggle="modal" class="<{$pref}>_delete btn btn-mini btn-warning" data-loading-text="删除中.." data-target="#<{$pref}>_deleteModal">删除
+                        </button>
+                    </td>
+                </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+        <div class="pagination pagination-centered">
+            <ul>
+                <li>
+                    <span class="label" style="color: #333333;">第<{$pgInfo['nowPage']}>/<{$pgInfo['totalPages']}>页</span>
+                </li>
+            </ul>
+            <ul>
+                <li class="<{$pgInfo['upName']}>">
+                    <a class="<{$pref}>_page<{$pgInfo['upName']}>" id="sp_<{$pgInfo['up']}>" >Prev</a>
+                </li>
+                <?php foreach($page as $p=>$pid){ if($p==$pgInfo['nowPage']){ ?>
+                <li class="<?php echo $pid['class']; ?>">
+                    <a class="<{$pref}>_now_page" id="<{$pref}>_<?php echo $pid['pid']; ?>" >
+                        <?php echo $p; ?>
+                    </a>
+                </li>
+                <?php } else{ ?>
+                <li>
+                    <a class="<{$pref}>_page" id="<{$pref}>_<?php echo $pid; ?>" >
+                        <?php echo $p; ?>
+                    </a>
+                </li>
+                <?php } } ?>
+                <li class="<{$pgInfo['downName']}>">
+                    <a class="<{$pref}>_page<{$pgInfo['downName']}>" id="<{$pref}>_<{$pgInfo['down']}>" >Next</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span class="label" style="color: #333333;">共<{$pgInfo['totalRows']}>条记录</span>
+                </li>
+            </ul>
+        </div>
+        <?php } ?>
+		
+</p>
+    </div>
+  </div>
+</div>
+
+    <div>
+        <div id="<{$pref}>_deleteModal" class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h5>警告！</h5>
+            </div>
+            <div class="modal-body">
+                <p>确定要删除吗？</p>
+            </div>
+            <div class="modal-footer">
+                <button id="<{$pref}>_to_delete" class="btn btn-small btn-warning" data-dismiss="modal" aria-hidden="true">
+                    确定
+                </button>
+                <button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+                    取消
+                </button>
+            </div>
+        </div>
+        <div id="<{$pref}>_deleteAllModal" class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h5>警告！</h5>
+            </div>
+            <div class="modal-body">
+                <p>
+                    确定要删除吗？
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button id="<{$pref}>_to_deleteAll" class="btn btn-small btn-warning" data-dismiss="modal" aria-hidden="true">
+                    确定
+                </button>
+                <button class="btn  btn-small" data-dismiss="modal" aria-hidden="true">
+                    取消
+                </button>
+            </div>
+        </div>
+        <div id="<{$pref}>_alert_checkbox_choose" class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h5 class="text-warning">警告！</h5>
+            </div>
+            <div class="modal-body">
+                <p>
+                    请选择要操作的项！
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+                    确定
+                </button>
+            </div>
+        </div>
+  
+   <div id="<{$pref}>_modal_units_add" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 id="myModalLabel">单位管理</h4>
+  </div>
+  <div class="modal-body">
+    <p>
+   <div class="input-append">
+        <input class="span2 inputText" id="<{$pref}>_units_inputAdd" type="text" placeholder="单位" value="" />
+        <button id="<{$pref}>_units_btnAdd" type="button" class="<{$pref}>_units btn btn-info" data-loading-text="增加中..">增加</button>
+    </div>
+  <?php 
+		$count=count($units);
+		$num=1;
+if($count<=0){ ?>
+      <div class="alert-info" style=" margin: 5px 3px; padding: 2px; text-align: center;">
+            暂无数据！
+        </div>
+        <?php }else{ ?>
+        <table class="table table-hover table-condensed" style="font-size: small;">
+            <thead>
+                <tr>
+                    <th>
+                        <button id="<{$pref}>_units_check_all" type="button" class="btn btn-mini btn-info">全选</button>
+                        <button id="<{$pref}>_units_check_invert" type="button" class="btn btn-mini btn-info">反选</button>
+                    </th>
+                    <th>名称</th>
+                    <th>
+                        <button id="<{$pref}>_units_saveAll" type="button" rel="tooltip" title="请选择要操作的项！" class="<{$pref}>_units btn btn-small btn-info" data-loading-text="正在保存">批量保存</button>
+                    </th>
+                    <th>
+                        <button id="<{$pref}>_units_deleteAll" type="button" rel="tooltip" title="请选择要操作的项！" class="<{$pref}>_units btn btn-small btn-warning" data-loading-text="正在删除">批量删除</button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php 
+
+foreach($units as $id=>$array){
+$id=$array['uid'];
+$name=$array['uname'];
+                ?>
+                <tr>
+                    <td>
+                        <label class="<{$pref}>_checkbox_units">
+                            <input id="<{$pref}>units_checkbox_<?php echo $id; ?>" type="checkbox" name="<{$pref}>_checkbox_units" />
+                            <?php echo $num; $num++?>
+                        </label>
+                    </td>
+                    <td>
+                        <input id="<{$pref}>units_input_<?php echo $id; ?>" name="<{$pref}>_units_text" class="input-medium" type="text" placeholder="单位" value="<?php echo $name; ?>" />
+                    </td>
+                    <td>
+                        <button id="<{$pref}>units_edit_<?php echo $id; ?>" type="button" class="<{$pref}>_units_edit btn btn-mini btn-info" data-loading-text="保存中..">保存</button>
+                    </td>
+                    <td>
+                        <button id="<{$pref}>units_delete_<?php echo $id; ?>" type="button" data-toggle="modal" class="<{$pref}>_units_delete btn btn-mini btn-warning" data-loading-text="删除中..">删除</button>
+                    </td>
+                </tr>
+                <?php }
+				} ?>
+            </tbody>
+        </table>
+	
+</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-small" data-dismiss="modal" aria-hidden="true">取消</button>
+  </div>
+</div>
+   
+    </div>
+
+
+</div>
+<script type="text/javascript">
+    var data_temp = {
+		p: "<{$pgInfo['nowPage']}>",
+		aid: "<{$aid}>",
+		aname: "<{$aname}>",
+		vid: "<{$vid}>",
+		vname: "<{$vname}>",
+		pid: "<{$prid}>",
+		pname: "<{$pname}>",
+		cid: "<{$cityid}>",
+		cname: "<{$cityname}>",
+		zid: "<{$zoneid}>",
+		zname: "<{$zonename}>",
+		mid: "<{$marketid}>",
+		mname: "<{$marketname}>",
+		mtype:"<{$mtype}>",
+		mtime:"<{$mtime}>",
+		key: "<{$search}>"
+	};
+    pageClickByData(".<{$pref}>_page", data_temp
+        , "<{$replaceId}>", host + "g=<{$group}>&m=<{$module}>&a=showAll");
+    var edit = ".<{$pref}>_edit.btn.btn-mini.btn-info";
+    mutilBtnToEdit(edit,"<{$pref}>_textarea_edit_","<{$pref}>_delimg_edit_", host + "g=<{$group}>&m=<{$module}>&a=editByName", {
+        p: "<{$pgInfo['nowPage']}>"
+    }, "<{$replaceId}>");
+	
+    var del = ".<{$pref}>_delete.btn.btn-mini.btn-warning";
+    mutilDelBtn(del, "<{$pref}>_to_delete", host + "g=<{$group}>&m=<{$module}>&a=deleteById", {
+        p: "<{$pgInfo['nowPage']}>"
+    }, "<{$replaceId}>");
+    
+	allChoose("<{$pref}>_check_all", "<{$pref}>_checkbox");
+    invertChoose("<{$pref}>_check_invert", "<{$pref}>_checkbox");
+    
+	allChoose("<{$pref}>_units_check_all", "<{$pref}>_checkbox_units");
+    invertChoose("<{$pref}>_units_check_invert", "<{$pref}>_checkbox_units");
+    
+	
+//	mutilSaveByGoods("<{$pref}>_saveAll","<{$pref}>_textarea_edit_","<{$pref}>_delimg_edit_", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose", host + "g=<{$group}>&m=<{$module}>&a=editAll", {
+//        p: "<{$pgInfo['nowPage']}>"
+//    }, "<{$replaceId}>");
+//    
+    mutilDel("<{$pref}>_deleteAll", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose", "<{$pref}>_deleteAllModal", "<{$pref}>_to_deleteAll", host + "g=<{$group}>&m=<{$module}>&a=deleteAll", {
+        p: "<{$pgInfo['nowPage']}>"
+    }, "<{$replaceId}>");
+    
+	//添加商品单位
+    singleBtnWithModal("<{$pref}>_units_btnAdd", "<{$pref}>_units_inputAdd","<{$pref}>_modal_units_add", host + "g=<{$group}>&m=<{$module}>&a=addByUnitsName", data_temp, "<{$replaceId}>");
+
+	mutilBtnWithModal(".<{$pref}>_units_edit","<{$pref}>_modal_units_add", host + "g=<{$group}>&m=<{$module}>&a=editByUnitsName", data_temp, "<{$replaceId}>");
+    mutilDelBtnWithModal(".<{$pref}>_units_delete", "<{$pref}>_modal_units_add", host + "g=<{$group}>&m=<{$module}>&a=deleteByUnitsId",data_temp, "<{$replaceId}>");
+    mutilSaveBySelectWithModal("<{$pref}>_units_saveAll","<{$pref}>_checkbox_units","<{$pref}>_modal_units_add",  host + "g=<{$group}>&m=<{$module}>&a=editAllByUnits",data_temp, "<{$replaceId}>");
+    mutilDelBySelectWithModal("<{$pref}>_units_deleteAll","<{$pref}>_checkbox_units","<{$pref}>_modal_units_add",  host + "g=<{$group}>&m=<{$module}>&a=deleteAllByUnits",data_temp, "<{$replaceId}>");
+   
+	
+	
+    //添加商品名称
+//    singleBtnToAddGoods("<{$pref}>_btnAdd", "<{$pref}>_inputAdd","<{$pref}>_textarea_add","<{$pref}>_delimg_add", host + "g=<{$group}>&m=<{$module}>&a=addByName", {
+//        p: "<{$pgInfo['nowPage']}>",
+//        vid: "<{$vid}>"
+//    }, "<{$replaceId}>");
+//    
+	//商品名称搜索
+    singleBtn("<{$pref}>_btnSearch", "<{$pref}>_inputSearch", host + "g=<{$group}>&m=<{$module}>&a=showAll", {
+        p: "<{$pgInfo['nowPage']}>",
+        vid: "<{$vid}>",
+		vname: "<{$vname}>"
+    },  "<{$replaceId}>");
+
+	
+    $("select[name='<{$pref}>_prvSelect']").change(function(){
+        var Str = this.value;
+        var arr = Str.split("_");
+        var name = arr[0]
+        var id = arr[1];
+        
+        var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
+        ajaxRequest("post", url, {
+        p: "<{$pgInfo['nowPage']}>",
+		aid:"<{$aid}>",
+		aname:"<{$aname}>",
+		vid:"<{$vid}>",
+		vname:"<{$vname}>",
+        pid: id,
+        pname: name,
+		mtype:"<{$mtype}>"
+        }, "", "#<{$replaceId}>");
+    });
+    
+	 $("select[name='<{$pref}>_citySelect']").change(function(){
+        var Str = this.value;
+        var arr = Str.split("_");
+        var name = arr[0]
+        var id = arr[1];
+        
+        var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
+        ajaxRequest("post", url, {
+        p: "<{$pgInfo['nowPage']}>",
+		aid:"<{$aid}>",
+		aname:"<{$aname}>",
+		vid:"<{$vid}>",
+		vname:"<{$vname}>",
+        pid: "<{$prid}>",
+        pname: "<{$pname}>",
+		cid:id,
+		cname:name,
+		mtype:"<{$mtype}>"
+        }, "", "#<{$replaceId}>");
+    });
+	
+	$("select[name='<{$pref}>_ZoneSelect']").change(function(){
+        var Str = this.value;
+        var arr = Str.split("_");
+        var name = arr[0]
+        var id = arr[1];
+        
+       var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
+        ajaxRequest("post", url, {
+        p: "<{$pgInfo['nowPage']}>",
+		aid:"<{$aid}>",
+		aname:"<{$aname}>",
+		vid:"<{$vid}>",
+		vname:"<{$vname}>",
+        pid: "<{$prid}>",
+        pname:"<{$pname}>",
+		cid:"<{$cityid}>",
+		cname:"<{$cityname}>",
+		zid:id,
+		zname:name,
+		mtype:"<{$mtype}>"
+        }, "", "#<{$replaceId}>");
+    });
+	
+	$("select[name='<{$pref}>_MarketSelect']").change(function(){
+        var Str = this.value;
+        var arr = Str.split("_");
+        var name = arr[0]
+        var id = arr[1];
+        
+       var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
+        ajaxRequest("post", url, {
+        p: "<{$pgInfo['nowPage']}>",
+		aid:"<{$aid}>",
+		aname:"<{$aname}>",
+		vid:"<{$vid}>",
+		vname:"<{$vname}>",
+        pid: "<{$prid}>",
+        pname: "<{$pname}>",
+		cid:"<{$cityid}>",
+		cname:"<{$cityname}>",
+		zid:"<{$zoneid}>",
+		zname:"<{$zonename}>",
+		mid:id,
+		mname:name,
+		mtype:"<{$mtype}>"
+        }, "", "#<{$replaceId}>");
+    });
+	
+		$("select[name='<{$pref}>_assortmentSelect']").change(function(){
+        var Str = this.value;
+        var arr = Str.split("_");
+        var name = arr[0]
+        var id = arr[1];
+        
+       var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
+        ajaxRequest("post", url, {
+        p: "<{$pgInfo['nowPage']}>",
+        pid: "<{$prid}>",
+        pname: "<{$pname}>",
+		cid:"<{$cityid}>",
+		cname:"<{$cityname}>",
+		zid:"<{$zoneid}>",
+		zname:"<{$zonename}>",
+		mid:"<{$marketid}>",
+		mname:"<{$marketname}>",
+		aid:id,
+		aname:name,
+		mtype:"<{$mtype}>"
+        }, "", "#<{$replaceId}>");
+    });
+		
+	$("select[name='<{$pref}>_goodsVarietySelect']").change(function(){
+        var Str = this.value;
+        var arr = Str.split("_");
+        var name = arr[0]
+        var id = arr[1];
+        
+       var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
+        ajaxRequest("post", url, {
+        p: "<{$pgInfo['nowPage']}>",
+        pid: "<{$prid}>",
+        pname: "<{$pname}>",
+		cid:"<{$cityid}>",
+		cname:"<{$cityname}>",
+		zid:"<{$zoneid}>",
+		zname:"<{$zonename}>",
+		mid:"<{$marketid}>",
+		mname:"<{$marketname}>",
+		aid:"<{$aid}>",
+		aname:"<{$aname}>",
+		vid:id,
+		vname:name,
+		mtype:"<{$mtype}>"
+        }, "", "#<{$replaceId}>");
+    });
+	//从左边移到右边
+	removeSelectOption("<{$pref}>_left_marketgoods","<{$pref}>_goodsSelect_left","<{$pref}>_goodsSelect_right","<{$pref}>_alert_checkbox_choose");
+	//从右边移到左边
+	removeSelectOption("<{$pref}>_right_marketgoods","<{$pref}>_goodsSelect_right","<{$pref}>_goodsSelect_left","<{$pref}>_alert_checkbox_choose");
+
+	
+	$("#<{$pref}>_edit_marketgoods").click(function(){
+		var str="{";
+		$("select[name='<{$pref}>_goodsSelect_right'] option").each(function(){
+			var val=$(this).val();
+			if (val != null) {
+				var arr = val.split("_");
+				var name = arr[0];
+				var id = arr[1];
+				str+="'"+id+"':'"+name+"',";
+			}
+		});
+		str+="}";
+		var data=window.eval('('+str+')');
+		$.extend(data,{get:data_temp});
+		var url = host + "g=<{$group}>&m=<{$module}>&a=editMarketgoods";
+        ajaxRequest("post", url,data , "#<{$pref}>_edit_marketgoods", "#<{$replaceId}>");
+	});
+	
+	$("input[name='<{$pref}>_optionsRadios']").change(function(){
+		var val=$(this).val();
+		var data=data_temp;
+		$.extend(data,{mtype:val});
+
+		 var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
+		 ajaxRequest("post", url,data , "", "#<{$replaceId}>");
+	});
+
+	var temp = "";
+		var inputdate = $("input[name='<{$pref}>_date']");
+		inputdate.bind({
+			focusin: function(){
+				temp = $(this).val();
+			}
+		});
+	function calenderChange(){
+		var val=inputdate.val();
+			if (temp != val) {
+		var data=data_temp;
+		$.extend(data,{mtime:val});
+		 var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
+		 ajaxRequest("post", url,data , "", "#<{$replaceId}>");
+			}
+	}
+	
+
+	
+	$(document).ready(function(){
+	var date=new Date();
+	$("input.mh_date").manhuaDate({					       
+		Event : "click",//可选				       
+		Left : 0,//弹出时间停靠的左边位置
+		Top : -16,//弹出时间停靠的顶部边位置
+		fuhao : "-",//日期连接符默认为-
+		isTime : false,//是否开启时间值默认为false
+		beginY :1990 ,//年份的开始默认为1949
+		endY :date.getFullYear()//年份的结束默认为2049
+	});
+	});
+
+
+ 
+</script>

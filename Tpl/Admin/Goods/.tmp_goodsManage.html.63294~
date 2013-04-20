@@ -51,11 +51,8 @@
                             <li class="active">
                                 <a href="#home_goods">goods管理</a>
                             </li>
-							<li>
-								<a href="#profile_marketgoods">市场商品管理</a>
-							</li>
                             <li>
-                                <a href="#profile_marketgoods_price">市场商品价格管理</a>
+                                <a href="#profile_goods">价格管理</a>
                             </li>
                         </ul>
                         <div class="tab-content">
@@ -63,12 +60,7 @@
                                 <div id="goods">
                                 </div>
                             </div>
-						 <div class="tab-pane" id="profile_marketgoods">
-                                <div id="marketgoodsSet">
-                                	
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="profile_marketgoods_price">
+                            <div class="tab-pane" id="profile_goods">
                                 <div id="goodspriceSet">
                                 	
                                 </div>

@@ -46,7 +46,7 @@
         <div class="accordion-group">
             <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                    <span><i class="icon-random"></i>市场类型</span>
+                    <span><i class="icon-random"></i>商品分类</span>
                 </a>
             </div>
             <div id="collapseTwo" class="accordion-body collapse">
