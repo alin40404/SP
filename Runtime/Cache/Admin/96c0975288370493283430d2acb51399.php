@@ -114,8 +114,11 @@ var host =  "<?php echo ($host); ?>";
                             <li class="active">
                                 <a href="#home_goods">goods管理</a>
                             </li>
+							<li>
+								<a href="#profile_marketgoods">市场商品管理</a>
+							</li>
                             <li>
-                                <a href="#profile_goods">价格管理</a>
+                                <a href="#profile_marketgoods_price">市场商品价格管理</a>
                             </li>
                         </ul>
                         <div class="tab-content">
@@ -123,7 +126,12 @@ var host =  "<?php echo ($host); ?>";
                                 <div id="goods">
                                 </div>
                             </div>
-                            <div class="tab-pane" id="profile_goods">
+						 <div class="tab-pane" id="profile_marketgoods">
+                                <div id="marketgoodsSet">
+                                	
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile_marketgoods_price">
                                 <div id="goodspriceSet">
                                 	
                                 </div>
@@ -148,8 +156,9 @@ var host =  "<?php echo ($host); ?>";
 
 	$(document).ready(function(){
 	loadFile("goods", host + "g=Admin&m=GoodsSet&a=showAll");
+	loadFile("marketgoodsSet", host + "g=Admin&m=MarketGoodsSet&a=showAll");
 	loadFile("goodspriceSet", host + "g=Admin&m=PriceSet&a=showAll");
-	
+
 });
     $('#myTab a').click(function(e){
         e.preventDefault();

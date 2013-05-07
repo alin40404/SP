@@ -1,0 +1,32 @@
+[ 2013-04-27T19:15:47+08:00 ] 127.0.0.1 /sp/index.php/Admin/User/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.014190s ]
+INFO: [ route_check ] --END-- [ RunTime:0.027258s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.006010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006143s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:6.385159s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.539373s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: UserName D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: Password D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 20 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.175855s ]
+INFO: [ view_template ] --END-- [ RunTime:0.176031s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: error D:\AppServ\www\SP\Runtime\Cache\Admin\17ee208018732b832d411ca700006883.php 第 179 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.327372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.327511s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.034348s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.044560s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001149s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.027446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.107803s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.035034s ]
+INFO: [ view_end ] --END-- [ RunTime:0.035155s ]
+

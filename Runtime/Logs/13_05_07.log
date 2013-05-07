@@ -1,0 +1,543 @@
+[ 2013-05-07T09:45:22+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/Home/Index/Index.html]
+[ 2013-05-07T09:45:51+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032585s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000360s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: UserName D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: Password D:\AppServ\www\SP\Lib\Action\Admin\UserAction.class.php 第 20 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001464s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001555s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: error D:\AppServ\www\SP\Runtime\Cache\Admin\17ee208018732b832d411ca700006883.php 第 179 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.081031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081123s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.009450s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.044232s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.004296s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.006199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.064454s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.015015s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015289s ]
+
+[ 2013-05-07T09:46:02+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.026736s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000408s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001331s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001412s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.194367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194935s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001603s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001549s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001221s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006774s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002426s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002625s ]
+
+[ 2013-05-07T09:46:03+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=admin_top
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.034685s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000816s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.021970s ]
+INFO: [ view_template ] --END-- [ RunTime:0.022099s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\97613306cc1d2b054578cdb67f172667.php 第 3 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.022971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023085s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000609s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000590s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000429s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002572s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000979s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001079s ]
+
+[ 2013-05-07T09:46:04+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=left
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032617s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000477s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001937s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002055s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.027112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027248s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000786s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000660s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000501s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003040s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000879s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2013-05-07T09:46:06+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=right
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.024257s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000647s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002163s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002299s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.027491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027631s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000766s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000703s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000505s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003102s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000894s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2013-05-07T09:46:10+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Member&a=memberManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032450s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000347s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000940s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\8a917ed2bcd96e521ed5a75d9a3e7758.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.154916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.155073s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001287s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001365s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000857s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005571s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001779s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001987s ]
+
+[ 2013-05-07T09:46:13+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Member&a=manage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.012897s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000339s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.060439s ]
+INFO: [ view_template ] --END-- [ RunTime:0.060634s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\65065d21213d193f4b913d224c92b05d.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.081332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081722s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001457s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001206s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000853s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005488s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001866s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002174s ]
+
+[ 2013-05-07T09:46:16+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=marketManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032099s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000717s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.014525s ]
+INFO: [ view_template ] --END-- [ RunTime:0.014688s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\14d7e739041034d997c9160e5ca54b69.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017063s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000498s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000440s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000323s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001985s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000638s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2013-05-07T09:46:18+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=MarketManage&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.034338s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000436s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketModel.class.php 第 187 行.
+SQL: SHOW COLUMNS FROM `sp_market` [ RunTime:0.030221s ]
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.039087s ]
+NOTIC: [2048] Declaration of MarketCityModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketCityModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_market_city` [ RunTime:0.045085s ]
+NOTIC: [2048] Declaration of MarketZoneModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketZoneModel.class.php 第 172 行.
+SQL: SHOW COLUMNS FROM `sp_market_zone` [ RunTime:0.038901s ]
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.015422s ]
+SQL: SELECT * FROM `sp_category` ORDER BY cid  [ RunTime:0.000306s ]
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid  [ RunTime:0.011136s ]
+SQL: SELECT * FROM `sp_market_city` WHERE ( pid='1' )  [ RunTime:0.018949s ]
+SQL: SELECT * FROM `sp_market_zone` WHERE ( cid='2' )  [ RunTime:0.000899s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\MarketManageAction.class.php 第 73 行.
+SQL: SELECT * FROM `sp_market` WHERE ( zid='4' ) ORDER BY mid LIMIT 0,5   [ RunTime:0.000678s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market` WHERE ( zid='4' ) LIMIT 1   [ RunTime:0.009755s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\MarketManageAction.class.php 第 79 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\MarketManageAction.class.php 第 80 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002761s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002956s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.094539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094786s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000797s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000474s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000340s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002333s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000633s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2013-05-07T09:46:20+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=goodsManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.027553s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000358s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.015699s ]
+INFO: [ view_template ] --END-- [ RunTime:0.015803s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\96c0975288370493283430d2acb51399.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.028602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028794s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000565s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000529s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000326s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002155s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000642s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2013-05-07T09:46:22+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AssortmentSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032919s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000707s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 178 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.064921s ]
+NOTIC: [8] Undefined index: style D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 15 行.
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid LIMIT 0,5   [ RunTime:0.000322s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_assortment` LIMIT 1   [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 36 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AssortmentSetAction.class.php 第 37 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001016s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001084s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.044628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044742s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000516s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000427s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000291s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001933s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000581s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2013-05-07T09:46:24+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsVarietySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.031083s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000355s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 188 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.142459s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 178 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.022169s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000300s ]
+NOTIC: [8] Undefined index: style D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 24 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' ) ORDER BY vid LIMIT 0,5   [ RunTime:0.037178s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods_variety` WHERE ( aid='1' ) LIMIT 1   [ RunTime:0.000366s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 47 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsVarietySetAction.class.php 第 48 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.050499s ]
+INFO: [ view_template ] --END-- [ RunTime:0.050622s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.497643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.497749s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000682s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000440s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000292s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002242s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000672s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2013-05-07T09:46:25+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=GoodsSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.034298s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000757s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of GoodsModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsModel.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.037155s ]
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 178 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.012856s ]
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 188 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.012516s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000328s ]
+NOTIC: [8] Undefined index: style D:\AppServ\www\SP\Lib\Action\Admin\GoodsSetAction.class.php 第 24 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\GoodsSetAction.class.php 第 36 行.
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' )  [ RunTime:0.000424s ]
+SQL: SELECT * FROM `sp_goods` WHERE ( vid='2' ) ORDER BY gid LIMIT 0,5   [ RunTime:0.000325s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_goods` WHERE ( vid='2' ) LIMIT 1   [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\GoodsSetAction.class.php 第 71 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\GoodsSetAction.class.php 第 72 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001030s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001110s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.047501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047593s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000914s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000602s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000491s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002849s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000632s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2013-05-07T09:46:27+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=MarketGoodsSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.032722s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000720s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of AssortmentModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\AssortmentModel.class.php 第 178 行.
+SQL: SHOW COLUMNS FROM `sp_assortment` [ RunTime:0.020769s ]
+NOTIC: [2048] Declaration of GoodsVarietyModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsVarietyModel.class.php 第 188 行.
+SQL: SHOW COLUMNS FROM `sp_goods_variety` [ RunTime:0.015312s ]
+NOTIC: [2048] Declaration of GoodsModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\GoodsModel.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.012203s ]
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.011409s ]
+NOTIC: [2048] Declaration of MarketCityModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketCityModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_market_city` [ RunTime:0.011603s ]
+NOTIC: [2048] Declaration of MarketZoneModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketZoneModel.class.php 第 172 行.
+SQL: SHOW COLUMNS FROM `sp_market_zone` [ RunTime:0.011584s ]
+NOTIC: [2048] Declaration of MarketModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketModel.class.php 第 187 行.
+SQL: SHOW COLUMNS FROM `sp_market` [ RunTime:0.013039s ]
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid  [ RunTime:0.000330s ]
+SQL: SELECT * FROM `sp_assortment` ORDER BY aid  [ RunTime:0.000188s ]
+NOTIC: [8] Undefined index: style D:\AppServ\www\SP\Lib\Action\Admin\MarketGoodsSetAction.class.php 第 27 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\MarketGoodsSetAction.class.php 第 48 行.
+SQL: SELECT * FROM `sp_market_city` WHERE ( pid='1' )  [ RunTime:0.000275s ]
+SQL: SELECT * FROM `sp_market_zone` WHERE ( cid='2' )  [ RunTime:0.000302s ]
+SQL: SELECT * FROM `sp_market` WHERE ( zid='4' )  [ RunTime:0.000310s ]
+SQL: SELECT * FROM `sp_goods_variety` WHERE ( aid='1' )  [ RunTime:0.000425s ]
+SQL: select gid,gname from sp_goods where vid='2' and gid not in (select gid from sp_market_goods where mid='52') [ RunTime:0.032801s ]
+SQL: select gid,gname from sp_goods where vid='2' and gid in (select gid from sp_market_goods where mid='52') [ RunTime:0.128606s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\MarketGoodsSetAction.class.php 第 120 行.
+NOTIC: [8] Undefined variable: info D:\AppServ\www\SP\Lib\Action\Admin\MarketGoodsSetAction.class.php 第 121 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002347s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002531s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: pgInfo D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 112 行.
+NOTIC: [8] Undefined variable: pgInfo D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 137 行.
+NOTIC: [8] Undefined variable: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 144 行.
+NOTIC: [8] Undefined variable: pgInfo D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 156 行.
+NOTIC: [8] Undefined variable: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 165 行.
+NOTIC: [8] Undefined variable: pgInfo D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 177 行.
+NOTIC: [8] Undefined variable: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 188 行.
+NOTIC: [8] Undefined variable: pgInfo D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 200 行.
+NOTIC: [8] Undefined variable: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 213 行.
+NOTIC: [8] Undefined variable: pgInfo D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 225 行.
+NOTIC: [8] Undefined variable: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 236 行.
+NOTIC: [8] Undefined variable: pgInfo D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 248 行.
+NOTIC: [8] Undefined variable: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\7ddb2c84105f58ff8a871d3e84f3e821.php 第 261 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.089853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089977s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000710s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000497s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000325s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002258s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000628s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2013-05-07T09:46:28+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=PriceSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sp_user_verified` [ RunTime:0.025531s ]
+SQL: SELECT `uid`,`uname`,`status` FROM `sp_user_verified` WHERE ( uid='' ) LIMIT 1   [ RunTime:0.000760s ]
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketGoodsModel::add() should be compatible with that of Model::add() D:\AppServ\www\SP\Lib\Model\MarketGoodsModel.class.php 第 195 行.
+NOTIC: [2048] Declaration of MarketGoodsModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketGoodsModel.class.php 第 195 行.
+SQL: SHOW COLUMNS FROM `sp_market_goods` [ RunTime:0.012108s ]
+NOTIC: [2048] Declaration of PriceUnitsModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\PriceUnitsModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_price_units` [ RunTime:0.108372s ]
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.017121s ]
+NOTIC: [2048] Declaration of MarketCityModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketCityModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_market_city` [ RunTime:0.015312s ]
+NOTIC: [2048] Declaration of MarketZoneModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketZoneModel.class.php 第 172 行.
+SQL: SHOW COLUMNS FROM `sp_market_zone` [ RunTime:0.011603s ]
+NOTIC: [2048] Declaration of MarketModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketModel.class.php 第 187 行.
+SQL: SHOW COLUMNS FROM `sp_market` [ RunTime:0.012231s ]
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid  [ RunTime:0.000311s ]
+NOTIC: [8] Undefined index: style D:\AppServ\www\SP\Lib\Action\Admin\PriceSetAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: p D:\AppServ\www\SP\Lib\Action\Admin\PriceSetAction.class.php 第 44 行.
+SQL: SELECT * FROM `sp_market_city` WHERE ( pid='1' )  [ RunTime:0.000263s ]
+SQL: SELECT * FROM `sp_market_zone` WHERE ( cid='2' )  [ RunTime:0.000352s ]
+SQL: SELECT * FROM `sp_market` WHERE ( zid='4' )  [ RunTime:0.000354s ]
+SQL: select gid,gname from sp_goods where gid in (select gid from sp_market_goods where mid='52') order by gid asc limit 1,5  [ RunTime:0.000389s ]
+SQL: SELECT `mgid`, `mtype`, `price`, `maxprice`, `minprice`, `uid` FROM `sp_market_price` WHERE `mtype`='批发' and `mtime`=1367856000 and `mgid` = (select mgid from sp_market_goods where mid='52' and gid='2' limit 1)  [ RunTime:0.102268s ]
+SQL: SELECT `mgid`, `mtype`, `price`, `maxprice`, `minprice`, `uid` FROM `sp_market_price` WHERE `mtype`='批发' and `mtime`=1367856000 and `mgid` = (select mgid from sp_market_goods where mid='52' and gid='3' limit 1)  [ RunTime:0.001092s ]
+SQL: SELECT `mgid`, `mtype`, `price`, `maxprice`, `minprice`, `uid` FROM `sp_market_price` WHERE `mtype`='批发' and `mtime`=1367856000 and `mgid` = (select mgid from sp_market_goods where mid='52' and gid='4' limit 1)  [ RunTime:0.000790s ]
+SQL: SELECT `mgid`, `mtype`, `price`, `maxprice`, `minprice`, `uid` FROM `sp_market_price` WHERE `mtype`='批发' and `mtime`=1367856000 and `mgid` = (select mgid from sp_market_goods where mid='52' and gid='5' limit 1)  [ RunTime:0.000735s ]
+SQL: SELECT `mgid`, `mtype`, `price`, `maxprice`, `minprice`, `uid` FROM `sp_market_price` WHERE `mtype`='批发' and `mtime`=1367856000 and `mgid` = (select mgid from sp_market_goods where mid='52' and gid='6' limit 1)  [ RunTime:0.000730s ]
+SQL: SELECT * FROM `sp_price_units` ORDER BY uid  [ RunTime:0.000492s ]
+SQL: select count(gid) as num from sp_goods where gid in (select gid from sp_market_goods where mid='52')  [ RunTime:0.002828s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\PriceSetAction.class.php 第 134 行.
+NOTIC: [8] Undefined variable: info D:\AppServ\www\SP\Lib\Action\Admin\PriceSetAction.class.php 第 135 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002740s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002939s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: mgid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: price D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: maxprice D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: minprice D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: uid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined variable: uname D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 108 行.
+NOTIC: [8] Undefined index: mgid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: price D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: maxprice D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: minprice D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: uid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined variable: uname D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 108 行.
+NOTIC: [8] Undefined index: mgid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: price D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: maxprice D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: minprice D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: uid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined variable: uname D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 108 行.
+NOTIC: [8] Undefined index: mgid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: price D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: maxprice D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: minprice D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: uid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined variable: uname D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 108 行.
+NOTIC: [8] Undefined index: mgid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: mtype D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: price D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: maxprice D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: minprice D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined index: uid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 96 行.
+NOTIC: [8] Undefined variable: uname D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 108 行.
+NOTIC: [8] Undefined variable: vid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 358 行.
+NOTIC: [8] Undefined variable: vid D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 364 行.
+NOTIC: [8] Undefined variable: vname D:\AppServ\www\SP\Runtime\Cache\Admin\5a01d4463b2d0e7a08e1bb0c62268dde.php 第 365 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.091556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091711s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001375s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000770s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000423s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003429s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000741s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000798s ]
+

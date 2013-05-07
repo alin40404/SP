@@ -43,20 +43,23 @@
 	</div>
 
     <div>
-    	<div class="input-append">    
-        <span class="add-on">品种:</span>
-        <select name="<?php echo ($pref); ?>_prvSelect" class="span2" rel="tooltip" data-placement="right" title="名称">
-            <?php $count=count($goodsVariety); if($count<=0){ ?>
+    	<div class="input-append">      
+        <span class="add-on"><i class="icon-star"></i>品种</span>
+		    <select name="<?php echo ($pref); ?>_assortmentSelect" class="span2"  rel="tooltip" data-placement="right" title="市/区">
+        	<?php $count=count($assortment); if($count<=0){ ?>
             <option>---暂无数据---</option>
-            <?php }else{ if(!empty($vid)){ ?>
-            <option value="<?php echo ($vname); ?>_<?php echo ($vid); ?>"><?php echo ($vname); ?></option>
-            <?php
- } foreach($goodsVariety as $key=>$value){ if($vid!=$value['vid']){ ?>
-            <option value="<?php echo $value['vname'],'_',$value['vid']; ?>">
-                <?php echo $value['vname']; ?>
-            </option>
-            <?php } } }?>
+			<?php }else{ foreach($assortment as $key=>$value){ $id=$value['aid']; $name=$value['aname']; ?>
+            <option <?php if($aid==$id){echo "selected='selected'";} ?> value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
+            <?php } }?>
         </select>
+		   <select name="<?php echo ($pref); ?>_goodsVarietySelect" class="span2" rel="tooltip" data-placement="right" title="">
+        	<?php $count=count($goodsVariety); if($count<=0){ ?>
+            <option>---暂无数据---</option>
+			<?php }else{ foreach($goodsVariety as $key=>$value){ $id=$value['vid']; $name=$value['vname']; ?>
+            <option <?php if($vid==$id){echo "selected='selected'";} ?> value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
+            <?php } }?>
+        </select>
+		
 		<input id="<?php echo ($pref); ?>_inputSearch" class="span2 inputText" type="text" placeholder="<?php echo ($spPlaceHolder); ?>" />
         <button id="<?php echo ($pref); ?>_btnSearch" class="btn" type="button" data-loading-text="搜索中..">搜索</button>
 
@@ -288,58 +291,63 @@
     </div>
 </div>
 <script type="text/javascript">
-    
-    pageClickByData(".<?php echo ($pref); ?>_page", {
-        vid: "<?php echo ($vid); ?>",
-        vname: "<?php echo ($vname); ?>",
+      var data_temp_goodsSet = {
+		p: "<?php echo ($pgInfo['nowPage']); ?>",
+		aid: "<?php echo ($aid); ?>",
+		aname: "<?php echo ($aname); ?>",
+		vid: "<?php echo ($vid); ?>",
+		vname: "<?php echo ($vname); ?>",
 		key:"<?php echo ($search); ?>"
-    }, "<?php echo ($replaceId); ?>", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll");
+		}
+		
+    pageClickByData(".<?php echo ($pref); ?>_page", data_temp_goodsSet, "<?php echo ($replaceId); ?>", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll");
     var edit = ".<?php echo ($pref); ?>_edit.btn.btn-mini.btn-info";
-    mutilBtnToEdit(edit,"<?php echo ($pref); ?>_textarea_edit_","<?php echo ($pref); ?>_delimg_edit_", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=editByName", {
-        p: "<?php echo ($pgInfo['nowPage']); ?>"
-    }, "<?php echo ($replaceId); ?>");
+    mutilBtnToEdit(edit,"<?php echo ($pref); ?>_textarea_edit_","<?php echo ($pref); ?>_delimg_edit_", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=editByName",data_temp_goodsSet, "<?php echo ($replaceId); ?>");
 	
     var del = ".<?php echo ($pref); ?>_delete.btn.btn-mini.btn-warning";
-    mutilDelBtn(del, "<?php echo ($pref); ?>_to_delete", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=deleteById", {
-        p: "<?php echo ($pgInfo['nowPage']); ?>"
-    }, "<?php echo ($replaceId); ?>");
+    mutilDelBtn(del, "<?php echo ($pref); ?>_to_delete", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=deleteById",data_temp_goodsSet, "<?php echo ($replaceId); ?>");
     
     allChoose("<?php echo ($pref); ?>_check_all", "<?php echo ($pref); ?>_checkbox");
     invertChoose("<?php echo ($pref); ?>_check_invert", "<?php echo ($pref); ?>_checkbox");
     
-	mutilSaveByGoods("<?php echo ($pref); ?>_saveAll","<?php echo ($pref); ?>_textarea_edit_","<?php echo ($pref); ?>_delimg_edit_", "<?php echo ($pref); ?>_checkbox", "<?php echo ($pref); ?>_alert_checkbox_choose", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=editAll", {
-        p: "<?php echo ($pgInfo['nowPage']); ?>"
-    }, "<?php echo ($replaceId); ?>");
+	mutilSaveByGoods("<?php echo ($pref); ?>_saveAll","<?php echo ($pref); ?>_textarea_edit_","<?php echo ($pref); ?>_delimg_edit_", "<?php echo ($pref); ?>_checkbox", "<?php echo ($pref); ?>_alert_checkbox_choose", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=editAll",data_temp_goodsSet, "<?php echo ($replaceId); ?>");
     
-    mutilDel("<?php echo ($pref); ?>_deleteAll", "<?php echo ($pref); ?>_checkbox", "<?php echo ($pref); ?>_alert_checkbox_choose", "<?php echo ($pref); ?>_deleteAllModal", "<?php echo ($pref); ?>_to_deleteAll", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=deleteAll", {
-        p: "<?php echo ($pgInfo['nowPage']); ?>"
-    }, "<?php echo ($replaceId); ?>");
+    mutilDel("<?php echo ($pref); ?>_deleteAll", "<?php echo ($pref); ?>_checkbox", "<?php echo ($pref); ?>_alert_checkbox_choose", "<?php echo ($pref); ?>_deleteAllModal", "<?php echo ($pref); ?>_to_deleteAll", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=deleteAll",data_temp_goodsSet, "<?php echo ($replaceId); ?>");
     
     //添加商品名称
-    singleBtnToAddGoods("<?php echo ($pref); ?>_btnAdd", "<?php echo ($pref); ?>_inputAdd","<?php echo ($pref); ?>_textarea_add","<?php echo ($pref); ?>_delimg_add", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=addByName", {
-        p: "<?php echo ($pgInfo['nowPage']); ?>",
-        vid: "<?php echo ($vid); ?>"
-    }, "<?php echo ($replaceId); ?>");
+    singleBtnToAddGoods("<?php echo ($pref); ?>_btnAdd", "<?php echo ($pref); ?>_inputAdd","<?php echo ($pref); ?>_textarea_add","<?php echo ($pref); ?>_delimg_add", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=addByName",data_temp_goodsSet, "<?php echo ($replaceId); ?>");
     
 	//商品名称搜索
-    singleBtn("<?php echo ($pref); ?>_btnSearch", "<?php echo ($pref); ?>_inputSearch", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll", {
-        p: "<?php echo ($pgInfo['nowPage']); ?>",
-        vid: "<?php echo ($vid); ?>",
-		vname: "<?php echo ($vname); ?>"
-    },  "<?php echo ($replaceId); ?>");
+    singleBtn("<?php echo ($pref); ?>_btnSearch", "<?php echo ($pref); ?>_inputSearch", host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll", data_temp_goodsSet,  "<?php echo ($replaceId); ?>");
 
 	
-    $("select[name='<?php echo ($pref); ?>_prvSelect']").change(function(){
+	$("select[name='<?php echo ($pref); ?>_assortmentSelect']").change(function(){
         var Str = this.value;
         var arr = Str.split("_");
         var name = arr[0]
         var id = arr[1];
         
-        var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll";
+       var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll";
         ajaxRequest("post", url, {
         p: "<?php echo ($pgInfo['nowPage']); ?>",
-        vid: id,
-        vname: name
+		aid:id,
+		aname:name
+        }, "", "#<?php echo ($replaceId); ?>");
+    });
+		
+	$("select[name='<?php echo ($pref); ?>_goodsVarietySelect']").change(function(){
+        var Str = this.value;
+        var arr = Str.split("_");
+        var name = arr[0]
+        var id = arr[1];
+        
+       var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll";
+        ajaxRequest("post", url, {
+        p: "<?php echo ($pgInfo['nowPage']); ?>",
+		aid:"<?php echo ($aid); ?>",
+		aname:"<?php echo ($aname); ?>",
+		vid:id,
+		vname:name,
         }, "", "#<?php echo ($replaceId); ?>");
     });
     

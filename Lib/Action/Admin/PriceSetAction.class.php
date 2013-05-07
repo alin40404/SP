@@ -5,27 +5,18 @@ class PriceSetAction extends AdminCommonAction {
 		$style = "none";
 		$db = D ( 'MarketGoods' );
 		
-		$db_a = D ( 'Assortment' );
-		$db_gv = D ( 'GoodsVariety' );
-		$db_g = D ( 'Goods' );
 		$db_price_units = D ( 'PriceUnits' );
 		
-		$db1 = D ( 'MarketProvince' );
-		$db2 = D ( 'MarketCity' );
-		$db3 = D ( 'MarketZone' );
-		$db4 = D ( 'Market' );
+		$db_prov = D ( 'MarketProvince' );
+		$db_city = D ( 'MarketCity' );
+		$db_zone = D ( 'MarketZone' );
+		$db_market = D ( 'Market' );
 		
-		$province = $db1->getAll ();
+		$province = $db_prov->getAll ();
 		$this->assign ( 'province', $province );
 		$pid = $province [0] ['pid'];
 		$pname = $province [0] ['pname'];
-		
-		$assortment = $db_a->getAll ();
-		$this->assign ( 'assortment', $assortment );
-		$aid = $assortment [0] ['aid'];
-		$aname = $assortment [0] ['aname'];
-		
-		$addClass = "accordion-body collapse";
+
 		$mtype = "批发";
 		$now = mktime ( 0, 0, 0, idate ( "n" ), idate ( "j" ), idate ( "Y" ) );
 		
@@ -37,10 +28,6 @@ class PriceSetAction extends AdminCommonAction {
 				$class = $_GET ['class'];
 				$info = $_GET ['info'];
 				
-				$aid = $_GET ['aid'];
-				$aname = $_GET ['aname'];
-				$vid = $_GET ['vid'];
-				$vname = $_GET ['vname'];
 				
 				$pid = $_GET ['pid'];
 				$pname = $_GET ['pname'];
@@ -58,12 +45,6 @@ class PriceSetAction extends AdminCommonAction {
 		} else if ($_SERVER ['REQUEST_METHOD'] == 'POST') {
 			$_POST = stripslashesDeep ( $_POST );
 			$p = $_POST ['p'];
-			$aid = $_POST ['aid'];
-			$aname = $_POST ['aname'];
-			$vid = $_POST ['vid'];
-			$vname = $_POST ['vname'];
-			// $gid=$_POST['gid'];
-			// $gname=$_POST['gname'];
 			
 			$pid = $_POST ['pid'];
 			$pname = $_POST ['pname'];
@@ -78,79 +59,49 @@ class PriceSetAction extends AdminCommonAction {
 			
 			$search = (isset ( $_POST ['key'] ) ? trim ( $_POST ['key'] ) : $search);
 		}
-// 		dump($_POST);
 		
 		
-		$city = $db2->selectByPid ( $pid );
+		$city = $db_city->selectByPid ( $pid );
 		$this->assign ( 'city', $city );
 		if (! isset ( $cid ) || empty ( $cid )) {
 			$cid = $city [0] ['cid'];
 			$cname = $city [0] ['cname'];
 		}
 		
-		$zone = $db3->selectByCid ( $cid );
+		$zone = $db_zone->selectByCid ( $cid );
 		$this->assign ( 'zone', $zone );
 		if (! isset ( $zid ) || empty ( $zid )) {
 			$zid = $zone [0] ['zid'];
 			$zname = $zone [0] ['zname'];
 		}
 		
-		$market = $db4->selectByZid ( $zid );
+		$market = $db_market->selectByZid ( $zid );
 		$this->assign ( 'market', $market );
 		if (! isset ( $marketid ) || empty ( $marketid )) {
 			$marketid = $market [0] ['mid'];
 			$marketname = $market [0] ['mname'];
 		}
 		
-		// dump($marketid);
-		
-		$goodsVariety = $db_gv->selectByAid ( $aid );
-		$this->assign ( 'goodsVariety', $goodsVariety );
-		if (! isset ( $vid ) || empty ( $vid )) {
-			$vid = $goodsVariety [0] ['vid'];
-			$vname = $goodsVariety [0] ['vname'];
-		}
-		
-		$originDB = new Model ();
-		if ($vid === null || $vid < 0) {
-			$goods = array ();
-			$marketgoods = array ();
-		} else if ($marketid === null || $marketid < 0) {
-			$goods = $db_g->selectByVid ( $vid );
-			$marketgoods = array ();
-		} else {
-			
-			$sql = "select gid from sp_market_goods where mid='$marketid'";
-			$sql_g = "select gid,gname from sp_goods where vid='$vid' and gid not in (" . $sql . ")";
-			$sql_mg = "select gid,gname from sp_goods where vid='$vid' and gid in (" . $sql . ")";
-			
-			$goods = $originDB->query ( $sql_g );
-			$marketgoods = $originDB->query ( $sql_mg );
-		}
-		
-		$this->assign ( 'goods', $goods );
-		$this->assign ( 'marketgoods', $marketgoods );
-		// if(! isset ( $gid ) || empty ( $gid )){
-		// $gid=$goods[0]['gid'];
-		// $gname=$goods[0]['gname'];
-		// }
+
 		if (isset ( $mtime ) && ! empty ( $mtime )) {
 			$time = explode ( '-', $mtime );
 			$now = mktime ( 0, 0, 0, $time [1], $time [2], $time [0] );
 		} else {
 			$mtime = date ( "Y-n-j", time () );
 		}
-		// dump($now);
-		// dump($time);
+
 		
+		$originDB = new Model ();
+		$sql = "select gid from sp_market_goods where mid='$marketid'";
 		$p = ($p == false ? 1 : $p);
 		$p = intval ( $p );
 		if ($marketid === null || $marketid < 0) {
 			$data = array ();
 		} else {
 			$begin = ($p - 1) * $this->pageNum + 1;
-			$end = $p * $this->pageNum;
+			$end = $this->pageNum;
 			$sql_mg = "select gid,gname from sp_goods where gid in (" . $sql . ") order by gid asc limit $begin,$end ";
+			
 			$data = $originDB->query ( $sql_mg );
 			
 			$sql_temp = "SELECT `mgid`, `mtype`, `price`, `maxprice`, `minprice`, `uid` FROM `sp_market_price` WHERE `mtype`='$mtype' and `mtime`=$now and `mgid` = ";
@@ -166,7 +117,7 @@ class PriceSetAction extends AdminCommonAction {
 			
 		}
 		if (! empty ( $search )) {
-			$count = $db->getTheSearchNum ( $vid, $search );
+			$count = @$db->getTheSearchNum ( $search );
 			$info = "搜索结果如下，共" . $count . "条信息";
 			$class = "alert alert-success";
 			$style = "block";
@@ -179,7 +130,6 @@ class PriceSetAction extends AdminCommonAction {
 		}
 		$page = showPage ( $count, $p, $this->pageNum, $this->rollPages );
 		
-		$this->assign ( 'addClass', $addClass );
 		$this->assign ( 'style', $style );
 		$this->assign ( 'class', $class );
 		$this->assign ( 'info', $info );
@@ -192,12 +142,6 @@ class PriceSetAction extends AdminCommonAction {
 		$pref = "GoodspriceSet";
 		$this->assign ( 'pref', $pref );
 		
-		$this->assign ( 'aid', $aid );
-		$this->assign ( 'aname', $aname );
-		$this->assign ( 'vid', $vid );
-		$this->assign ( 'vname', $vname );
-		// $this->assign('gid',$gid);
-		// $this->assign('gname',$gname);
 		
 		$this->assign ( 'prid', $pid );
 		$this->assign ( 'pname', $pname );
@@ -219,66 +163,6 @@ class PriceSetAction extends AdminCommonAction {
 		$this->assign ( 'page', $page ['page'] );
 		$this->assign ( "spPlaceHolder", $spPlaceHolder );
 		$this->display ();
-	}
-	public function editMarketgoods() {
-		$db = D ( 'MarketGoods' );
-		
-		if ($_SERVER ['REQUEST_METHOD'] == 'POST') {
-			$_POST = stripslashesDeep ( $_POST );
-			$get = $_POST ['get'];
-			$p = $get ['p'];
-			$aid = $get ['aid'];
-			$aname = $get ['aname'];
-			$vid = intval ( $get ['vid'] );
-			$vname = $get ['vname'];
-			
-			$pid = $get ['pid'];
-			$pname = $get ['pname'];
-			$cid = $get ['cid'];
-			$cname = $get ['cname'];
-			$zid = $get ['zid'];
-			$zname = $get ['zname'];
-			$marketid = intval ( $get ['mid'] );
-			$marketname = $get ['mname'];
-			
-			unset ( $_POST ['get'] );
-			$data = $_POST;
-			if ($marketid === null || $marketid < 0) {
-				$info = "未创建市场名称！";
-				$class = "alert alert-error";
-			} else if ($vid === null || $vid < 0) {
-				$info = "未创建品种名称！";
-				
-				$class = "alert alert-error";
-			} else {
-				$sql = "delete from sp_market_goods where mid='$marketid' and gid in (select gid from sp_goods where vid='$vid') ";
-				$originDB = new Model ();
-				$originDB->query ( $sql );
-				$db->addAll ( $marketid, $data );
-				$info = "已修改！";
-				$class = "alert alert-success";
-			}
-			$style = "block";
-		}
-		
-		$this->redirect ( 'showAll', array (
-				'p' => $p,
-				'aid' => $aid,
-				'aname' => $aname,
-				'vid' => $vid,
-				'vname' => $vname,
-				'pid' => $pid,
-				'pname' => $pname,
-				'cid' => $cid,
-				'cname' => $cname,
-				'zid' => $zid,
-				'zname' => $zname,
-				'mid' => $marketid,
-				'mname' => $marketname,
-				'style' => $style,
-				'class' => $class,
-				'info' => $info 
-		) );
 	}
 	
 	

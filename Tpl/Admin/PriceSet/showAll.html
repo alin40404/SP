@@ -57,102 +57,8 @@
 		</div>
     </div>
 
-<div class="tabbable tabs-left">
-  <ul class="nav nav-tabs">
-    <li ><a href="#<{$pref}>_market_goods" data-toggle="tab">市场goods</a></li>
-    <li class="active"><a href="#<{$pref}>_goodsprice" data-toggle="tab">goods价格</a></li>
-  </ul>
-  <div class="tab-content">
-    <div class="tab-pane" id="<{$pref}>_market_goods">
-      <p>
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span6">
-      <!--Sidebar content-->
-	  <div class="input-prepend">    
-        <span class="add-on"><i class="icon-star"></i>品种</span>
-		    <select name="<{$pref}>_assortmentSelect" class="span4"  rel="tooltip" data-placement="right" title="市/区">
-        	<?php $count=count($assortment);
-			if($count<=0){ ?>
-            <option>---暂无数据---</option>
-			<?php }else{
-			foreach($assortment as $key=>$value){
-			$id=$value['aid'];
-			$name=$value['aname'];
-			 ?>
-            <option <?php if($aid==$id){echo "selected='selected'";} ?> value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
-            <?php }
-			}?>
-        </select>
-		   <select name="<{$pref}>_goodsVarietySelect" class="span4" rel="tooltip" data-placement="right" title="">
-        	<?php $count=count($goodsVariety);
-			if($count<=0){ ?>
-            <option>---暂无数据---</option>
-			<?php }else{
-			foreach($goodsVariety as $key=>$value){
-			$id=$value['vid'];
-			$name=$value['vname'];
-			 ?>
-            <option <?php if($vid==$id){echo "selected='selected'";} ?> value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
-            <?php }
-			}?>
-        </select>
-	</div>
-	<div>
-	<?php $count=count($goods); ?>
-	<label class="text-info"><i class="icon-arrow-right"></i>未添加goods名称(共<?php echo $count;?>种)</label>
-	<div>
-	<select size="10" multiple="multiple" name="<{$pref}>_goodsSelect_left"  rel="tooltip" data-placement="right">
-        	<?php $count=count($goods);
-			if($count>0){ 
-			foreach($goods as $key=>$value){
-			$id=$value['gid'];
-			$name=$value['gname'];	
-			 ?>
-            <option  value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
-            <?php }
-			}?>
-</select>
-</div>
 <div>
-<button type="button" id="<{$pref}>_left_marketgoods" class="btn btn-small">确定<i class="icon-forward"></i></button>
-</div>
-	</div>
-    </div>
-    <div class="span6">
-      <!--Body content-->
-	  <div style=" height:30px;" class="input-prepend">  
-	  <label class="text-info">
-	  	<i class="icon-pencil"></i>当前：<{$marketname}>
-	  </label>
-	  </div>
-	  <?php $count=count($marketgoods); ?>
-	  <label class="text-info"><i class="icon-arrow-right"></i>已添加的goods名称(共<?php echo $count;?>种)，品种:<{$vname}></label>
-	<div>
-	<select size="10" multiple="multiple" name="<{$pref}>_goodsSelect_right" >
-        	<?php 
-			if($count>0){
-			foreach($marketgoods as $key=>$value){
-			$id=$value['gid'];
-			$name=$value['gname'];
-			 ?>
-            <option  value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
-            <?php }
-			}?>
-</select>
-</div>
-<div>
-<button type="button" id="<{$pref}>_right_marketgoods" class="btn btn-small"><i class="icon-backward"></i>确定</button>
-<button type="button" id="<{$pref}>_edit_marketgoods" class="btn btn-small" data-loading-text="修改 中.">修改</button>
-</div>
-    </div>
-  </div>
-  <div style="margin-top:20px;"  class="text-warning">警告说明</div>
-</div>
-</p>
-    </div>
-	
-    <div class="tab-pane active" id="<{$pref}>_goodsprice">
+    <div id="<{$pref}>_goodsprice">
       <p>
 		<div class="input-append">    
 		<input id="<{$pref}>_inputSearch" class="span2 inputText" type="text" placeholder="<{$spPlaceHolder}>" />
@@ -304,7 +210,7 @@ $uid=$array['uid'];
 		
 </p>
     </div>
-  </div>
+
 </div>
 
     <div>
@@ -440,15 +346,10 @@ $name=$array['uname'];
    
     </div>
 
-
 </div>
 <script type="text/javascript">
     var data_temp = {
 		p: "<{$pgInfo['nowPage']}>",
-		aid: "<{$aid}>",
-		aname: "<{$aname}>",
-		vid: "<{$vid}>",
-		vname: "<{$vname}>",
 		pid: "<{$prid}>",
 		pname: "<{$pname}>",
 		cid: "<{$cityid}>",
@@ -521,10 +422,6 @@ $name=$array['uname'];
         var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
         ajaxRequest("post", url, {
         p: "<{$pgInfo['nowPage']}>",
-		aid:"<{$aid}>",
-		aname:"<{$aname}>",
-		vid:"<{$vid}>",
-		vname:"<{$vname}>",
         pid: id,
         pname: name,
 		mtype:"<{$mtype}>"
@@ -540,10 +437,6 @@ $name=$array['uname'];
         var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
         ajaxRequest("post", url, {
         p: "<{$pgInfo['nowPage']}>",
-		aid:"<{$aid}>",
-		aname:"<{$aname}>",
-		vid:"<{$vid}>",
-		vname:"<{$vname}>",
         pid: "<{$prid}>",
         pname: "<{$pname}>",
 		cid:id,
@@ -561,10 +454,6 @@ $name=$array['uname'];
        var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
         ajaxRequest("post", url, {
         p: "<{$pgInfo['nowPage']}>",
-		aid:"<{$aid}>",
-		aname:"<{$aname}>",
-		vid:"<{$vid}>",
-		vname:"<{$vname}>",
         pid: "<{$prid}>",
         pname:"<{$pname}>",
 		cid:"<{$cityid}>",
@@ -584,10 +473,6 @@ $name=$array['uname'];
        var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
         ajaxRequest("post", url, {
         p: "<{$pgInfo['nowPage']}>",
-		aid:"<{$aid}>",
-		aname:"<{$aname}>",
-		vid:"<{$vid}>",
-		vname:"<{$vname}>",
         pid: "<{$prid}>",
         pname: "<{$pname}>",
 		cid:"<{$cityid}>",
@@ -600,76 +485,6 @@ $name=$array['uname'];
         }, "", "#<{$replaceId}>");
     });
 	
-		$("select[name='<{$pref}>_assortmentSelect']").change(function(){
-        var Str = this.value;
-        var arr = Str.split("_");
-        var name = arr[0]
-        var id = arr[1];
-        
-       var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
-        ajaxRequest("post", url, {
-        p: "<{$pgInfo['nowPage']}>",
-        pid: "<{$prid}>",
-        pname: "<{$pname}>",
-		cid:"<{$cityid}>",
-		cname:"<{$cityname}>",
-		zid:"<{$zoneid}>",
-		zname:"<{$zonename}>",
-		mid:"<{$marketid}>",
-		mname:"<{$marketname}>",
-		aid:id,
-		aname:name,
-		mtype:"<{$mtype}>"
-        }, "", "#<{$replaceId}>");
-    });
-		
-	$("select[name='<{$pref}>_goodsVarietySelect']").change(function(){
-        var Str = this.value;
-        var arr = Str.split("_");
-        var name = arr[0]
-        var id = arr[1];
-        
-       var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
-        ajaxRequest("post", url, {
-        p: "<{$pgInfo['nowPage']}>",
-        pid: "<{$prid}>",
-        pname: "<{$pname}>",
-		cid:"<{$cityid}>",
-		cname:"<{$cityname}>",
-		zid:"<{$zoneid}>",
-		zname:"<{$zonename}>",
-		mid:"<{$marketid}>",
-		mname:"<{$marketname}>",
-		aid:"<{$aid}>",
-		aname:"<{$aname}>",
-		vid:id,
-		vname:name,
-		mtype:"<{$mtype}>"
-        }, "", "#<{$replaceId}>");
-    });
-	//从左边移到右边
-	removeSelectOption("<{$pref}>_left_marketgoods","<{$pref}>_goodsSelect_left","<{$pref}>_goodsSelect_right","<{$pref}>_alert_checkbox_choose");
-	//从右边移到左边
-	removeSelectOption("<{$pref}>_right_marketgoods","<{$pref}>_goodsSelect_right","<{$pref}>_goodsSelect_left","<{$pref}>_alert_checkbox_choose");
-
-	
-	$("#<{$pref}>_edit_marketgoods").click(function(){
-		var str="{";
-		$("select[name='<{$pref}>_goodsSelect_right'] option").each(function(){
-			var val=$(this).val();
-			if (val != null) {
-				var arr = val.split("_");
-				var name = arr[0];
-				var id = arr[1];
-				str+="'"+id+"':'"+name+"',";
-			}
-		});
-		str+="}";
-		var data=window.eval('('+str+')');
-		$.extend(data,{get:data_temp});
-		var url = host + "g=<{$group}>&m=<{$module}>&a=editMarketgoods";
-        ajaxRequest("post", url,data , "#<{$pref}>_edit_marketgoods", "#<{$replaceId}>");
-	});
 	
 	$("input[name='<{$pref}>_optionsRadios']").change(function(){
 		var val=$(this).val();
@@ -681,12 +496,13 @@ $name=$array['uname'];
 	});
 
 	var temp = "";
-		var inputdate = $("input[name='<{$pref}>_date']");
+	var inputdate = $("input[name='<{$pref}>_date']");
 		inputdate.bind({
 			focusin: function(){
 				temp = $(this).val();
 			}
 		});
+		
 	function calenderChange(){
 		var val=inputdate.val();
 			if (temp != val) {
@@ -694,7 +510,7 @@ $name=$array['uname'];
 		$.extend(data,{mtime:val});
 		 var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
 		 ajaxRequest("post", url,data , "", "#<{$replaceId}>");
-			}
+		}
 	}
 	
 

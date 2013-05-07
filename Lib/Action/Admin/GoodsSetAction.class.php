@@ -4,12 +4,20 @@ class GoodsSetAction extends AdminCommonAction{
 	public function showAll() {
 		$style = "none";
 		$db =D ( 'Goods' );
-		$db1 = D ( 'GoodsVariety' );
+		
+		$db_a = D ( 'Assortment' );
+		$db_gv = D ( 'GoodsVariety' );
 	
-		$goodsVariety=$db1->getAll();
-		$this->assign('goodsVariety',$goodsVariety);
-		$vid=$goodsVariety[0]['vid'];
-		$vname=$goodsVariety[0]['vname'];
+		$assortment = $db_a->getAll ();
+		$this->assign ( 'assortment', $assortment );
+		$aid = $assortment [0] ['aid'];
+		$aname = $assortment [0] ['aname'];
+		
+// 		$goodsVariety=$db_gv->getAll();
+// 		$this->assign('goodsVariety',$goodsVariety);
+// 		$vid=$goodsVariety[0]['vid'];
+// 		$vname=$goodsVariety[0]['vname'];
+
 	    $addClass="accordion-body collapse";
 	    $search="";
 		if ($_SERVER['REQUEST_METHOD']=='GET') {
@@ -18,9 +26,10 @@ class GoodsSetAction extends AdminCommonAction{
 				$style = "block";
 				$class = $_GET ['class'];
 				$infor = $_GET ['infor'];
-				$vid=$_GET['vid'];
-				$array=$db1->selectById($vid);
-				$vname=$array['vname'];
+				$aid = $_GET ['aid'];
+				$aname = $_GET ['aname'];
+				$vid = $_GET ['vid'];
+				$vname = $_GET ['vname'];
 				$addClass=($_GET['addClass']==""?$addClass:$_GET['addClass']);
 				unset($_GET['addClass']);
 			}
@@ -28,10 +37,19 @@ class GoodsSetAction extends AdminCommonAction{
 		} else if ($_SERVER['REQUEST_METHOD']=='POST') {
 			$_POST = stripslashesDeep ( $_POST );
 			$p = $_POST ['p'];
+			$aid = $_POST ['aid'];
+			$aname = $_POST ['aname'];
 			$vid=$_POST['vid'];
 			$vname=$_POST['vname'];
 			$search=(isset($_POST['key'])?trim($_POST['key']):$search);
 			
+		}
+		
+		$goodsVariety = $db_gv->selectByAid ( $aid );
+		$this->assign ( 'goodsVariety', $goodsVariety );
+		if (! isset ( $vid ) || empty ( $vid )) {
+			$vid = $goodsVariety [0] ['vid'];
+			$vname = $goodsVariety [0] ['vname'];
 		}
 		
 		$p=($p==false?1:$p);
@@ -63,8 +81,10 @@ class GoodsSetAction extends AdminCommonAction{
 		// dump($data);
 		// dump($page);
 	
-		$this->assign('vid',$vid);
-		$this->assign('vname',$vname);
+		$this->assign ( 'aid', $aid );
+		$this->assign ( 'aname', $aname );
+		$this->assign ( 'vid', $vid );
+		$this->assign ( 'vname', $vname );
 		
 		$this->assign('search',$search);
 		$spPlaceHolder = "名称";
@@ -81,11 +101,14 @@ class GoodsSetAction extends AdminCommonAction{
 		
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );
+			$post_array=array();
 			$id = $_POST ['id'];
 			$name = $_POST ['key'];
 			$p = $_POST ['p'];
 			$gdesc=	$_POST['gdesc'];
 			$img=$_POST['img'];
+			unset($_POST['key']);
+			$post_array=$_POST;
 			
 			$array=$db->selectById($id);
 			$vid=$array['vid'];
@@ -100,27 +123,27 @@ class GoodsSetAction extends AdminCommonAction{
 				$class = "alert alert-error";
 			}
 			$style = "block";
+			$post_array['infor']=$infor;
+			$post_array['class']=$class;
+			$post_array['style']=$style;
 		}
 	
-		$this->redirect ( 'showAll', array (
-				'p' => $p,
-				'vid'=>$vid,
-				'style' => $style,
-				'class' => $class,
-				'infor' => $infor
-		) );
+		$this->redirect ( 'showAll',$post_array);
 	}
 	public function addByName() {
 		$db =D ( 'Goods' );
-		//$db1 = D ( 'GoodsVariety' );
 		
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );
+			$post_array=array();
 			$name = $_POST ['key'];
 			$p = $_POST ['p'];
 			$id=$_POST['vid'];
 			$gdesc=	$_POST['gdesc'];
 			$img=$_POST['img'];
+			unset($_POST['key']);
+			$post_array=$_POST;
+			
 			if(file_exists($img)){
 				$pathinfo=pathinfo($img);
 				$filename=$pathinfo['basename'];
@@ -146,25 +169,25 @@ class GoodsSetAction extends AdminCommonAction{
 				$infor = "名称已存在，增加失败！";
 				$class = "alert alert-error";
 			}
+			$addClass='accordion-body collapse in';
 			$style = "block";
+			$post_array['infor']=$infor;
+			$post_array['class']=$class;
+			$post_array['style']=$style;
+			$post_array['addClass']=$addClass;
 		}
-		$this->redirect ( 'showAll', array (
-				'p' => $p,
-				'vid'=>$id,
-				'addClass'=>'accordion-body collapse in',
-				'style' => $style,
-				'class' => $class,
-				'infor' => $infor
-		) );
+		$this->redirect ( 'showAll',$post_array);
 	}
 	public function deleteById() {
 		$db =D ( 'Goods' );
 	
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );
+			$post_array=array();
 			$id = $_POST ['id'];
 			$p = $_POST ['p'];
-	
+			$post_array=$_POST;
+			
 			$array=$db->selectById($id);
 			$vid=$array['vid'];
 			$gimg=$array['gimg'];
@@ -182,15 +205,13 @@ class GoodsSetAction extends AdminCommonAction{
 				$class = "alert alert-error";
 			}
 			$style = "block";
+			$post_array['infor']=$infor;
+			$post_array['class']=$class;
+			$post_array['style']=$style;
+		
 		}
 	
-		$this->redirect ( 'showAll', array (
-				'p' => $p,
-				'vid'=>$vid,
-				'style' => $style,
-				'class' => $class,
-				'infor' => $infor
-		) );
+		$this->redirect ( 'showAll',$post_array);
 	}
 	
 	
@@ -220,6 +241,9 @@ class GoodsSetAction extends AdminCommonAction{
 			$infor = "保存成功！";
 			$class = "alert alert-info";
 			$style = "block";
+			$post_array['infor']=$infor;
+			$post_array['class']=$class;
+			$post_array['style']=$style;
 		}
 	
 		$this->redirect ( 'showAll', array (

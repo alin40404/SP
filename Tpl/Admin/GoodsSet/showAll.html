@@ -43,28 +43,35 @@
 	</div>
 
     <div>
-    	<div class="input-append">    
-        <span class="add-on">品种:</span>
-        <select name="<{$pref}>_prvSelect" class="span2" rel="tooltip" data-placement="right" title="名称">
-            <?php $count=count($goodsVariety);
+    	<div class="input-append">      
+        <span class="add-on"><i class="icon-star"></i>品种</span>
+		    <select name="<{$pref}>_assortmentSelect" class="span2"  rel="tooltip" data-placement="right" title="市/区">
+        	<?php $count=count($assortment);
 			if($count<=0){ ?>
             <option>---暂无数据---</option>
-            <?php }else{
-			if(!empty($vid)){
-			?>
-            <option value="<{$vname}>_<{$vid}>"><{$vname}></option>
-            <?php
-			}
-			foreach($goodsVariety as $key=>$value){
-			if($vid!=$value['vid']){
+			<?php }else{
+			foreach($assortment as $key=>$value){
+			$id=$value['aid'];
+			$name=$value['aname'];
 			 ?>
-            <option value="<?php echo $value['vname'],'_',$value['vid']; ?>">
-                <?php echo $value['vname']; ?>
-            </option>
+            <option <?php if($aid==$id){echo "selected='selected'";} ?> value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
             <?php }
-			} 
 			}?>
         </select>
+		   <select name="<{$pref}>_goodsVarietySelect" class="span2" rel="tooltip" data-placement="right" title="">
+        	<?php $count=count($goodsVariety);
+			if($count<=0){ ?>
+            <option>---暂无数据---</option>
+			<?php }else{
+			foreach($goodsVariety as $key=>$value){
+			$id=$value['vid'];
+			$name=$value['vname'];
+			 ?>
+            <option <?php if($vid==$id){echo "selected='selected'";} ?> value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
+            <?php }
+			}?>
+        </select>
+		
 		<input id="<{$pref}>_inputSearch" class="span2 inputText" type="text" placeholder="<{$spPlaceHolder}>" />
         <button id="<{$pref}>_btnSearch" class="btn" type="button" data-loading-text="搜索中..">搜索</button>
 
@@ -307,58 +314,63 @@ $img=$array['gimg'];
     </div>
 </div>
 <script type="text/javascript">
-    
-    pageClickByData(".<{$pref}>_page", {
-        vid: "<{$vid}>",
-        vname: "<{$vname}>",
+      var data_temp_goodsSet = {
+		p: "<{$pgInfo['nowPage']}>",
+		aid: "<{$aid}>",
+		aname: "<{$aname}>",
+		vid: "<{$vid}>",
+		vname: "<{$vname}>",
 		key:"<{$search}>"
-    }, "<{$replaceId}>", host + "g=<{$group}>&m=<{$module}>&a=showAll");
+		}
+		
+    pageClickByData(".<{$pref}>_page", data_temp_goodsSet, "<{$replaceId}>", host + "g=<{$group}>&m=<{$module}>&a=showAll");
     var edit = ".<{$pref}>_edit.btn.btn-mini.btn-info";
-    mutilBtnToEdit(edit,"<{$pref}>_textarea_edit_","<{$pref}>_delimg_edit_", host + "g=<{$group}>&m=<{$module}>&a=editByName", {
-        p: "<{$pgInfo['nowPage']}>"
-    }, "<{$replaceId}>");
+    mutilBtnToEdit(edit,"<{$pref}>_textarea_edit_","<{$pref}>_delimg_edit_", host + "g=<{$group}>&m=<{$module}>&a=editByName",data_temp_goodsSet, "<{$replaceId}>");
 	
     var del = ".<{$pref}>_delete.btn.btn-mini.btn-warning";
-    mutilDelBtn(del, "<{$pref}>_to_delete", host + "g=<{$group}>&m=<{$module}>&a=deleteById", {
-        p: "<{$pgInfo['nowPage']}>"
-    }, "<{$replaceId}>");
+    mutilDelBtn(del, "<{$pref}>_to_delete", host + "g=<{$group}>&m=<{$module}>&a=deleteById",data_temp_goodsSet, "<{$replaceId}>");
     
     allChoose("<{$pref}>_check_all", "<{$pref}>_checkbox");
     invertChoose("<{$pref}>_check_invert", "<{$pref}>_checkbox");
     
-	mutilSaveByGoods("<{$pref}>_saveAll","<{$pref}>_textarea_edit_","<{$pref}>_delimg_edit_", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose", host + "g=<{$group}>&m=<{$module}>&a=editAll", {
-        p: "<{$pgInfo['nowPage']}>"
-    }, "<{$replaceId}>");
+	mutilSaveByGoods("<{$pref}>_saveAll","<{$pref}>_textarea_edit_","<{$pref}>_delimg_edit_", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose", host + "g=<{$group}>&m=<{$module}>&a=editAll",data_temp_goodsSet, "<{$replaceId}>");
     
-    mutilDel("<{$pref}>_deleteAll", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose", "<{$pref}>_deleteAllModal", "<{$pref}>_to_deleteAll", host + "g=<{$group}>&m=<{$module}>&a=deleteAll", {
-        p: "<{$pgInfo['nowPage']}>"
-    }, "<{$replaceId}>");
+    mutilDel("<{$pref}>_deleteAll", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose", "<{$pref}>_deleteAllModal", "<{$pref}>_to_deleteAll", host + "g=<{$group}>&m=<{$module}>&a=deleteAll",data_temp_goodsSet, "<{$replaceId}>");
     
     //添加商品名称
-    singleBtnToAddGoods("<{$pref}>_btnAdd", "<{$pref}>_inputAdd","<{$pref}>_textarea_add","<{$pref}>_delimg_add", host + "g=<{$group}>&m=<{$module}>&a=addByName", {
-        p: "<{$pgInfo['nowPage']}>",
-        vid: "<{$vid}>"
-    }, "<{$replaceId}>");
+    singleBtnToAddGoods("<{$pref}>_btnAdd", "<{$pref}>_inputAdd","<{$pref}>_textarea_add","<{$pref}>_delimg_add", host + "g=<{$group}>&m=<{$module}>&a=addByName",data_temp_goodsSet, "<{$replaceId}>");
     
 	//商品名称搜索
-    singleBtn("<{$pref}>_btnSearch", "<{$pref}>_inputSearch", host + "g=<{$group}>&m=<{$module}>&a=showAll", {
-        p: "<{$pgInfo['nowPage']}>",
-        vid: "<{$vid}>",
-		vname: "<{$vname}>"
-    },  "<{$replaceId}>");
+    singleBtn("<{$pref}>_btnSearch", "<{$pref}>_inputSearch", host + "g=<{$group}>&m=<{$module}>&a=showAll", data_temp_goodsSet,  "<{$replaceId}>");
 
 	
-    $("select[name='<{$pref}>_prvSelect']").change(function(){
+	$("select[name='<{$pref}>_assortmentSelect']").change(function(){
         var Str = this.value;
         var arr = Str.split("_");
         var name = arr[0]
         var id = arr[1];
         
-        var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
+       var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
         ajaxRequest("post", url, {
         p: "<{$pgInfo['nowPage']}>",
-        vid: id,
-        vname: name
+		aid:id,
+		aname:name
+        }, "", "#<{$replaceId}>");
+    });
+		
+	$("select[name='<{$pref}>_goodsVarietySelect']").change(function(){
+        var Str = this.value;
+        var arr = Str.split("_");
+        var name = arr[0]
+        var id = arr[1];
+        
+       var url = host + "g=<{$group}>&m=<{$module}>&a=showAll";
+        ajaxRequest("post", url, {
+        p: "<{$pgInfo['nowPage']}>",
+		aid:"<{$aid}>",
+		aname:"<{$aname}>",
+		vid:id,
+		vname:name,
         }, "", "#<{$replaceId}>");
     });
     

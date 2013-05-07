@@ -40,78 +40,8 @@
 		</div>
     </div>
 
-<div class="tabbable tabs-left">
-  <ul class="nav nav-tabs">
-    <li ><a href="#<?php echo ($pref); ?>_market_goods" data-toggle="tab">市场goods</a></li>
-    <li class="active"><a href="#<?php echo ($pref); ?>_goodsprice" data-toggle="tab">goods价格</a></li>
-  </ul>
-  <div class="tab-content">
-    <div class="tab-pane" id="<?php echo ($pref); ?>_market_goods">
-      <p>
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span6">
-      <!--Sidebar content-->
-	  <div class="input-prepend">    
-        <span class="add-on"><i class="icon-star"></i>品种</span>
-		    <select name="<?php echo ($pref); ?>_assortmentSelect" class="span4"  rel="tooltip" data-placement="right" title="市/区">
-        	<?php $count=count($assortment); if($count<=0){ ?>
-            <option>---暂无数据---</option>
-			<?php }else{ foreach($assortment as $key=>$value){ $id=$value['aid']; $name=$value['aname']; ?>
-            <option <?php if($aid==$id){echo "selected='selected'";} ?> value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
-            <?php } }?>
-        </select>
-		   <select name="<?php echo ($pref); ?>_goodsVarietySelect" class="span4" rel="tooltip" data-placement="right" title="">
-        	<?php $count=count($goodsVariety); if($count<=0){ ?>
-            <option>---暂无数据---</option>
-			<?php }else{ foreach($goodsVariety as $key=>$value){ $id=$value['vid']; $name=$value['vname']; ?>
-            <option <?php if($vid==$id){echo "selected='selected'";} ?> value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
-            <?php } }?>
-        </select>
-	</div>
-	<div>
-	<?php $count=count($goods); ?>
-	<label class="text-info"><i class="icon-arrow-right"></i>未添加goods名称(共<?php echo $count;?>种)</label>
-	<div>
-	<select size="10" multiple="multiple" name="<?php echo ($pref); ?>_goodsSelect_left"  rel="tooltip" data-placement="right">
-        	<?php $count=count($goods); if($count>0){ foreach($goods as $key=>$value){ $id=$value['gid']; $name=$value['gname']; ?>
-            <option  value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
-            <?php } }?>
-</select>
-</div>
 <div>
-<button type="button" id="<?php echo ($pref); ?>_left_marketgoods" class="btn btn-small">确定<i class="icon-forward"></i></button>
-</div>
-	</div>
-    </div>
-    <div class="span6">
-      <!--Body content-->
-	  <div style=" height:30px;" class="input-prepend">  
-	  <label class="text-info">
-	  	<i class="icon-pencil"></i>当前：<?php echo ($marketname); ?>
-	  </label>
-	  </div>
-	  <?php $count=count($marketgoods); ?>
-	  <label class="text-info"><i class="icon-arrow-right"></i>已添加的goods名称(共<?php echo $count;?>种)，品种:<?php echo ($vname); ?></label>
-	<div>
-	<select size="10" multiple="multiple" name="<?php echo ($pref); ?>_goodsSelect_right" >
-        	<?php  if($count>0){ foreach($marketgoods as $key=>$value){ $id=$value['gid']; $name=$value['gname']; ?>
-            <option  value="<?php echo $name,'_',$id; ?>"><?php echo $name; ?></option>
-            <?php } }?>
-</select>
-</div>
-<div>
-<button type="button" id="<?php echo ($pref); ?>_right_marketgoods" class="btn btn-small"><i class="icon-backward"></i>确定</button>
-<button type="button" id="<?php echo ($pref); ?>_edit_marketgoods" class="btn btn-small" data-loading-text="修改 中.">修改</button>
-</div>
-    </div>
-  </div>
-  <div style="margin-top:20px;"  class="text-warning">警告说明</div>
-</div>
-</p>
-    </div>
-	
-    <div class="tab-pane active" id="<?php echo ($pref); ?>_goodsprice">
+    <div id="<?php echo ($pref); ?>_goodsprice">
       <p>
 		<div class="input-append">    
 		<input id="<?php echo ($pref); ?>_inputSearch" class="span2 inputText" type="text" placeholder="<?php echo ($spPlaceHolder); ?>" />
@@ -242,7 +172,7 @@
 		
 </p>
     </div>
-  </div>
+
 </div>
 
     <div>
@@ -369,15 +299,10 @@
    
     </div>
 
-
 </div>
 <script type="text/javascript">
     var data_temp = {
 		p: "<?php echo ($pgInfo['nowPage']); ?>",
-		aid: "<?php echo ($aid); ?>",
-		aname: "<?php echo ($aname); ?>",
-		vid: "<?php echo ($vid); ?>",
-		vname: "<?php echo ($vname); ?>",
 		pid: "<?php echo ($prid); ?>",
 		pname: "<?php echo ($pname); ?>",
 		cid: "<?php echo ($cityid); ?>",
@@ -450,10 +375,6 @@
         var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll";
         ajaxRequest("post", url, {
         p: "<?php echo ($pgInfo['nowPage']); ?>",
-		aid:"<?php echo ($aid); ?>",
-		aname:"<?php echo ($aname); ?>",
-		vid:"<?php echo ($vid); ?>",
-		vname:"<?php echo ($vname); ?>",
         pid: id,
         pname: name,
 		mtype:"<?php echo ($mtype); ?>"
@@ -469,10 +390,6 @@
         var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll";
         ajaxRequest("post", url, {
         p: "<?php echo ($pgInfo['nowPage']); ?>",
-		aid:"<?php echo ($aid); ?>",
-		aname:"<?php echo ($aname); ?>",
-		vid:"<?php echo ($vid); ?>",
-		vname:"<?php echo ($vname); ?>",
         pid: "<?php echo ($prid); ?>",
         pname: "<?php echo ($pname); ?>",
 		cid:id,
@@ -490,10 +407,6 @@
        var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll";
         ajaxRequest("post", url, {
         p: "<?php echo ($pgInfo['nowPage']); ?>",
-		aid:"<?php echo ($aid); ?>",
-		aname:"<?php echo ($aname); ?>",
-		vid:"<?php echo ($vid); ?>",
-		vname:"<?php echo ($vname); ?>",
         pid: "<?php echo ($prid); ?>",
         pname:"<?php echo ($pname); ?>",
 		cid:"<?php echo ($cityid); ?>",
@@ -513,10 +426,6 @@
        var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll";
         ajaxRequest("post", url, {
         p: "<?php echo ($pgInfo['nowPage']); ?>",
-		aid:"<?php echo ($aid); ?>",
-		aname:"<?php echo ($aname); ?>",
-		vid:"<?php echo ($vid); ?>",
-		vname:"<?php echo ($vname); ?>",
         pid: "<?php echo ($prid); ?>",
         pname: "<?php echo ($pname); ?>",
 		cid:"<?php echo ($cityid); ?>",
@@ -529,76 +438,6 @@
         }, "", "#<?php echo ($replaceId); ?>");
     });
 	
-		$("select[name='<?php echo ($pref); ?>_assortmentSelect']").change(function(){
-        var Str = this.value;
-        var arr = Str.split("_");
-        var name = arr[0]
-        var id = arr[1];
-        
-       var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll";
-        ajaxRequest("post", url, {
-        p: "<?php echo ($pgInfo['nowPage']); ?>",
-        pid: "<?php echo ($prid); ?>",
-        pname: "<?php echo ($pname); ?>",
-		cid:"<?php echo ($cityid); ?>",
-		cname:"<?php echo ($cityname); ?>",
-		zid:"<?php echo ($zoneid); ?>",
-		zname:"<?php echo ($zonename); ?>",
-		mid:"<?php echo ($marketid); ?>",
-		mname:"<?php echo ($marketname); ?>",
-		aid:id,
-		aname:name,
-		mtype:"<?php echo ($mtype); ?>"
-        }, "", "#<?php echo ($replaceId); ?>");
-    });
-		
-	$("select[name='<?php echo ($pref); ?>_goodsVarietySelect']").change(function(){
-        var Str = this.value;
-        var arr = Str.split("_");
-        var name = arr[0]
-        var id = arr[1];
-        
-       var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll";
-        ajaxRequest("post", url, {
-        p: "<?php echo ($pgInfo['nowPage']); ?>",
-        pid: "<?php echo ($prid); ?>",
-        pname: "<?php echo ($pname); ?>",
-		cid:"<?php echo ($cityid); ?>",
-		cname:"<?php echo ($cityname); ?>",
-		zid:"<?php echo ($zoneid); ?>",
-		zname:"<?php echo ($zonename); ?>",
-		mid:"<?php echo ($marketid); ?>",
-		mname:"<?php echo ($marketname); ?>",
-		aid:"<?php echo ($aid); ?>",
-		aname:"<?php echo ($aname); ?>",
-		vid:id,
-		vname:name,
-		mtype:"<?php echo ($mtype); ?>"
-        }, "", "#<?php echo ($replaceId); ?>");
-    });
-	//从左边移到右边
-	removeSelectOption("<?php echo ($pref); ?>_left_marketgoods","<?php echo ($pref); ?>_goodsSelect_left","<?php echo ($pref); ?>_goodsSelect_right","<?php echo ($pref); ?>_alert_checkbox_choose");
-	//从右边移到左边
-	removeSelectOption("<?php echo ($pref); ?>_right_marketgoods","<?php echo ($pref); ?>_goodsSelect_right","<?php echo ($pref); ?>_goodsSelect_left","<?php echo ($pref); ?>_alert_checkbox_choose");
-
-	
-	$("#<?php echo ($pref); ?>_edit_marketgoods").click(function(){
-		var str="{";
-		$("select[name='<?php echo ($pref); ?>_goodsSelect_right'] option").each(function(){
-			var val=$(this).val();
-			if (val != null) {
-				var arr = val.split("_");
-				var name = arr[0];
-				var id = arr[1];
-				str+="'"+id+"':'"+name+"',";
-			}
-		});
-		str+="}";
-		var data=window.eval('('+str+')');
-		$.extend(data,{get:data_temp});
-		var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=editMarketgoods";
-        ajaxRequest("post", url,data , "#<?php echo ($pref); ?>_edit_marketgoods", "#<?php echo ($replaceId); ?>");
-	});
 	
 	$("input[name='<?php echo ($pref); ?>_optionsRadios']").change(function(){
 		var val=$(this).val();
@@ -610,12 +449,13 @@
 	});
 
 	var temp = "";
-		var inputdate = $("input[name='<?php echo ($pref); ?>_date']");
+	var inputdate = $("input[name='<?php echo ($pref); ?>_date']");
 		inputdate.bind({
 			focusin: function(){
 				temp = $(this).val();
 			}
 		});
+		
 	function calenderChange(){
 		var val=inputdate.val();
 			if (temp != val) {
@@ -623,7 +463,7 @@
 		$.extend(data,{mtime:val});
 		 var url = host + "g=<?php echo ($group); ?>&m=<?php echo ($module); ?>&a=showAll";
 		 ajaxRequest("post", url,data , "", "#<?php echo ($replaceId); ?>");
-			}
+		}
 	}
 	
 
