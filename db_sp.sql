@@ -201,6 +201,7 @@ CREATE TABLE `sp_market_price` (
    `maxprice` decimal(10,3) default 0.000 COMMENT '最高价格',
     `minprice` decimal(10,3) default 0.000 COMMENT '最低价格',
   `mtime` int(11) unsigned NOT NULL COMMENT '修改时间',
+  `uid` int(11) unsigned NOT NULL COMMENT '单位',
   PRIMARY KEY  (`priceid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

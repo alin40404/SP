@@ -517,6 +517,8 @@ function mutilSaveByGoods(btnSaveId,prefTextArea,prefImg, checkboxName, tipInfoI
 	});
 }
 
+
+
 	function modifyimgEdit(btnId,editId,url,modalId,showimgId,preffiles,prefmodify){
 			var btn=$(btnId);
 			btn.click(function(){

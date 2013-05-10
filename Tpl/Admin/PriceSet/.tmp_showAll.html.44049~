@@ -69,7 +69,6 @@
     <label style="display:inline;"><input type="radio" class="<{$pref}>_optionsRadios" name="<{$pref}>_optionsRadios" id="<{$pref}>_optionsRadios1" value="零售" <?php if($mtype=='零售') echo 'checked=checked'; ?> />零售</label>
 		</span>
 		<span class="add-on">日期：<input style=" height:20px; margin: 0px;padding:0px;" type="text" class="mh_date" name="<{$pref}>_date" readonly="true" value="<{$mtime}>" /></span>
-		
 		</div>
         <?php 
 		$count=count($data);
@@ -115,31 +114,13 @@ if($count<=0){ ?>
                 </tr>
             </thead>
             <tbody>
-           <?php 
-		   $count=count($units);
-		   $selectUnits="";
-			if($count<=0){ 
-			$selectUnits=<<<SHOW
-			<option></option>
-SHOW;
-			}else{
-			foreach($units as $key=>$value){
-			$uid0=$value['uid'];
-			$uname0=$value['uname'];
-			$selectUnits .='<option ';
-			if($uid==$uid0){
-				$selectUnits.='selected="selected" ';
-			}
-			$selectUnits .='value="'.$uid0.'">'.$uname0.'</option>';
+                <?php 
 
-			 }
-			}
-				
 foreach($data as $id=>$array){
 $gid=$array['gid'];
 $name=$array['gname'];
 $id=$array['mgid'];
-//$mtype=$array['mtype'];
+$mtype=$array['mtype'];
 $price=$array['price'];
 $maxprice=$array['maxprice'];
 $minprice=$array['minprice'];
@@ -148,7 +129,7 @@ $uid=$array['uid'];
                 <tr>
                     <td>
                         <label class="<{$pref}>_checkbox">
-                            <input id="<{$pref}>_checkbox_<?php echo $gid; ?>" type="checkbox" name="<{$pref}>_checkbox" />
+                            <input id="<{$pref}>_checkbox_<?php echo $id; ?>" type="checkbox" name="<{$pref}>_checkbox" />
                             <?php echo $num; $num++?>
                         </label>
                     </td>
@@ -157,25 +138,35 @@ $uid=$array['uid'];
 					</td>
 					<td>
 						<{$uname}>
-			<select style="width:auto;" id="<{$pref}>_unitsSelect_<{$gid}>" name="<{$pref}>_unitsSelect_<{$gid}>" class="span1" rel="tooltip" data-placement="right" title="市场">
-			<?php echo $selectUnits;  ?>
+			<select style="width:auto;" name="<{$pref}>_unitsSelect" class="span1" rel="tooltip" data-placement="right" title="市场">
+        	<?php $count=count($units);
+			if($count<=0){ ?>
+            <option></option>
+			<?php }else{
+			foreach($units as $key=>$value){
+			$uid0=$value['uid'];
+			$uname0=$value['uname'];
+			 ?>
+            <option <?php if($uid==$uid0){echo "selected='selected'";} ?> value="<?php echo $uname0,'_',$uid0; ?>"><?php echo $uname0; ?></option>
+            <?php }
+			}?>
         </select>
 					</td>
 					<td>
-				 <input style="width:100px;" id="<{$pref}>_input_price_<?php echo $gid; ?>" name="<{$pref}>_text" class="input-medium" type="text" placeholder="价格" value="<?php echo $price; ?>" />
+				 <input style="width:100px;" id="<{$pref}>_input_<?php echo $id; ?>" name="<{$pref}>_text" class="input-medium" type="text" placeholder="价格" value="<?php echo $price; ?>" />
 					</td>
 					<td >
-				 <input style="width:100px;" id="<{$pref}>_input_minprice_<?php echo $gid; ?>" name="<{$pref}>_text" class="input-medium" type="text" placeholder="价格" value="<?php echo $minprice; ?>" />
+				 <input style="width:100px;" id="<{$pref}>_input_<?php echo $id; ?>" name="<{$pref}>_text" class="input-medium" type="text" placeholder="价格" value="<?php echo $minprice; ?>" />
 					</td>
                     <td >  
-				 <input style="width:100px;" id="<{$pref}>_input_maxprice_<?php echo $gid; ?>" name="<{$pref}>_text" class="input-medium" type="text" placeholder="价格" value="<?php echo $maxprice; ?>" />
+				 <input style="width:100px;" id="<{$pref}>_input_<?php echo $id; ?>" name="<{$pref}>_text" class="input-medium" type="text" placeholder="价格" value="<?php echo $maxprice; ?>" />
 					</td>
                     <td>
-                        <button id="<{$pref}>_edit_<?php echo $gid; ?>" type="button" class="<{$pref}>_edit btn btn-mini btn-info" data-loading-text="保存中..">保存
+                        <button id="<{$pref}>_edit_<?php echo $id; ?>" type="button" class="<{$pref}>_edit btn btn-mini btn-info" data-loading-text="保存中..">保存
                         </button>
                     </td>
                     <td>
-                        <button id="<{$pref}>_delete_<?php echo $gid; ?>" type="button" data-toggle="modal" class="<{$pref}>_delete btn btn-mini btn-warning" data-loading-text="删除中.." data-target="#<{$pref}>_deleteModal">删除
+                        <button id="<{$pref}>_delete_<?php echo $id; ?>" type="button" data-toggle="modal" class="<{$pref}>_delete btn btn-mini btn-warning" data-loading-text="删除中.." data-target="#<{$pref}>_deleteModal">删除
                         </button>
                     </td>
                 </tr>
@@ -390,8 +381,10 @@ $name=$array['uname'];
     invertChoose("<{$pref}>_units_check_invert", "<{$pref}>_checkbox_units");
     
 	
-	mutilSaveByGoodsPrice("<{$pref}>_saveAll", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose", host + "g=<{$group}>&m=<{$module}>&a=editAllByGoodsPrice",data_temp, "<{$replaceId}>");
-
+//	mutilSaveByGoods("<{$pref}>_saveAll","<{$pref}>_textarea_edit_","<{$pref}>_delimg_edit_", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose", host + "g=<{$group}>&m=<{$module}>&a=editAll", {
+//        p: "<{$pgInfo['nowPage']}>"
+//    }, "<{$replaceId}>");
+//    
     mutilDel("<{$pref}>_deleteAll", "<{$pref}>_checkbox", "<{$pref}>_alert_checkbox_choose", "<{$pref}>_deleteAllModal", "<{$pref}>_to_deleteAll", host + "g=<{$group}>&m=<{$module}>&a=deleteAll", {
         p: "<{$pgInfo['nowPage']}>"
     }, "<{$replaceId}>");
@@ -520,43 +513,7 @@ $name=$array['uname'];
 		}
 	}
 	
-	
-	    function mutilSaveByGoodsPrice( btnSaveId, checkboxName, tipInfoId, url, data, insertHtmlId){
-		var btn = $("#" + btnSaveId);
-		btn.click(function() {
-		var dataStr = "{'data':{";
-		var isEmpty = true;
-		$("input[name='" + checkboxName + "']").each(
-						function() {
-							if ($(this).attr("checked") == "checked") {
-								var arrId = (this.id).split("_");
-								var tempId = arrId[arrId.length - 1];
-								var pref=arrId[0];
-								var tempPriceValue = $("#" + pref + "_input_price_"+ tempId).val();
-								var tempMinPriceValue = $("#" + pref + "_input_minprice_"+ tempId).val(); 
-								var tempMaxPriceValue = $("#" + pref + "_input_maxprice_"+ tempId).val();
-								tempPriceValue=(tempPriceValue==""||tempPriceValue=="undefined")?0:tempPriceValue;
-								tempMinPriceValue=(tempMinPriceValue==""||tempMinPriceValue=="undefined")?0:tempMinPriceValue;
-								tempMaxPriceValue=(tempMaxPriceValue==""||tempMaxPriceValue=="undefined")?0:tempMaxPriceValue;
-								var uid=$("#" + pref + "_unitsSelect_"+ tempId).val();
-								dataStr += "'" + tempId + "':{price:'" + tempPriceValue+ "',minprice:'"+tempMinPriceValue+ "',maxprice:'"+tempMaxPriceValue+ "',uid:'"+uid+"'},";
-								isEmpty = false;
-							}
-						});
-		dataStr += "}}";
-		var d = window.eval("(" + dataStr + ")");
-		if (isEmpty) {
-			$('#' + tipInfoId).modal({
-				show : true,
-				keyboard : false
-			})
-		} else {
-			$.extend(d, data);
-			ajaxRequest("post", url, d, btn, "#" + insertHtmlId);
-		}
-	});
-		
-	}
+
 	
 	$(document).ready(function(){
 	var date=new Date();

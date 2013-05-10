@@ -496,12 +496,12 @@ CREATE TABLE IF NOT EXISTS `sp_market_price` (
   `priceid` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `mgid` int(11) unsigned NOT NULL COMMENT '市场上的商品id',
   `mtype` enum('批发','零售') NOT NULL DEFAULT '批发' COMMENT '销售方式:批发或零售',
-  `price` decimal(10,3) NOT NULL COMMENT '价格',
-  `maxprice` decimal(10,3) DEFAULT '0.000' COMMENT '最高价格',
-  `minprice` decimal(10,3) DEFAULT '0.000' COMMENT '最低价格',
+  `price` decimal(10,2) NOT NULL COMMENT '价格',
+  `maxprice` decimal(10,2) DEFAULT '0.00' COMMENT '最高价格',
+  `minprice` decimal(10,2) DEFAULT '0.00' COMMENT '最低价格',
   `mtime` int(11) unsigned NOT NULL COMMENT '修改时间',
-  PRIMARY KEY (`priceid`),
-  UNIQUE KEY `mgid` (`mgid`)
+  `uid` int(11) unsigned NOT NULL COMMENT '单位',
+  PRIMARY KEY (`priceid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------

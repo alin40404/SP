@@ -42,6 +42,8 @@ class PriceSetAction extends AdminCommonAction {
 				$mtime = $_GET ['mtime'];
 			}
 			$p = $_GET ['p'];
+			
+			
 		} else if ($_SERVER ['REQUEST_METHOD'] == 'POST') {
 			$_POST = stripslashesDeep ( $_POST );
 			$p = $_POST ['p'];
@@ -104,15 +106,30 @@ class PriceSetAction extends AdminCommonAction {
 			
 			$data = $originDB->query ( $sql_mg );
 			
-			$sql_temp = "SELECT `mgid`, `mtype`, `price`, `maxprice`, `minprice`, `uid` FROM `sp_market_price` WHERE `mtype`='$mtype' and `mtime`=$now and `mgid` = ";
+			$sql_temp = "SELECT `mgid`, `mtype`, `price`, `maxprice`, `minprice`, `uid` FROM `sp_market_price` WHERE `mtype`='$mtype' and `mtime`='$now' and `mgid` in ";
+			$first=true;
 			foreach ( $data as $id => $value ) {
 				$gid = $value ['gid'];
-				$sql_mg = $sql_temp . "(select mgid from sp_market_goods where mid='$marketid' and gid='$gid' limit 1) ";
-				$result = $originDB->query ( $sql_mg );
-				if ($result != null) {
-					$data [$id] = array_merge ( $value, $result [0] );
+				if($first){
+					$sql_mg = "select mgid from sp_market_goods where (mid='$marketid' and gid='$gid') ";
+					$first=false;
+				}else{
+					$sql_mg .= " or  (mid='$marketid' and gid='$gid') ";
+				}
+
+			}
+			$sql_mg =$sql_temp." ( ".$sql_mg." ) ";
+// 			dump($sql_mg);
+			$result = $originDB->query ( $sql_mg );
+// 			dump($result);
+			if ($result != null) {
+				$i=0;
+				foreach ($data as $id => $value ){
+					$data [$id] = array_merge ( $value, $result [$i] );
+					$i++;
 				}
 			}
+// 			dump($data);
 			$units = $db_price_units->getAll();
 			
 		}
@@ -152,6 +169,9 @@ class PriceSetAction extends AdminCommonAction {
 		$this->assign ( 'marketid', $marketid );
 		$this->assign ( 'marketname', $marketname );
 		
+// 		$mtype=(empty($mtype))?"批发":$mtype;
+// 		$mtype="批发";
+// 		var_dump($mtype);
 		$this->assign ( 'mtype', $mtype );
 		$this->assign ( 'mtime', $mtime );
 		$this->assign ( 'units', $units );
@@ -261,7 +281,7 @@ class PriceSetAction extends AdminCommonAction {
 			}
 			$style = "block";
 		}
-		$this->redirect ( 'showAll', array (
+		$this->redirect ('showAll', array (
 				'p' => $p,
 				'vid' => $id,
 				'addClass' => 'accordion-body collapse in',
@@ -271,7 +291,7 @@ class PriceSetAction extends AdminCommonAction {
 		) );
 	}
 	
-	public function deleteByUnitsId() {
+	public function deleteByUnitsId(){
 		$db = D ( 'PriceUnits' );
 
 		if ($_SERVER['REQUEST_METHOD']=='POST') {
@@ -360,4 +380,58 @@ class PriceSetAction extends AdminCommonAction {
 		$this->redirect ( 'showAll',$post_array );
 		
 	}
+	
+	public function editAllByGoodsPrice(){
+		$db = M ( 'MarketPrice' );
+		$db_mg = D ( 'MarketGoods' );
+// 		$db_price_units = D ( 'PriceUnits' );
+// 		var_dump($_POST);exit;
+		if ($_SERVER['REQUEST_METHOD']=='POST') {
+			$post_array=array();
+			$post_array =  $_POST ;
+			$priceData = $post_array ['data'];
+			$mid=$post_array['mid'];
+			$mtype=$post_array['mtype'];
+			$mtime=$post_array['mtime'];
+			if (isset ( $mtime ) && ! empty ( $mtime )) {
+				$time = explode ( '-', $mtime );
+				$mtime = mktime ( 0, 0, 0, $time [1], $time [2], $time [0] );
+			} else {
+				$mtime = mktime ( 0, 0, 0, idate ( "n" ), idate ( "j" ), idate ( "Y" ) );
+			}
+			
+			foreach($priceData as $gid => $value){
+// 				$uid=$value['uid'];
+				$mgid= $db_mg->getMgId($mid,$gid);
+// 				$price=$value['price'];
+// 				$minprice=$value['minprice'];
+// 				$maxprice=$value['maxprice'];
+				$value['mgid']=$mgid;
+				$value['mtime']= $mtime;
+				$value['mtype']=$mtype;
+				$db->where("mgid='$mgid' and mtime='$mtime'")->delete();
+				$result=$db->add($value);
+			}
+			
+// 			$result = $db->addByName ( $name );
+				
+			if ($result) {
+				$info = "增加成功！";
+				$class = "alert alert-success";
+			} else {
+				$info = "增加失败！";
+				$class = "alert alert-error";
+			}
+			$style = "block";
+			unset($post_array['data']);
+			$post_array['style']=$style;
+			$post_array['info']=$info;
+			$post_array['class']=$class;
+		}
+		// 		dump($post_array);
+		// 		exit();
+		$this->redirect ( 'showAll',$post_array );
+		
+	}
+	
 }

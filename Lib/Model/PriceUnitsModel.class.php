@@ -44,6 +44,8 @@ class PriceUnitsModel extends Model {
 		return $result;
 	}
 	
+	
+	
 	/**
 	 * 根据名称精确查询
 	 *

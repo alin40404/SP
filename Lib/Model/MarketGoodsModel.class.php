@@ -71,9 +71,18 @@ class MarketGoodsModel extends Model{
 	 * @return Ambigous <mixed, string, boolean, NULL, unknown>
 	 */
 	public function selectPreciseByName($mid, $gid) {
-		$result = $this->where ( "mid='$mid' and gid ='$gid'" )->select ();
+		$result = $this->where ( "mid='$mid' and gid ='$gid'" )->find ();
 		return $result;
 	}
+	
+	public function getMgId($mid, $gid){
+		$result= $this->selectPreciseByName($mid, $gid);
+		if($result){
+			return $result['mgid'];
+		}
+		return false;
+	}
+	
 	public function selectById($id = 1) {
 		return $this->where ( "gid='$id'" )->find ();
 	}
