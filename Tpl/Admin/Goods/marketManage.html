@@ -4,15 +4,51 @@
 
 <include file="Public:navigation"/>
 <div id="main-edit" style="border-top: thin #CCC solid; padding: 10px 0 0;">
+
 <div id="marketSet">
 	
+</div>
+
+</div>
+<!-- 
+<div id="main-edit" style="border-top: thin #CCC solid;">
+    <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                    <span><i class="icon-random"></i><{$currentLocal}></span>
+                </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse in">
+                <div class="accordion-inner">
+                <div id="marketSet">
 	
+				</div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                    <span><i class="icon-random"></i>市场类型</span>
+                </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+                <div  class="accordion-inner">
+                	<div id="tableGoods">
+                		
+                	</div>
+                 </div>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
+ -->
 <script type="text/javascript">
 $(document).ready(function(){
 	 loadFile("marketSet", host + "g=Admin&m=MarketManage&a=showAll");
 });
+
 
 </script>
 <include file="Public:footer"/>

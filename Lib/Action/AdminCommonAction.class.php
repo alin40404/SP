@@ -32,45 +32,45 @@ class AdminCommonAction extends CommonAction{
 		// if($auth){
 		// }
 		$this->_user = array (
-				'uid' => 0,
+				'adminId' => 0,
 				'uname' => '',
 				'status' => 0
 		);
 		
-		$uid = '';
+// 		$adminId = '';
 	
-		$userModel = D ( 'UserVerified' );
-		$user = $userModel->infor ( $uid, array (
-				'uid',
-				'uname',
-				'status'
-		) );
+// 		$userModel = D ( 'UserVerified' );
+// 		$user = $userModel->infor ( $adminId, array (
+// 				'adminId',
+// 				'uname',
+// 				'status'
+// 		) );
 	
-		$this->_user = array (
-				'uid' => $user ['uid'],
-				'uname' => $user ['uname'],
-				'status' => $user ['status']
-		);
+// 		$this->_user = array (
+// 				'adminId' => $user ['adminId'],
+// 				'uname' => $user ['uname'],
+// 				'status' => $user ['status']
+// 		);
 	
-		if (! $this->isAjax () && ! $this->isPost ()) {
-			$this->assign ( 'user', $this->_user );
-		}
+// 		if (! $this->isAjax () && ! $this->isPost ()) {
+// 			$this->assign ( 'user', $this->_user );
+// 		}
 	}
 	
 	private function _check_login() {
-		if (is_array ( MODULE_NAME, C ( 'LOGIN_MODULES' ) ) && ! in_array ( ACTION_NAME, C ( 'NOT_LOGIN_ACTIONS' ) ) && ! $this->_user ['uid']) {
+		if (is_array ( MODULE_NAME, C ( 'LOGIN_MODULES' ) ) && ! in_array ( ACTION_NAME, C ( 'NOT_LOGIN_ACTIONS' ) ) && ! $this->_user ['adminId']) {
 			// 需要登录
 			if ($this->isAjax ()) {
 				$this->ajaxReturn ( '', '未登录', 0 );
 			} else {
-				redirect ( reUrl ( ('User/login') ) );
+				redirect ( reUrl ( ('Index/login') ) );
 			}
 		}
 	}
 	protected function isLogin(){
-		$user=$_SESSION['user'];
-		if($user==null||empty($user)||$user==''){
-			$this->redirect('User/login');
+		$adminName=$_SESSION['adminName'];
+		if($adminName==null||empty($adminName)){
+			$this->redirect('Index/login');
 		}
 	}
 }

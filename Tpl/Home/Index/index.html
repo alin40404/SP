@@ -1,54 +1,335 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title><{$title}></title>
-	<link rel="stylesheet" type="text/css"
-		href="__PUBLIC__/Css/Home/bootstrap-responsive.min.css" />
-	<link rel="stylesheet" type="text/css"
-		href="__PUBLIC__/Css/Home/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css"
-		href="__PUBLIC__/Css/Home/common.css" />
 
-	<script type="text/javascript">
-		var _public_ = '__PUBLIC__';
-	</script>
-	<script type="text/javascript" src="__PUBLIC__/Js/bootstrap.min.js"></script>
-</head>
 
-<body>
-
-	<div id="header">
-		<!-- 响应式导航条 -->
-		<div class="navbar navbar-inverse">
-				<div id="conHeader" class="container">
-					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-					<a class="btn btn-navbar" data-toggle="collapse"
-						data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span>
-					</a>
-					<div  class="nav-collapse collapse">
-						<span><a href="#">加关注</a>| <a href="#">收藏SP</a>| <a
-							href="#">网站首页</a>| <a href="#">联系我们</a></span>
-					</div>
-				</div>
-			</div>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>菜篮子价格查询</title>
+		<base target="_blank" />
+	  	<link rel="stylesheet" href="__PUBLIC__/css/Home/goodsview.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/bootstrap-responsive.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
 		
-	</div>
-	<div class="page">
-		<div id="main"></div>
-	</div>
+		<script type="text/javascript" src="__PUBLIC__/js/Home/kissy-min.js"></script>
+	  	<script src="__PUBLIC__/js/Home/header-v8-min.js?t=20101130.js"></script>
+		<script src="__PUBLIC__/js/Home/header.js"></script>
 
-	<!-- footer -->
-	<div class="footer empty"></div>
-	<div id="footer">
-		<div class="container">
+		
+		<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/bootstrap.js"></script>
+	</head>
+	<body><script type="text/javascript">
+	/*
+(function (d) {
+var t=d.createElement("script");t.type="text/javascript";t.async=true;t.id="tb-beacon-aplus";
+t.setAttribute("exparams","category=&userid=&aplus");
+t.src=("https:"==d.location.protocol?"https://s":"http://a")+".tbcdn.cn/s/aplus_v2.js";
+d.getElementsByTagName("head")[0].appendChild(t);
+})(document);
+	*/
+</script>
+
+<div id="header">
+  <div id="etao-nav">
+    <p class="login-info">
+    <!-- 
+	  <a rel="nofollow" class="sep nav-link-item" href="http://www.taobao.com/" target="_blank">上 淘宝</a>
+      <a rel="nofollow" class="sep nav-link-item" href="http://www.tmall.com/" target="_blank">逛  天猫</a>
+	 -->
+	 	  <span class="add-on"><input style=" height:20px;width:108px; margin: 0px;padding:0px;" type="text" class="mh_date" name="GoodspriceSet_date" readonly="true" value="2013-5-15"></span>
+	 	  <span class="add-on"><input style=" height:20px; margin: 0px;padding:0px;" type="text" class="mh_date" name="GoodspriceSet_date" readonly="true" value="地区"></span>
+	 	  <span class="add-on"><input style=" height:20px;width:108px; margin: 0px;padding:0px;" type="text" class="mh_date" name="GoodspriceSet_date" readonly="true" value="市场"></span>
+
+	</p>
+    <ul class="quick-menu">
+         <li>	 	 
+          <a rel="nofollow" class="sep nav-link-item" href="index.php?g=Admin&m=Index&a=login" target="_bank" >进入后台</a>
+    </li>
+      <li class="home">
+      <a rel="nofollow" class="sep nav-link-item" href="index.php?g=Home&m=Member&a=login" target="_top" >登录</a>
+      </li>
+      <li>
+      <a rel="nofollow" class="sep nav-link-item" href="index.php?g=Home&m=Member&a=register" target="_top" >注册</a>
+      </li>
+
+      <li class="favorite menu-item">
+        <div class="menu">
+            <a class="menu-hd" style="width:48px;" href="#" target="_top" rel="nofollow">收藏夹<b></b></a>
+            <div class="menu-bd" style="width:82px;height:73px;line-height:1.7;">
+                <div class="menu-bd-panel" style="padding:8px 10px;">
+                    <div>
+                        <a href="#" target="_top" rel="nofollow">收藏的宝贝</a>
+                        <a href="#" target="_top" rel="nofollow">热门收藏</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="last"><a id="J_addFavor" href="#">收藏本页</a></li>
+    </ul>
+	<!--[if IE 6]>
+	<script type="text/javascript">
+	(function() {
+		var navWrapper = document.getElementById('etao-nav'),
+			divs = navWrapper.getElementsByTagName('div');
+		for(var i = 0, len = divs.length; i < len; i++) {
+			if(divs[i].className !== 'menu') { continue; }
+			divs[i].onmouseover = function() { this.className += ' hover'; }
+			divs[i].onmouseout = function() { this.className = 'menu'; }
+		}
+	})();
+	</script>
+    <![endif]-->
+  </div>
+
+  <div class="header-bd">
+    <h1 id="logo">
+ 
+      <a href="#" class="sub-logo" target="_self">
+      <img src="__PUBLIC__/images/Home/front_bg.png" title="菜篮子">
+      </a>
+
+      <a href="#" class="sub-logo" target="_self">
+      	<img src="__PUBLIC__/images/Home/foodbacket.png" title="菜篮子">
+      </a>
+    </h1>
+    <div class="right-common">
+      <a href="#" class="logo" target="_blank">
+      	<img src="__PUBLIC__/images/Home/front_logo.png" title="菜篮子" />
+      </a>
+    <!--  
+      <a href="#" target="_blank"><img src="" title="菜篮子" /></a>
+     -->
+    </div>
+    <div class="search-form etao-search" id="J_searchFormV2">
+      <form action="/search" method="get" id="J_etaoForm" target="_self">
+        <fieldset tabindex="0">
+          <legend>菜篮子搜索</legend>
+          <div class="s-bg-outer" id="J_sBgOuter">
+              <div class="s-bg-inner clear-fix">
+                <div class="s-menu" id="J_sMenu">
+                  <div id="J_sMenuSelected" class="s-menu-selected">常规<i></i></div>
+                  <div class="s-menu-container" id="J_sMenuContainer">
+                  
+                      <ul class="s-menu-list" id="J_sMenuList" data-redirect="false">
+                        <li data-query="q"><a target="_self" hidefocus="true" href="">高级</a></li>
+                        <li class="selected"><a target="_self" hidefocus="true" href="">常规</a></li>
+
+                      </ul>
+                   
+                  </div>
+                </div>
+                <button type="submit" class="s-btn-submit" id="J_sBtnSubmit">search</button>
+                <button type="button" class="s-btn-clear" id="J_sBtnClear">clear</button>
+                <div class="s-ipt-outer">
+                  <fieldset tabindex="1">
+                    <legend>菜篮子搜索框</legend>
+                    <div class="s-ipt-inner">
+                        <label for="J_searchIpt">菜篮子价格查询</label>
+                         <input id="J_searchIpt" accesskey="s" x-webkit-speech x-webkit-grammar="builtin:translate" autocomplete="off" name="keyword" value="菜篮子" maxlength="100">
+                    </div>
+                  </fieldset>
+                </div>
+            </div>
+          </div>
+        </fieldset>
+        <script>
+      
+        var searchBox = new KISSY.searchTabBox();
+        searchBox.on('tabChanged', function (e) {
+          var url = 'http://log.mmstat.com/tblm.3.43';
+          (new Image()).src = url + '?logtype=2&cache=' + ((''+Math.random()).substring(2));
+          t = KISSY.one(e.eventData);
+          if(t.hasAttr('data-query')){
+            KISSY.one('#J_searchIpt').attr('name','q');
+          }else{
+            KISSY.one('#J_searchIpt').attr('name','keyword');
+          }
+          
+          //
+          var menu = KISSY.one('#J_sMenuList').all('li');
+          
+          if(menu[1]==e.eventData){
+            KISSY.one('#J_etaoForm').attr('target','_self');
+          }else{
+            KISSY.one('#J_etaoForm').attr('target','_blank');
+          }
+        });
+        /*   
+        searchBox.on('submited', function (e) {
+          var url = 'http://log.mmstat.com/tblm.3.41';
+          (new Image()).src = url + '?logtype=2&cache=' + ((''+Math.random()).substring(2));
+        });
+        */
+      </script>
+      </form>
+    </div>
+  </div>
+
+</div>
+<!-- header end -->
+		<div id="content">
+  			<div class="grid-c2f clear">
+  				<div class="col-sub">
+<div id="J_popword" class="secition hotword" data-param="mm_15419835_2182922_11077272">
+	<div><h4>猜你喜欢</h4><p id="J_popDefault" style="display:block;"></p></div>
+		
+</div>
+	<div class="section sales-rank">
+    <h4> 浏览排行</h4>
+    <ul>
+      	<li class="item">
+          <div class="itembox">
+            <a class="pic" href="" >
+              <div class="pic-con">
+                <img src="__PUBLIC__/images/goods_demo.png" />
+                 <i class="top1">1</i>
+            </div>
+            </a>
+            <a href=" " class="info">
+              <span class="desc">三金冠 便携塑料提菜器提物器拎菜器拎物器</span>
+              <span class="price">￥4.80</span>
+              <span class="sell">销量:443</span>
+            </a>
+          </div>
+	      </li>
+	      
+	     <li class="item">
+          <div class="itembox">
+            <a class="pic" href="" >
+              <div class="pic-con">
+                <img src="__PUBLIC__/images/goods_demo.png" />
+                                  <i class="top2">2</i>
+                              </div>
+            </a>
+            <a href="" class="info">
+              <span class="desc">便利提菜器 拎菜器 轻便手提挂环袋用提手</span>
+              <span class="price">￥1.00</span>
+              <span class="sell">销量:305</span>
+            </a>
+          </div>
+	      </li>
+	  
+	    </ul>
+ 	 </div>
+
+		<div class="section sales-rank" id="p4pHotshopSection">
+			<h4>店家精选</h4>
+				
+		</div>
+
+		<div class="section sales-rank">
+		 <h4>商家活动</h4>
+
+        
+		</div>
+</div>
+    			<!-- col-sub end -->
+				<div class="col-main">
+					<div class="items-con clear">
+					<div id="J_waterfall" class="items-list" data-url="" style="visibility:hidden;">
+						
+
+		<!--1-->
+		<div class="debug" style="display:none" data-back="" >
+		<span>
+		
+		</span>
+   		</div>
+    	        
+			
+				 							
+		<div class="ks-waterfall item">
+            <div class="photo">
+              <a title="zakka 收纳篮 野餐篮 面包筐 礼品篮" href="#" target="_blank">
+                <img src="__PUBLIC__/images/goods_demo.png" data-pinit="registered"   width="210"  height="124"/>
+                  <span class="alpha-bg"></span>
+              </a>
+              <div class="mask">
+              	<span class="like">
+                  <a class="J_Trigger" href="#" data-item="19160503597"><em class="J_Counter">0</em></a>
+                </span>
+              </div>
+            </div>
+            <ul class="details">
+              <li class="price"><em>￥28.00</em><span class="sales">
+              	                  <i class="icon-taobao"></i>
+                              	已售出70件</span>
+              </li>
+              <li class="more">
+              	<span class="like">
+              	  <a href="#" class="hotsale-btn tiny J_Trigger" data-item="19160503597">
+                    <span><i></i> <em class="J_Counter">0</em> </span>
+                  </a>
+                </span>
+                <span class="comment">
+                  <a class="hotsale-btn tiny" href="" >
+                    <span><i></i> 40 </span>
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>	
+	
+		        									
+								
+						</div>
+						<!-- waterfalll items end -->
+				        <div id="J_loading" class="loading hidden">
+				          <img src="__PUBLIC__/images/Home/front_bg.png" alt="Loading..." width="48" height="48"> <span>宝贝马上放出...</span>
+				        </div>
+					</div>
+		    	</div>
+		    	<!-- col-main end -->
+		  </div>
+		  <div id="J_goTop" class="go-top">top</div>
+		</div>
+
+		<!-- content end -->
+		<div id="footer">
+		  <div id="copyright">
 			<p class="muted credit">
 				All Right Reserved <a href="#">Alin</a> Copyright © 2012 <a
 					href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.
 			</p>
+		  </div>
 		</div>
-	</div>
-
-</body>
+		<!-- footer end -->
+		
+		<script type="text/javascript" src="__PUBLIC__/js/Home/hotsale.screen-201211.js"></script>
+  
+		<script type="text/javascript" src="__PUBLIC__/js/Home/tongji.js"></script>
+		<!--
+		 -->
+		<!-- search box starts -->
+		<script>
+			/*KISSY.use("node,suggest", function (S, Node, Suggest) {
+			    // Initialize a Suggest Object, setting up input element, data source and configs
+			    var input = S.one('#J_searchIpt');
+			    var _suggest = new Suggest('#J_searchIpt', 'http://suggest.taobao.com/sug?code=utf-8&extras=1', {
+			            resultFormat: '约%result%个宝贝',
+			            dataType: 1
+			        });
+			    _suggest.on('beforeSubmit', function(e) {
+			      if(input.val() === '') {
+			        return false;
+			      }
+			    })
+			});
+			
+			*/
+		</script>
+		<!-- search box ends -->
+		<!--
+		
+		<remark>
+			mainSearchQuery : sort=&frontcatid=&count=24&refpid=mm_15419835_2182922_11077272&keyword=%B2%CB%C0%BA%D7%D3&loc=&o=s&tab=&pid=420630_1006&from=hotsale&type=&gprice=&propertyid=&ip=125.88.25.101&ismall=&p4p=&name=tbuad&ac=A7sPCtMjXXQCAQ6axXyMxt8M&creativeid=refposplaceholder&sbid=1_0&offset=0&catid=&clk1=bb3ed5593f1ac0183c92875730e44195
+			releatedWordUrl : s=relasearch&c=&relacount=16&k=%B2%CB%C0%BA%D7%D3
+			monthSellSearchUrl : frontcatid=&count=5&tp=&keyword=%B2%CB%C0%BA%D7%D3&refpid=mm_15419835_2182922_11077272&o=s&pid=420632_1006&from=hotsale&propertyid=&ip=125.88.25.101&ismall=&name=top&ac=A7sPCtMjXXQCAQ6axXyMxt8M&creativeid=refposplaceholder&sbid=1_0&offset=0&catid=&clk1=bb3ed5593f1ac0183c92875730e44195
+			covertedCatId : 
+		</remark>
+		-->
+	</body>
 </html>
+
+

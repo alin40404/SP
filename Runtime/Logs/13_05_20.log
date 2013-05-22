@@ -1,0 +1,764 @@
+[ 2013-05-20T22:12:57+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Member&a=memberManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001840s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: d D:\AppServ\www\SP\Common\common.php 第 202 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.011696s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.042753s ]
+INFO: [ view_template ] --END-- [ RunTime:0.042959s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\8a917ed2bcd96e521ed5a75d9a3e7758.php 第 6 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.396282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.396425s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001298s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001096s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000929s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004794s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001573s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001666s ]
+
+[ 2013-05-20T22:13:03+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AdminUser&a=group
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: d D:\AppServ\www\SP\Common\common.php 第 202 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.011883s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003126s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003336s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\1230cc44402f68dde01126f8d7ccbab7.php 第 6 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.045380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045546s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000824s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000711s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000560s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003182s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000964s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001066s ]
+
+[ 2013-05-20T22:13:07+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AdminUser&a=role
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: d D:\AppServ\www\SP\Common\common.php 第 202 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.011368s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002439s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002807s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\f32672bd5aadfc9de02566c66c64c620.php 第 6 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.160080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160333s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001317s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001292s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.005848s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010616s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001878s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002075s ]
+
+[ 2013-05-20T22:13:10+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AdminUser&a=adminUserManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: d D:\AppServ\www\SP\Common\common.php 第 202 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.012367s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002457s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002688s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\c6caed281bd412ef50aa7b2af90489b0.php 第 6 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.039720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039911s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000623s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000582s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000419s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002493s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000666s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2013-05-20T22:13:29+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AdminUser&a=adminUserManage&d=add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.011468s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+SQL: SELECT Id,fatherId,gName FROM sp_group ORDER BY orderNum DESC [ RunTime:0.000669s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002393s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002753s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\c6caed281bd412ef50aa7b2af90489b0.php 第 6 行.
+NOTIC: [8] Undefined variable: Id D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 129 行.
+NOTIC: [8] Undefined variable: gId D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 139 行.
+NOTIC: [8] Undefined variable: gId D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 139 行.
+NOTIC: [8] Undefined variable: role D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 150 行.
+NOTIC: [8] Undefined variable: adminName D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 158 行.
+NOTIC: [8] Undefined variable: adminPwd D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 165 行.
+NOTIC: [8] Undefined variable: adminPwd D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 172 行.
+NOTIC: [8] Undefined variable: realName D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 178 行.
+NOTIC: [8] Undefined variable: sex D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 184 行.
+NOTIC: [8] Undefined variable: sex D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 186 行.
+NOTIC: [8] Undefined variable: phone D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 192 行.
+NOTIC: [8] Undefined variable: email D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 199 行.
+NOTIC: [8] Undefined variable: bak D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 207 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 215 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 219 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 222 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 231 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 236 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 239 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 240 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 241 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 242 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 245 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 248 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 249 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 250 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 251 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 254 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 257 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 258 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 259 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 260 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 266 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 270 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 273 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 274 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 275 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 276 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 279 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 282 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 283 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 284 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 285 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 291 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 295 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 298 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 299 行.
+NOTIC: [8] Undefined variable: power D:\AppServ\www\SP\Tpl\Admin\AdminUser\AdminUser\add.html 第 300 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.034663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034814s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000752s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000555s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000519s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002769s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000800s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2013-05-20T23:43:23+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001647s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001621s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001741s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013952s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001128s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000912s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001050s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005206s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001730s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001885s ]
+
+[ 2013-05-20T23:43:23+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=admin_top
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.004281s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004680s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\97613306cc1d2b054578cdb67f172667.php 第 3 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.018681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018795s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001310s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001037s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000738s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005545s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001186s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2013-05-20T23:43:23+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=left
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002346s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001293s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001405s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adSetUrl D:\AppServ\www\SP\Runtime\Cache\Admin\d5a6cb968d935d4e4130eeb4fc648deb.php 第 158 行.
+NOTIC: [8] Undefined variable: linkManage D:\AppServ\www\SP\Runtime\Cache\Admin\d5a6cb968d935d4e4130eeb4fc648deb.php 第 159 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013034s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000678s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000573s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002122s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004354s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000807s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2013-05-20T23:43:24+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Index&a=right
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.019673s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+SQL: select * from sp_member [ RunTime:0.002485s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, array given D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 8 行.
+SQL: SELECT a.Id,a.adminName,a.realName,a.sex,a.loginTimes,a.lastLoginIP,a.lastLoginTime,g.gName,r.rName FROM sp_admin AS a LEFT JOIN sp_role AS r ON a.rId=r.Id LEFT JOIN sp_group AS g  ON r.gId = g.Id WHERE adminName="admin" [ RunTime:0.004780s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003861s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004075s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\cafef3aff63e2d88c5dd22f95e60fd8e.php 第 6 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016911s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001012s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000905s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000716s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003749s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001063s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2013-05-20T23:44:19+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=marketManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.012062s ]
+INFO: [ view_template ] --END-- [ RunTime:0.012229s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\14d7e739041034d997c9160e5ca54b69.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.122830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123012s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002051s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000947s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000815s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005395s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001425s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001539s ]
+
+[ 2013-05-20T23:44:21+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=MarketManage&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_market` [ RunTime:0.072727s ]
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.014846s ]
+NOTIC: [2048] Declaration of MarketCityModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketCityModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_market_city` [ RunTime:0.007292s ]
+NOTIC: [2048] Declaration of MarketZoneModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketZoneModel.class.php 第 172 行.
+SQL: SHOW COLUMNS FROM `sp_market_zone` [ RunTime:0.006314s ]
+NOTIC: [2048] Declaration of CategoryModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\CategoryModel.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.004786s ]
+SQL: SELECT * FROM `sp_category` ORDER BY cid  [ RunTime:0.056284s ]
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid  [ RunTime:0.000318s ]
+SQL: SELECT * FROM `sp_market_city` WHERE ( pid='1' )  [ RunTime:0.025710s ]
+SQL: SELECT * FROM `sp_market_zone` WHERE ( cid='2' )  [ RunTime:0.000378s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\MarketManageAction.class.php 第 73 行.
+SQL: SELECT * FROM `sp_market` WHERE ( zid='4' ) ORDER BY mid LIMIT 0,5   [ RunTime:0.000283s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market` WHERE ( zid='4' ) LIMIT 1   [ RunTime:0.012144s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\MarketManageAction.class.php 第 79 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\MarketManageAction.class.php 第 80 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.012937s ]
+INFO: [ view_template ] --END-- [ RunTime:0.013143s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.052447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052628s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000941s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000741s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000622s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003339s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000920s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2013-05-20T23:44:28+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=areaManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.033295s ]
+INFO: [ view_template ] --END-- [ RunTime:0.033426s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\3139a8fa04c5329f19c35a21757e32b1.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.202545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.202716s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001858s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001752s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001582s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007843s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002730s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002973s ]
+
+[ 2013-05-20T23:44:29+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.009431s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 25 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.000487s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 27 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.000375s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 30 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 45 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 46 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.017542s ]
+INFO: [ view_template ] --END-- [ RunTime:0.017710s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.039320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039439s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000830s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000637s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000524s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002924s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001048s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2013-05-20T23:44:30+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=CitySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003643s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketCityModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketCityModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_market_city` [ RunTime:0.012645s ]
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.006805s ]
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid  [ RunTime:0.000412s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\CitySetAction.class.php 第 35 行.
+SQL: SELECT * FROM `sp_market_city` WHERE ( pid='1' ) ORDER BY cid LIMIT 0,5   [ RunTime:0.000334s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_city` WHERE ( pid='1' ) LIMIT 1   [ RunTime:0.000262s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\CitySetAction.class.php 第 43 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\CitySetAction.class.php 第 44 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.138402s ]
+INFO: [ view_template ] --END-- [ RunTime:0.138631s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.119436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119652s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001711s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001047s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000573s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004467s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000947s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2013-05-20T23:44:31+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=ZoneSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002060s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketZoneModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketZoneModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_market_zone` [ RunTime:0.009122s ]
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.008602s ]
+NOTIC: [2048] Declaration of MarketCityModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketCityModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_market_city` [ RunTime:0.007275s ]
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid  [ RunTime:0.000352s ]
+SQL: SELECT * FROM `sp_market_city` WHERE ( pid='1' )  [ RunTime:0.000286s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\ZoneSetAction.class.php 第 47 行.
+SQL: SELECT * FROM `sp_market_zone` WHERE ( cid='2' ) ORDER BY zid LIMIT 0,5   [ RunTime:0.066201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_zone` WHERE ( cid='2' ) LIMIT 1   [ RunTime:0.009996s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\ZoneSetAction.class.php 第 53 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\ZoneSetAction.class.php 第 54 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.017767s ]
+INFO: [ view_template ] --END-- [ RunTime:0.017855s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.064231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064354s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000824s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000565s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000448s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002668s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000794s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2013-05-20T23:44:34+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Goods&a=areaManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001132s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001247s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\3139a8fa04c5329f19c35a21757e32b1.php 第 5 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014458s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000782s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000716s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000594s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003124s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000973s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2013-05-20T23:44:35+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AreaSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.012094s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 25 行.
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid LIMIT 0,5   [ RunTime:0.012090s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php on line 27 and defined D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where D:\AppServ\www\SP\ThinkPHP\Lib\Core\Model.class.php 第 1470 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_province` LIMIT 1   [ RunTime:0.001043s ]
+NOTIC: [8] Undefined index: search D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 30 行.
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 45 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\AreaSetAction.class.php 第 46 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002101s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002569s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.042127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042234s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000724s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000641s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000541s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002773s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000999s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2013-05-20T23:44:36+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=CitySet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketCityModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketCityModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_market_city` [ RunTime:0.013791s ]
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.012808s ]
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid  [ RunTime:0.000740s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\CitySetAction.class.php 第 35 行.
+SQL: SELECT * FROM `sp_market_city` WHERE ( pid='1' ) ORDER BY cid LIMIT 0,5   [ RunTime:0.000618s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_city` WHERE ( pid='1' ) LIMIT 1   [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\CitySetAction.class.php 第 43 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\CitySetAction.class.php 第 44 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002447s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002651s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.024084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024238s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000952s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000563s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000405s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002840s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000850s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2013-05-20T23:44:38+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=ZoneSet&a=showAll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [2048] Declaration of MarketZoneModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketZoneModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_market_zone` [ RunTime:0.012815s ]
+NOTIC: [2048] Declaration of MarketProvinceModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketProvinceModel.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `sp_market_province` [ RunTime:0.016162s ]
+NOTIC: [2048] Declaration of MarketCityModel::addAll() should be compatible with that of Model::addAll() D:\AppServ\www\SP\Lib\Model\MarketCityModel.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `sp_market_city` [ RunTime:0.005077s ]
+SQL: SELECT * FROM `sp_market_province` ORDER BY pid  [ RunTime:0.000377s ]
+SQL: SELECT * FROM `sp_market_city` WHERE ( pid='1' )  [ RunTime:0.000365s ]
+NOTIC: [8] Undefined variable: p D:\AppServ\www\SP\Lib\Action\Admin\ZoneSetAction.class.php 第 47 行.
+SQL: SELECT * FROM `sp_market_zone` WHERE ( cid='2' ) ORDER BY zid LIMIT 0,5   [ RunTime:0.000382s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_market_zone` WHERE ( cid='2' ) LIMIT 1   [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: class D:\AppServ\www\SP\Lib\Action\Admin\ZoneSetAction.class.php 第 53 行.
+NOTIC: [8] Undefined variable: infor D:\AppServ\www\SP\Lib\Action\Admin\ZoneSetAction.class.php 第 54 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000737s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000809s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.213086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.213390s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001087s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001043s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000696s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004116s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001072s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001183s ]
+
+[ 2013-05-20T23:44:39+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=Member&a=memberManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: d D:\AppServ\www\SP\Common\common.php 第 202 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.009563s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001991s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002138s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\8a917ed2bcd96e521ed5a75d9a3e7758.php 第 6 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019870s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001303s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001184s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000565s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004099s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000950s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2013-05-20T23:44:43+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AdminUser&a=group
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: d D:\AppServ\www\SP\Common\common.php 第 202 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.011564s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002841s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003044s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\1230cc44402f68dde01126f8d7ccbab7.php 第 6 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.020541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020696s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001486s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000907s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000753s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000989s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004415s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001132s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2013-05-20T23:44:46+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AdminUser&a=role
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: d D:\AppServ\www\SP\Common\common.php 第 202 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.011417s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002937s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003153s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\f32672bd5aadfc9de02566c66c64c620.php 第 6 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.024556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024752s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001143s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000916s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000744s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005063s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001383s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001493s ]
+
+[ 2013-05-20T23:44:48+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AdminUser&a=adminUserManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: d D:\AppServ\www\SP\Common\common.php 第 202 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.012390s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002387s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002606s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\c6caed281bd412ef50aa7b2af90489b0.php 第 6 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013512s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000864s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000560s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000405s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002761s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000887s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2013-05-20T23:44:51+08:00 ] 127.0.0.1 /sp/index.php?g=Admin&m=AdminUser&a=adminUserManage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: url_rewrite D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 14 行.
+NOTIC: [2] is_array() expects exactly 1 parameter, 2 given D:\AppServ\www\SP\Lib\Action\AdminCommonAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: d D:\AppServ\www\SP\Common\common.php 第 202 行.
+NOTIC: [2048] Declaration of OriginModel::delete() should be compatible with that of Model::delete() D:\AppServ\www\SP\Lib\Model\OriginModel.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `sp_origin` [ RunTime:0.013994s ]
+ERR: Table 'shoppingprice.sp_origin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_origin`
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002701s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002911s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title D:\AppServ\www\SP\Runtime\Cache\Admin\c6caed281bd412ef50aa7b2af90489b0.php 第 6 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016117s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000781s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001107s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000617s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003678s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001043s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001130s ]
+

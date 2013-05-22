@@ -1,0 +1,182 @@
+
+<div id="body_box" style="margin-left:0px;">
+	<style type="text/css">
+/*用户角色权限补充CSS*/
+.rolesA {
+	width: 100%;
+}
+
+.rolesA,.rolesB {
+	display: block;
+	clear: both;
+	margin: 5px;
+}
+
+.rolesA {
+	background-color: #CCC;
+	line-height: 200%;
+	color: #666;
+}
+
+.rolesA h2 {
+	display: block;
+	clear: both;
+	padding: 5px;
+	padding-left: 0px;
+	background-color: #CCC;
+	color: #333;
+}
+
+.rolesA input {
+	vertical-align: middle;
+}
+
+.rolesB {
+	margin-left: 0px;
+}
+
+.rolesB strong {
+	display: block;
+	clear: both;
+	float: left;
+	width: 150px;
+}
+
+.rolesC {
+	float: left;
+	width: 100%;
+	border-bottom: #CCC 1px dotted;
+}
+
+.rolesC label {
+	width: 160px;
+}
+</style>
+	<script language="javascript">
+		$(function() {
+			$(".rolesA > h2 > input").click(
+					function() {
+						if ($(this).attr("checked") == "checked") {
+							$(this).parents(".rolesA").children(".rolesB")
+									.find(":checkbox").attr("checked", true);
+						} else {
+							$(this).parents(".rolesA").children(".rolesB")
+									.find(":checkbox").attr("checked", false);
+						}
+					});
+
+			$(".rolesB > strong > input").click(
+					function() {
+						if ($(this).attr("checked") == "checked") {
+							$(this).parent("strong").next(".rolesC").find(
+									":checkbox").attr("checked", true);
+						} else {
+							$(this).parent("strong").next(".rolesC").find(
+									":checkbox").attr("checked", false);
+						}
+			});
+
+		});
+	</script>
+	<div class="info_all rounded">
+		<h1>
+
+			<i class="icon-edit btnico"></i><span>修改用户资料</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<span class="rounded btn">
+			<i class="icon-plus btnico"></i><span>
+			<a href="?g=Admin&m=AdminUser&a=adminUserManage&d=add">新增用户</a></span>
+			</span>
+			&nbsp;&nbsp;&nbsp;&nbsp; <span class="rounded btn"> <i
+				class="icon-th-list btnico"></i><span><a
+					href="?g=Admin&m=AdminUser&a=adminUserManage&d=list">用户管理</a></span>
+			</span>
+
+		</h1>
+		<link rel="stylesheet"
+			href="__PUBLIC__/effects/validform/css/validform.css"
+			type="text/css" media="all" />
+		<form action="index.php?g=Admin&m=AdminUser&a=adminUserManage&d=<?php echo $d;?>deal" method="post"
+			class="formTable">
+			<input type="hidden" name="Id" value="<?php echo $Id; ?>" />
+			
+			<table width="100%" align="center" border="0" cellpadding="0"
+				cellspacing="0">
+					<tr>
+						<td class="eleName"><span class="need">*</span> 密码:</td>
+						<td class="eleCont"><input type="password" name="adminPwd"
+							value="<?php echo $adminPwd; ?>" class="input_text" datatype="*6-20" nullmsg="请填写"
+							errormsg="填写有误" /></td>
+						<td class="eleTip"><div class="Validform_checktip">请填写</div></td>
+					</tr>
+					<tr>
+						<td class="eleName"><span class="need">*</span> 重复密码:</td>
+						<td class="eleCont"><input type="password" name="adminPwd_re"
+							recheck="adminPwd" value="<?php echo $adminPwd; ?>" class="input_text" datatype="*6-18"
+							nullmsg="与密码一致" errormsg="您两次输入的账号密码不一致" /></td>
+						<td class="eleTip"><div class="Validform_checktip">与密码一致</div></td>
+					</tr>
+					<tr>
+						<td class="eleName"><span class="need">*</span> 真实姓名:</td>
+						<td class="eleCont"><input type="text" name="realName" value="<?php echo $realName; ?>"
+							class="input_text" datatype="*" nullmsg="请填写" errormsg="填写有误" /></td>
+						<td class="eleTip"><div class="Validform_checktip">请填写</div></td>
+					</tr>
+					<tr>
+						<td class="eleName"><span class="need">*</span> 性别:</td>
+						<td class="eleCont"><input <?php if($sex==1){ echo 'checked="checked"';} ?>  value="1" need="1"
+							type="radio" name="sex" class="inputradio" datatype="*"
+							nullmsg="请填写" errormsg="填写有误" /> 男&nbsp;&nbsp;<input <?php if($sex==2){ echo 'checked="checked"';} ?> value="2"
+							type="radio" name="sex" class="inputradio" /> 女&nbsp;&nbsp;</td>
+						<td class="eleTip"><div class="Validform_checktip">请填写</div></td>
+					</tr>
+					<tr>
+						<td class="eleName"><span class="need">*</span> 电话号码:</td>
+						<td class="eleCont"><input type="text" name="phone" value="<?php echo $phone; ?>"
+							class="input_text" datatype="*" ignore="ignore" nullmsg="请填写"
+							errormsg="填写有误" /></td>
+						<td class="eleTip"><div class="Validform_checktip">请填写</div></td>
+					</tr>
+					<tr>
+						<td class="eleName"><span class="need">*</span> Email:</td>
+						<td class="eleCont"><input type="text" name="email" value="<?php echo $email; ?>"
+							class="input_text" datatype="e" ignore="ignore" nullmsg="请填写"
+							errormsg="填写有误" /></td>
+						<td class="eleTip"><div class="Validform_checktip">请填写</div></td>
+					</tr>
+					<tr>
+						<td class="eleName"><span class="need">*</span> 备注:</td>
+						<td class="eleCont">
+						<textarea type="textaera" name="bak" style="width: 400px; height: 80px;" nullmsg="请填写" errormsg="填写有误" /><?php echo $bak; ?></textarea>
+							</td>
+						<td class="eleTip"><div class="Validform_checktip">请填写</div></td>
+					</tr>
+					<tr class="button">
+					<td colspan="3" class="center"><input type="submit"
+						value="提 交" />&nbsp;&nbsp;&nbsp;<input type="reset" value="重 置" /></td>
+				</tr>
+				
+			</table>
+		</form>
+		<script type="text/javascript"
+			src="__PUBLIC__/effects/validform/validform.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".formTable").Validform({
+					tiptype : 2,
+					tipmsg : {
+						tit : "提示信息",
+						w : "请输入正确信息！",
+						r : "通过信息验证！",
+						c : "正在检测信息…",
+						s : "请填入信息！",
+						v : "所填信息没有经过验证，请稍后…",
+						p : "正在提交数据…",
+						err : "出错了！提交地址或返回数据格式是错误！",
+						abort : "Ajax操作被取消！"
+					},
+				});
+			});
+		</script>
+	</div>
+

@@ -1,6 +1,8 @@
 <?php
 class PriceSetAction extends AdminCommonAction {
-	//
+	/**
+	 * 价格管理
+	 */
 	public function showAll() {
 		$style = "none";
 		$db = D ( 'MarketGoods' );

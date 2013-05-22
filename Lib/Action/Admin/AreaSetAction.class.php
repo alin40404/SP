@@ -2,6 +2,10 @@
 class AreaSetAction extends AdminCommonAction {
 	// 省
 	public function showAll() {
+		
+		define('NOWPOWER','c040404');
+		isHavePower(NOWPOWER);
+		
 		$style = "none";
 		$db = D ( 'MarketProvince' );
 		
@@ -59,6 +63,10 @@ class AreaSetAction extends AdminCommonAction {
 		$this->display ();
 	}
 	public function editByName() {
+		
+		define('NOWPOWER','c040402');
+		isHavePower(NOWPOWER);
+		
 		$db = D ( 'MarketProvince' );
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );
@@ -86,6 +94,10 @@ class AreaSetAction extends AdminCommonAction {
 		) );
 	}
 	public function addByName() {
+		
+		define('NOWPOWER','c040401');
+		isHavePower(NOWPOWER);
+		
 		$db = D ( 'MarketProvince' );
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );
@@ -110,6 +122,10 @@ class AreaSetAction extends AdminCommonAction {
 		) );
 	}
 	public function deleteById() {
+		
+		define('NOWPOWER','c040403');
+		isHavePower(NOWPOWER);
+		
 		$db = D ( 'MarketProvince' );
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );
@@ -148,6 +164,10 @@ class AreaSetAction extends AdminCommonAction {
 		) );
 	}
 	public function editAll() {
+		
+		define('NOWPOWER','c040402');
+		isHavePower(NOWPOWER);
+		
 		$db = D ( 'MarketProvince' );
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );
@@ -177,6 +197,10 @@ class AreaSetAction extends AdminCommonAction {
 		) );
 	}
 	public function deleteAll() {
+		
+		define('NOWPOWER','c040403');
+		isHavePower(NOWPOWER);
+		
 		$db = D ( 'MarketProvince' );
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );

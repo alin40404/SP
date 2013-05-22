@@ -1,0 +1,161 @@
+
+<div id="body_box" style="margin-left: 0px;">
+	<link rel="stylesheet" type="text/css"
+		href="__PUBLIC__/effects/flexigrid/css/flexigrid.pack.css" />
+	<script type="text/javascript"
+		src="__PUBLIC__/effects/flexigrid/js/flexigrid.min.js"></script>
+	<div class="info_all rounded">
+		<h1>
+			<i class="icon-th-list btnico"></i><span>用户管理</span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+				class="rounded btn"><i class="icon-plus btnico"></i><span><a
+					href="?g=Admin&m=AdminUser&a=adminUserManage&d=add">新增用户</a></span></span>
+		</h1>
+		<div class="info_search">
+			<form action="" method="get">
+				<table border="0" cellpadding="0" cellspacing="5">
+					<tbody>
+						<tr>
+							<td><input class='input' name='keywords' id='keywords'
+								placeholder='keywords' size='15' type='text' /><input
+								type="hidden" value="" name="lang" id="lang" /><input
+								type="hidden" value="1" name="search" id="search" /></td>
+							<td><a class="button_2" href="#" id="search_button">搜索</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+		<div class="operate">
+			<table border="0" cellpadding="0" cellspacing="5">
+				<tbody>
+					<td><span class="rounded btn" id="search_refresh"><i
+							class="icon-refresh btnico"></i><span>刷新</span></span></td>
+					<td><span class="rounded btn" id="sall_button"><i
+							class="icon-retweet btnico"></i><span>全选</span></span></td>
+					<td><span class="rounded btn" id="del_button"><i
+							class="icon-remove btnico"></i><span>删除</span></span></td>
+				</tbody>
+			</table>
+		</div>
+		<div class="info_list">
+			<table id="info_list" style="display: none"></table>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function deleteOne(id) {
+			$.dialog.confirm("您确定要删除该数据吗？", function() {
+				var id_str = "Id=" + id;
+				$.ajax({
+					type : "POST",
+					url : "?g=Admin&m=AdminUser&a=adminUserManage&d=del",
+					data : id_str,
+					success : function(msg) {
+						if ($.trim(msg) == "ok") {
+							$.dialog.alert("数据删除成功！");
+							$("#info_list").flexReload();
+						} else {
+							$.dialog.alert(msg);
+						}
+					}
+				});
+			}, function() {
+				$.dialog.tips("执行取消操作！");
+			});
+		}
+		$("#search_button").bind("click", function() {
+			$("#info_list").flexSearch({
+				searchitems : "search,keywords,lang"
+			});
+			return false;
+		});
+		$("#search_refresh").bind("click", function() {
+			$("#info_list").flexReload();
+			return false;
+		});
+		$("#sall_button").bind("click", function() {
+			$("#info_list tbody tr").toggleClass("trSelected");
+			return false;
+		});
+		$("#del_button").bind("click", function() {
+			$.dialog.confirm("您确定要删除该数据吗？", function() {
+				var id_str = "Id=0";
+				$.each($("#info_list .trSelected"), function() {
+					id_str += "," + $(this).attr("id");
+				});
+				$.ajax({
+					type : "POST",
+					url : "?g=Admin&m=AdminUser&a=adminUserManage&d=del",
+					data : id_str,
+					success : function(msg) {
+						if ($.trim(msg) == "ok") {
+							$.dialog.alert("数据删除成功！");
+							$("#info_list").flexReload();
+						} else {
+							$.dialog.alert(msg);
+						}
+					}
+				});
+			}, function() {
+				$.dialog.tips("执行取消操作！");
+			});
+			return false;
+		});
+		$("#info_list").flexigrid({
+			"url" : "?g=Admin&m=AdminUser&a=adminUserManage&d=listjson",
+			"dataType" : "json",
+			"colModel" : [ {
+				"name" : "Id",
+				"display" : "ID",
+				"width" : 40,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "adminName",
+				"display" : "\u8d26\u53f7",
+				"width" : 100,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "gName",
+				"display" : "\u6240\u5c5e\u7528\u6237\u7ec4",
+				"width" : 100,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "rName",
+				"display" : "\u6240\u5c5e\u89d2\u8272",
+				"width" : 100,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "realName",
+				"display" : "\u771f\u5b9e\u59d3\u540d",
+				"width" : 80,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "email",
+				"display" : "Email",
+				"width" : 80,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "deal",
+				"display" : "\u64cd\u4f5c",
+				"width" : 150,
+				"sortable" : false,
+				"align" : "center"
+			} ],
+			"sortname" : "addTime",
+			"sortorder" : "DESC",
+			"usepager" : true,
+			"useRp" : true,
+			"rp" : 10,
+			"showTableToggleBtn" : true,
+			"width" : "100%",
+			"height" : "auto"
+		});
+	</script>
+
+</div>

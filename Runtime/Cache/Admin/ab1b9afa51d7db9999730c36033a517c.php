@@ -20,7 +20,7 @@
             </button>
         </div>
         <?php  $count=count($data); $nowPage=$pgInfo['nowPage']; $num=($nowPage-1)*$pgInfo['perPageRows']+1; if($count<=0){ ?>
-        <div class="alert-info" style=" margin: 5px 3px; padding: 2px;">
+      <div class="alert-info" style=" margin: 5px 3px; padding: 2px; text-align: center;">
             暂无数据！
         </div>
         <?php }else{ ?>
@@ -70,23 +70,23 @@
             </ul>
             <ul>
                 <li class="<?php echo ($pgInfo['upName']); ?>">
-                    <a class="<?php echo ($pref); ?>_page<?php echo ($pgInfo['upName']); ?>" id="sp_<?php echo ($pgInfo['up']); ?>" href="#">Prev</a>
+                    <a class="<?php echo ($pref); ?>_page<?php echo ($pgInfo['upName']); ?>" id="sp_<?php echo ($pgInfo['up']); ?>" >Prev</a>
                 </li>
                 <?php foreach($page as $p=>$pid){ if($p==$pgInfo['nowPage']){ ?>
                 <li class="<?php echo $pid['class']; ?>">
-                    <a class="<?php echo ($pref); ?>_now_page" id="<?php echo ($pref); ?>_<?php echo $pid['pid']; ?>" href="#">
+                    <a class="<?php echo ($pref); ?>_now_page" id="<?php echo ($pref); ?>_<?php echo $pid['pid']; ?>" >
                         <?php echo $p; ?>
                     </a>
                 </li>
                 <?php } else{ ?>
                 <li>
-                    <a class="<?php echo ($pref); ?>_page" id="<?php echo ($pref); ?>_<?php echo $pid; ?>" href="#">
+                    <a class="<?php echo ($pref); ?>_page" id="<?php echo ($pref); ?>_<?php echo $pid; ?>" >
                         <?php echo $p; ?>
                     </a>
                 </li>
                 <?php } } ?>
                 <li class="<?php echo ($pgInfo['downName']); ?>">
-                    <a class="<?php echo ($pref); ?>_page<?php echo ($pgInfo['downName']); ?>" id="<?php echo ($pref); ?>_<?php echo ($pgInfo['down']); ?>" href="#">Next</a>
+                    <a class="<?php echo ($pref); ?>_page<?php echo ($pgInfo['downName']); ?>" id="<?php echo ($pref); ?>_<?php echo ($pgInfo['down']); ?>" >Next</a>
                 </li>
             </ul>
             <ul>

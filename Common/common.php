@@ -1,6 +1,211 @@
 <?php
 
+function isHavePower($power){
+	$str=getPowerCacheFile();
+	if(is_string($str)){
+		if(strpos('|'.$str, $power)>0){
+			return true;
+		}else{
+			$descibe="你没有权限操作！";
+			$html_str = dialog_toURL($descibe,'window.history.back();','error');
+			exit($html_str);
+				
+		}
+	}
+}
 
+/**
+ * 删除文件夹下面的文件和文件夹
+ * @param string $filename
+ * @param bool $isRemoveDir  当前文件夹是否删除 ，默认否
+ */
+function rmdirs($filename,$isRemoveDir=false){
+	
+	if(strpos($filename,'/')!=0){
+		$filename='/'.$filename;
+	}
+	$filename=trim($filename,'/').'/';
+	if(is_dir($filename)){
+		$handle=opendir($filename);
+		while($file=readdir($handle)){
+			if($file!='.'&&$file!='..'){
+				$dir=$filename.$file;
+				if(is_dir($dir)){
+				    rmdirs($dir,true);
+				}else{
+					unlink($dir);
+				}
+				
+			}
+		}
+		if($isRemoveDir){
+			rmdir($filename);
+		}
+
+		closedir($handle);
+		
+		if($isRemoveDir){
+			rmdir($filename);
+		}
+		
+	}else if(file_exists($filename)){
+		unlink($filename);
+	}
+}
+
+function clearCacheFile($dir=''){
+	$dirname=(empty($dir))? C('CACHE_FILE_URL'):$dir;
+	rmdirs($dirname);
+	mkdirs($dirname);
+}
+
+function clearLogFile($dir=''){
+	$dirname=(empty($dir))? C('LOGS_FILE_URL'):$dir;
+	rmdirs($dirname);
+	mkdirs($dirname);
+}
+function clearImgCache($dir=''){
+	$dirname=(empty($dir))?C('TEMP_FILE_URL').'img/':$dir;
+	rmdirs($dirname);
+	mkdirs($dirname);
+}
+
+function clearPowerCache($dir=''){
+	$power_url=(empty($dir))? C('TEMP_FILE_URL').'power/':$dir;
+	$powerFileName=$power_url.md5('admin_'.$_SESSION['adminId']).'.php';
+	if(file_exists($powerFileName)){
+		unlink($powerFileName);
+	}
+}
+/**
+ * 从数据库中获取管理员权限
+ * @return mixed
+ */
+function getPower(){
+	$originDB=new OriginModel();
+	$adminname = $_SESSION['adminName'];
+	$table =  C('DB_PREFIX').'admin';
+	$sql = 'SELECT `power` FROM '.$table.' WHERE `adminName`="'.$adminname.'"';
+	//exit($sql);
+	$result = $originDB->getOneRow($sql);
+	$power=$result['power'];
+	return $power;
+}
+
+/**
+ * 获取权限内容
+ * @param string $dir
+ * @return mixed
+ */
+function getPowerCacheFile($dir=''){
+	$power_url=(empty($dir))?C('TEMP_FILE_URL').'power/':$dir;
+	$powerFileName=$power_url.md5('admin_'.$_SESSION['adminId']).'.php';
+	if(!file_exists($powerFileName)){
+		$power=getPower();
+		setPowerCacheFile($power);
+		return $power;
+	}
+	$content=file_get_contents($powerFileName);
+	$power=unserialize($content);
+	return $power;
+}
+
+function setPowerCacheFile($power,$dir=''){
+	$power_url=(empty($dir))?C('TEMP_FILE_URL').'power/':$dir;
+		
+	if(!file_exists($power_url)){
+		mkdirs($power_url);
+	}
+	$powerFileName=$power_url.md5('admin_'.$_SESSION['adminId']).'.php';
+	$power=serialize($power);
+	return file_put_contents($powerFileName, $power);
+	
+}
+
+
+
+/**
+ * 获取IP
+ * @return unknown
+ */
+function getIP(){
+	return $_SERVER['REMOTE_ADDR'];
+}
+/**
+ 函数名：dialog_toURL
+ 参数：$message-提示内容,$icon-图标,$reaction-输入后动作,$forTag-，布尔值，是否要<script>标签
+ 函数作用：指定秒数后执行动作
+ 返回值：对话框
+ **/
+function dialog_toURL($message,$reaction,$icon='info.png',$seconds=3,$forTag=true){
+	$host=C('APP_ABSOLUTE_PATH');
+	$str = '';
+	$str = '$.dialog({';
+	$str .= 'icon: "'.$icon.'",';
+	$str .= 'fixed: true,';
+	$str .= 'lock: true,';
+	$str .= 'ok: true,';
+	$str .= 'content: "'.$message.'",';
+	$str .= 'init: function(){var that = this, i = '.$seconds.';var fn = function () {that.title(i + "秒后关闭");!i && that.close();i --;};timer = setInterval(fn, 1000);fn();},';
+	$str .= 'close: function(){clearInterval(timer);'.$reaction.'}';
+	$str .= '});';
+	if($forTag){
+		$script=<<<SHOW
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+		<title></title>
+		
+        <link id="skin_css" href="__PUBLIC__/css/Admin/common_green.css" type="text/css" rel="stylesheet">
+	    <link href="__PUBLIC__/css/Admin/admin.index.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/Admin/ico.css" />
+		<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+		<script src="__PUBLIC__/js/jquery.cookie.js" type="text/javascript"></script>
+	
+        <script src="__PUBLIC__/effects/artDialog/jquery.artDialog.min.js?skin=grey" type="text/javascript"></script>
+        <script type="text/javascript" src="__PUBLIC__/effects/artDialog/plugins/iframeTools.js"></script>
+		<script src="__PUBLIC__/js/Admin/admin.common.js" type="text/javascript"></script>
+				
+	 <script type="text/javascript">
+			(function (config) {
+				config['background'] = '#000';
+				config['opacity'] = 0.1;
+				config['lock'] = true;
+				config['fixed'] = true;
+				config['okVal'] = '确定';
+				config['cancelVal'] = '取消';
+			})($.dialog.defaults);
+		</script>
+
+       </head>
+<body></body>
+		<script type="text/javascript">
+		__DIALOG__
+		</script>
+</html>
+SHOW;
+		$script=str_replace('__PUBLIC__', $host.'Public', $script);
+		
+		$str =str_replace('__DIALOG__',$str,$script);
+	}
+	return $str;
+}
+
+/**
+ * @函数名:getvar
+ * @参数:$var——GET或POST传递的变量名称
+ * @作用:接收GET或POST传递的变量，并进行基本的安全过滤
+ * @返回值:接收到的值
+ */
+function getvar($var){
+	$result = isset($_GET[$var])?@$_GET[$var]:@$_POST[$var];
+	if(!is_array($result)){
+		if(!get_magic_quotes_gpc())
+			$result = addslashes(trim($result));
+	}
+	return $result;
+}
 /**
  * 重写URL地址
  * 此方法乃修改Thinkphp内置的U方法

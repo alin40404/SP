@@ -1,0 +1,47 @@
+/* CSS Document */
+.formTable .info {
+	margin-left:8px; 
+	border:1px solid #ccc; 
+	padding:8px 20px 8px 10px; 
+	color:#666; 
+	float:left;
+	position:relative;
+	display:none;
+	line-height:20px;
+}
+.formTable .info .dec {
+	top: 9px;
+	display: block;
+	height: 17px;
+	overflow: hidden;
+	position: absolute;
+	left: -8px;
+	width: 8px;
+}
+.formTable .Validform_checktip{
+	display:none;
+	line-height:38px;
+	height:38px;
+}
+.formTable .info .dec s {
+	font-family: simsun;
+	font-size: 16px;
+	height: 19px;
+	left: 0;
+	line-height: 21px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+	width: 17px;
+}
+.formTable .info .dec .dec1 {
+	color: #ccc;
+}
+.formTable .info .dec .dec2 {
+	color: #fff;
+	left: 1px;
+}
+.formTable .input_text , .formTable .textarea{
+	padding:10px;
+	width:245px;
+}

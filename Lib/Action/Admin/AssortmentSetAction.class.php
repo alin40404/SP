@@ -2,6 +2,9 @@
 class AssortmentSetAction extends AdminCommonAction {
 	// 品种
 	public function showAll() {
+		define('NOWPOWER','c040904');
+		isHavePower(NOWPOWER);
+		
 		$style = "none";
 		$db = D ( 'Assortment' );
 		$search = "";
@@ -54,6 +57,13 @@ class AssortmentSetAction extends AdminCommonAction {
 		$this->display ();
 	}
 	public function editByName() {
+		
+
+
+		define('NOWPOWER','c040902');
+		isHavePower(NOWPOWER);
+		
+		
 		$db = D ( 'Assortment' );
 		
 		if ($_POST) {
@@ -82,6 +92,10 @@ class AssortmentSetAction extends AdminCommonAction {
 		) );
 	}
 	public function addByName() {
+		
+		define('NOWPOWER','c040901');
+		isHavePower(NOWPOWER);
+		
 		$db = D ( 'Assortment' );
 		
 		if ($_POST) {
@@ -119,6 +133,12 @@ class AssortmentSetAction extends AdminCommonAction {
 		) );
 	}
 	public function deleteById() {
+		
+		define('NOWPOWER','c040903');
+		
+		isHavePower(NOWPOWER);
+		
+		
 		$db = D ( 'Assortment' );
 		
 		if ($_POST) {
@@ -146,6 +166,11 @@ class AssortmentSetAction extends AdminCommonAction {
 		) );
 	}
 	public function editAll() {
+		
+		define('NOWPOWER','c040902');
+		isHavePower(NOWPOWER);
+		
+		
 		$db = D ( 'Assortment' );
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );
@@ -175,7 +200,12 @@ class AssortmentSetAction extends AdminCommonAction {
 		) );
 	}
 	public function deleteAll() {
+		
+		define('NOWPOWER','c040903');
+		isHavePower(NOWPOWER);
+		
 		$db = D ( 'Assortment' );
+		
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );
 			$p = $_POST ['p'];

@@ -2,6 +2,10 @@
 class GoodsSetAction extends AdminCommonAction{
 	//
 	public function showAll() {
+		
+		define('NOWPOWER','c040904');
+		isHavePower(NOWPOWER);
+		
 		$style = "none";
 		$db =D ( 'Goods' );
 		
@@ -96,6 +100,10 @@ class GoodsSetAction extends AdminCommonAction{
 	}
 	
 	public function editByName() {
+		
+		define('NOWPOWER','c040902');
+		isHavePower(NOWPOWER);
+		
 		$db =D ( 'Goods' );
 		$db1 = D ( 'GoodsVariety' );
 		
@@ -131,6 +139,10 @@ class GoodsSetAction extends AdminCommonAction{
 		$this->redirect ( 'showAll',$post_array);
 	}
 	public function addByName() {
+		
+		define('NOWPOWER','c040901');
+		isHavePower(NOWPOWER);
+		
 		$db =D ( 'Goods' );
 		
 		if ($_POST) {
@@ -179,6 +191,10 @@ class GoodsSetAction extends AdminCommonAction{
 		$this->redirect ( 'showAll',$post_array);
 	}
 	public function deleteById() {
+		
+		define('NOWPOWER','c040903');
+		isHavePower(NOWPOWER);
+		
 		$db =D ( 'Goods' );
 	
 		if ($_POST) {
@@ -216,6 +232,10 @@ class GoodsSetAction extends AdminCommonAction{
 	
 	
 	public function editAll() {
+		
+		define('NOWPOWER','c040902');
+		isHavePower(NOWPOWER);
+		
 		$db =D ( 'Goods' );
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );
@@ -225,7 +245,6 @@ class GoodsSetAction extends AdminCommonAction{
 			$editNum = 0;
 			$num = count ( $data );
 			foreach ( $data as $id => $array ) {
-				dump($array);
 				$name=$array['name'];
 				$gdesc=$array['gdesc'];
 				$img=$array['img'];
@@ -256,6 +275,8 @@ class GoodsSetAction extends AdminCommonAction{
 	}
 	
 	public function deleteAll() {
+		define('NOWPOWER','c040903');
+		isHavePower(NOWPOWER);
 		$db =D ( 'Goods' );
 		if ($_POST) {
 			$_POST = stripslashesDeep ( $_POST );

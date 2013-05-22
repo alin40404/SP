@@ -1,6 +1,12 @@
 <?php
 $config = require(rtrim(dirname(__FILE__), '/\\') . DIRECTORY_SEPARATOR . "db_config.php");
 
+// define('HOST_HTTP',"http://localhost:8001/");
+$array_temp=array(
+		'HOST_HTTP'=>'http://localhost:8001/',
+		'WEB_NAME'=>'菜篮子价格查询系统',
+		'WEB_BAK_NUM'=>'www.foodsupply.com.cn',
+		);
 $array=array(
 		'DB_FIELDS_CACHE'=>false, //缓存字段信息，开发时不缓存
 		'DB_FIELDTYPE_CHECK'=>true,  // 开启字段类型检测
@@ -11,10 +17,10 @@ $array=array(
 		'APP_GROUP_LIST'       	=> 'Admin,Public,Home',//模块分组
 		'DEFAULT_GROUP'			=>	'Home',//默认分组
 		'DEFAULT_MODULE'		=>	'Index',//默认模块
-		'DEFAULT_ACTION'		=>	'Index',//默认操作
+		'DEFAULT_ACTION'		=>	'index',//默认操作
 		
-		'ABSOLUTE_PATH'=>'http://localhost:8001/SP/index.php/',
-		'APP_ABSOLUTE_PATH'=>'http://localhost:8001/SP/',
+		'ABSOLUTE_PATH'=>$array_temp['HOST_HTTP'].'SP/index.php/',
+		'APP_ABSOLUTE_PATH'=>$array_temp['HOST_HTTP'].'SP/',
 		
 // 		'APP_AUTOLOAD_PATH'     => 'Think.Util,@.Service,@.Impl,@.Helper,@.Com,@.ORG',// __autoLoad 机制额外检测路径设置,注意搜索顺序
 // 		'LOAD_EXT_CONFIG'	=>	array('_menus_'=>'menus', '_privs_'=>'privs'),//加载扩展配置
@@ -45,12 +51,17 @@ $array=array(
 		'DEFAULT_THEME'			=>	'',//默认模板主题
 		'OPEN_PLATFORM'			=>	array('sina', 'qq'),//开启的开放平台
 		
-		'HOST' => 'http://localhost:8001/sp/index.php?',
+		'HOST' => $array_temp['HOST_HTTP'].'sp/index.php?',
 		'PAGENUM' => 5,//每页显示的分页数
 		'ROLLPAGES'=>5,
 		'UPLOAD_GOODS_IMG_URL'=>'Public/upload/img/goods/',
 		'DEFAULT_GOODS_IMG'=>'Public/images/goods_demo.png',
+		
+		'TEMP_FILE_URL'=>'Runtime/Temp/',
+		'CACHE_FILE_URL'=>'Runtime/Logs/',
+		'LOGS_FILE_URL'=>'Runtime/Cache/',
 );
+$array=array_merge($array_temp,$array);
 
 return array_merge($config,$array);
 ?>

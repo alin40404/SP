@@ -1,0 +1,265 @@
+
+<div id="body_box" style="margin-left: 0px;">
+	<link rel="stylesheet" type="text/css"
+		href="__PUBLIC__/effects/flexigrid/css/flexigrid.pack.css" />
+	<script type="text/javascript"
+		src="__PUBLIC__/effects/flexigrid/js/flexigrid.min.js"></script>
+	<div class="info_all rounded">
+		<h1>
+			<i class="icon-th-list btnico"></i><span>会员用户管理</span>&nbsp;&nbsp;&nbsp;&nbsp;
+			<!-- 
+			<span class="rounded btn">
+				<i class="icon-list btnico"></i><span><a href="?p=member&d=level">会员等级</a>
+				</span>
+			</span>
+			 -->
+		</h1>
+		<div class="info_search">
+			<form action="" method="get">
+				<table border="0" cellpadding="0" cellspacing="5">
+					<tbody>
+						<tr>
+							<td><input class='input' name='keywords' id='keywords'
+								placeholder='keywords' size='15' type='text' /><input
+								type="hidden" value="" name="lang" id="lang" /><input
+								type="hidden" value="1" name="search" id="search" /></td>
+							<td><a class="button_2" href="#" id="search_button">搜索</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+		<div class="operate">
+			<table border="0" cellpadding="0" cellspacing="5">
+				<tbody>
+					<td><span class="rounded btn" id="search_refresh"><i
+							class="icon-refresh btnico"></i><span>刷新</span></span></td>
+					<td><span class="rounded btn" id="sall_button"><i
+							class="icon-retweet btnico"></i><span>全选</span></span></td>
+					<td><span class="rounded btn" id="del_button"><i
+							class="icon-remove btnico"></i><span>删除</span></span></td>
+					<td><span class="rounded btn" id="reset_button"><i
+							class="icon-repeat btnico"></i><span>重置密码</span></span></td>
+					<td><span class="rounded btn" id="tofrost_button"><i
+							class="icon-ban-circle btnico"></i><span>冻结账号</span></span></td>
+					<td><span class="rounded btn" id="ccfrost_button"><i
+							class="icon-ok-circle btnico"></i><span>取消冻结</span></span></td>
+					
+				<!-- <td><span class="rounded btn" id="email_button"><i
+							class="icon-envelope btnico"></i><span>群发邮件</span></span></td>
+				  -->	
+				  </tbody>
+			</table>
+		</div>
+		<div class="info_list">
+			<table id="info_list" style="display: none"></table>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function deleteOne(id) {
+			$.dialog.confirm("您确定要删除该数据吗？", function() {
+				var id_str = "Id=" + id;
+				$.ajax({
+					type : "POST",
+					url : "index.php?g=Admin&m=Member&a=memberManage&d=del",
+					data : id_str,
+					success : function(msg) {
+						if ($.trim(msg) == "ok") {
+							$.dialog.alert("数据删除成功！");
+							$("#info_list").flexReload();
+						} else {
+							$.dialog.alert(msg);
+						}
+					}
+				});
+			}, function() {
+				$.dialog.tips("执行取消操作！");
+			});
+		}
+		$("#search_button").bind("click", function() {
+			$("#info_list").flexSearch({
+				searchitems : "search,keywords,lang"
+			});
+			return false;
+		});
+		$("#search_refresh").bind("click", function() {
+			$("#info_list").flexReload();
+			return false;
+		});
+		$("#sall_button").bind("click", function() {
+			$("#info_list tbody tr").toggleClass("trSelected");
+			return false;
+		});
+		$("#del_button").bind("click", function() {
+			$.dialog.confirm("您确定要删除该数据吗？", function() {
+				var id_str = "Id=0";
+				$.each($("#info_list .trSelected"), function() {
+					id_str += "," + $(this).attr("id");
+				});
+				$.ajax({
+					type : "POST",
+					url : "index.php?g=Admin&m=Member&a=memberManage&d=del",
+					data : id_str,
+					success : function(msg) {
+						if ($.trim(msg) == "ok") {
+							$.dialog.alert("数据删除成功！");
+							$("#info_list").flexReload();
+						} else {
+							$.dialog.alert(msg);
+						}
+					}
+				});
+			}, function() {
+				$.dialog.tips("执行取消操作！");
+			});
+			return false;
+		});
+		$("#info_list").flexigrid({
+			"url" : "index.php?g=Admin&m=Member&a=memberManage&d=listjson",
+			"dataType" : "json",
+			"colModel" : [ {
+				"name" : "Id",
+				"display" : "ID",
+				"width" : 40,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "email",
+				"display" : "\u7535\u5b50\u90ae\u7bb1",
+				"width" : 200,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "realname",
+				"display" : "\u771f\u5b9e\u59d3\u540d",
+				"width" : 100,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "sex",
+				"display" : "\u6027\u522b",
+				"width" : 100,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "mobile",
+				"display" : "\u79fb\u52a8\u7535\u8bdd",
+				"width" : 80,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "regTime",
+				"display" : "\u6ce8\u518c\u65f6\u95f4",
+				"width" : 80,
+				"sortable" : true,
+				"align" : "center"
+			}, {
+				"name" : "status",
+				"display" : "\u72b6\u6001",
+				"width" : 80,
+				"sortable" : false,
+				"align" : "center"
+			}, {
+				"name" : "deal",
+				"display" : "\u64cd\u4f5c",
+				"width" : 150,
+				"sortable" : false,
+				"align" : "center"
+			} ],
+			"sortname" : "regTime",
+			"sortorder" : "DESC",
+			"usepager" : true,
+			"useRp" : true,
+			"rp" : 10,
+			"showTableToggleBtn" : true,
+			"width" : "100%",
+			"height" : "auto"
+		});
+		function memberView(id) {
+			art.dialog.open("index.php?g=Admin&m=Member&a=memberManage&d=view&Id=" + id);
+		};
+		$("#reset_button").bind("click", function() {
+			$.dialog.confirm("您确定要重置该用户密码？", function() {
+				var id_str = "Id=0";
+				$.each($("#info_list .trSelected"), function() {
+					id_str += "," + $(this).attr("id")
+				});
+				$.ajax({
+					type : "POST",
+					url : "index.php?g=Admin&m=Member&a=memberManage&d=resetpwd",
+					data : id_str,
+					success : function(msg) {
+						if (msg == "ok") {
+							$.dialog.alert("改用户的密码已经被重置为：123456，请提醒用户及时修改密码！");
+							$("#info_list").flexReload()
+						} else {
+							$.dialog.alert(msg)
+						}
+					}
+				})
+			}, function() {
+				$.dialog.tips("执行取消操作！")
+			})
+		});
+		$("#tofrost_button").bind("click", function() {
+			$.dialog.confirm("用户账户被冻结后将不能登录，您确定要冻结该账户？", function() {
+				var id_str = "Id=0";
+				$.each($("#info_list .trSelected"), function() {
+					id_str += "," + $(this).attr("id")
+				});
+				$.ajax({
+					type : "POST",
+					url : "index.php?g=Admin&m=Member&a=memberManage&d=isfrost&value=2",
+					data : id_str,
+					success : function(msg) {
+						if (msg == "ok") {
+							$.dialog.alert("冻结账户成功！");
+							$("#info_list").flexReload()
+						} else {
+							$.dialog.alert(msg)
+						}
+					}
+				})
+			}, function() {
+				$.dialog.tips("执行取消操作！")
+			})
+		});
+		$("#ccfrost_button").bind("click", function() {
+			$.dialog.confirm("用户账户被取消冻结后将恢复正常，您确定要取消冻结该账户？", function() {
+				var id_str = "Id=0";
+				$.each($("#info_list .trSelected"), function() {
+					id_str += "," + $(this).attr("id")
+				});
+				$.ajax({
+					type : "POST",
+					url : "index.php?g=Admin&m=Member&a=memberManage&d=isfrost&value=1",
+					data : id_str,
+					success : function(msg) {
+						if (msg == "ok") {
+							$.dialog.alert("取消冻结账户成功！");
+							$("#info_list").flexReload()
+						} else {
+							$.dialog.alert(msg)
+						}
+					}
+				})
+			}, function() {
+				$.dialog.tips("执行取消操作！")
+			})
+		});
+		/*
+		$("#email_button").bind("click", function() {
+			$.dialog.confirm("您启动了群发邮件功能，系统将跳转到群发邮件界面？", function() {
+				var id_str = "0";
+				$.each($("#info_list .trSelected"), function() {
+					id_str += "," + $(this).attr("id")
+				});
+				window.location.href = "?p=email&d=send&t=member&mId=" + id_str
+			}, function() {
+				$.dialog.tips("执行取消操作！")
+			})
+		});
+		*/
+	</script>
+
+</div>

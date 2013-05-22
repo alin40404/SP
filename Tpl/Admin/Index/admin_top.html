@@ -43,7 +43,7 @@ function showsubmenu(sid) {
 <body leftmargin="0" topmargin="0">
 <table width="100%" height="64" border="0" cellpadding="0" cellspacing="0" class="admin_topbg">
   <tr>
-    <td width="61%" height="64"><img src="__PUBLIC__/images/Admin/logo.gif" width="262" height="64"></td>
+    <td width="61%" height="64"><img src="__PUBLIC__/images/Admin/logo.png" width="262" height="63"></td>
     <td width="39%" valign="top">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
